@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://week.wiki/link/index.html</loc>
+    <loc>https://week.wiki/posts/82b3b541ef90/</loc>
     
     <lastmod>2022-12-02</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://week.wiki/gallery/index.html</loc>
+    <loc>https://week.wiki/about/index.html</loc>
     
     <lastmod>2022-12-02</lastmod>
     
@@ -29,9 +29,18 @@
   </url>
   
   <url>
-    <loc>https://week.wiki/posts/82b3b541ef90/</loc>
+    <loc>https://week.wiki/link/index.html</loc>
     
-    <lastmod>2022-12-01</lastmod>
+    <lastmod>2022-12-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/gallery/index.html</loc>
+    
+    <lastmod>2022-12-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -111,15 +120,6 @@
   
   <url>
     <loc>https://week.wiki/archives/index.html</loc>
-    
-    <lastmod>2022-11-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/about/index.html</loc>
     
     <lastmod>2022-11-27</lastmod>
     
