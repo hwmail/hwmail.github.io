@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://week.wiki/about/index.html</loc>
+    
+    <lastmod>2022-12-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://week.wiki/posts/82b3b541ef90/</loc>
     
     <lastmod>2022-12-02</lastmod>
@@ -12,15 +21,6 @@
   
   <url>
     <loc>https://week.wiki/posts/d143bc148fba/</loc>
-    
-    <lastmod>2022-12-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/about/index.html</loc>
     
     <lastmod>2022-12-02</lastmod>
     
@@ -175,7 +175,7 @@
 
   <url>
     <loc>https://week.wiki/</loc>
-    <lastmod>2022-12-02</lastmod>
+    <lastmod>2022-12-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -183,42 +183,42 @@
   
   <url>
     <loc>https://week.wiki/tags/t1/</loc>
-    <lastmod>2022-12-02</lastmod>
+    <lastmod>2022-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://week.wiki/tags/t2/</loc>
-    <lastmod>2022-12-02</lastmod>
+    <lastmod>2022-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://week.wiki/tags/tags1/</loc>
-    <lastmod>2022-12-02</lastmod>
+    <lastmod>2022-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://week.wiki/tags/tags2/</loc>
-    <lastmod>2022-12-02</lastmod>
+    <lastmod>2022-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://week.wiki/tags/hexo-www/</loc>
-    <lastmod>2022-12-02</lastmod>
+    <lastmod>2022-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://week.wiki/tags/music/</loc>
-    <lastmod>2022-12-02</lastmod>
+    <lastmod>2022-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -227,56 +227,56 @@
   
   <url>
     <loc>https://week.wiki/categories/%E4%B8%80%E7%BA%A7/</loc>
-    <lastmod>2022-12-02</lastmod>
+    <lastmod>2022-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://week.wiki/categories/aji/</loc>
-    <lastmod>2022-12-02</lastmod>
+    <lastmod>2022-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://week.wiki/categories/Music/</loc>
-    <lastmod>2022-12-02</lastmod>
+    <lastmod>2022-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://week.wiki/categories/%E4%B8%80%E7%BA%A7/%E4%BA%8C%E7%BA%A7/</loc>
-    <lastmod>2022-12-02</lastmod>
+    <lastmod>2022-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://week.wiki/categories/aji/bji/</loc>
-    <lastmod>2022-12-02</lastmod>
+    <lastmod>2022-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://week.wiki/categories/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2022-12-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/categories/%E4%B8%80%E7%BA%A7/%E4%BA%8C%E7%BA%A7/%E4%B8%89%E7%BA%A7/</loc>
-    <lastmod>2022-12-02</lastmod>
+    <lastmod>2022-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://week.wiki/categories/aji/bji/cj/</loc>
-    <lastmod>2022-12-02</lastmod>
+    <lastmod>2022-12-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/categories/%E4%B8%80%E7%BA%A7/%E4%BA%8C%E7%BA%A7/%E4%B8%89%E7%BA%A7/</loc>
+    <lastmod>2022-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
