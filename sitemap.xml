@@ -2,7 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://week.wiki/posts/029687e251b2/</loc>
+    <loc>https://week.wiki/posts/82b3b541ef90/</loc>
+    
+    <lastmod>2023-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/posts/2e2f2a277e85/</loc>
+    
+    <lastmod>2023-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/posts/fe46397ae547/</loc>
+    
+    <lastmod>2023-02-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/posts/cd0865893d66/</loc>
     
     <lastmod>2023-01-19</lastmod>
     
@@ -11,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://week.wiki/posts/38f1144c7d18/</loc>
+    <loc>https://week.wiki/posts/9b0dda63780e/</loc>
     
     <lastmod>2023-01-13</lastmod>
     
@@ -20,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://week.wiki/posts/16b7061667f6/</loc>
+    <loc>https://week.wiki/posts/a210a871e734/</loc>
     
     <lastmod>2023-01-13</lastmod>
     
@@ -29,7 +56,7 @@
   </url>
   
   <url>
-    <loc>https://week.wiki/posts/0ce63a87a556/</loc>
+    <loc>https://week.wiki/posts/160205aa652e/</loc>
     
     <lastmod>2023-01-13</lastmod>
     
@@ -38,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://week.wiki/posts/945496a4069b/</loc>
+    <loc>https://week.wiki/posts/331dcc5e6fbc/</loc>
     
     <lastmod>2023-01-13</lastmod>
     
@@ -47,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://week.wiki/posts/3689d8dde0cc/</loc>
+    <loc>https://week.wiki/posts/296feeb72e63/</loc>
     
     <lastmod>2023-01-12</lastmod>
     
@@ -56,16 +83,7 @@
   </url>
   
   <url>
-    <loc>https://week.wiki/posts/593f46bb1bf3/</loc>
-    
-    <lastmod>2023-01-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/posts/e1e39b49552a/</loc>
+    <loc>https://week.wiki/posts/42d416cb4ecb/</loc>
     
     <lastmod>2023-01-12</lastmod>
     
@@ -83,25 +101,7 @@
   </url>
   
   <url>
-    <loc>https://week.wiki/posts/82b3b541ef90/</loc>
-    
-    <lastmod>2022-12-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/posts/b3cdb9819a99/</loc>
-    
-    <lastmod>2022-12-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/posts/e376acf85af5/</loc>
+    <loc>https://week.wiki/posts/ee23b331190f/</loc>
     
     <lastmod>2022-12-20</lastmod>
     
@@ -113,15 +113,6 @@
     <loc>https://week.wiki/posts/74a687a1675b/</loc>
     
     <lastmod>2022-12-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/posts/d89724276873/</loc>
-    
-    <lastmod>2022-12-15</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -164,7 +155,7 @@
   </url>
   
   <url>
-    <loc>https://week.wiki/posts/39f3390e7873/</loc>
+    <loc>https://week.wiki/posts/dcbc5eefe58b/</loc>
     
     <lastmod>2022-11-29</lastmod>
     
@@ -218,36 +209,9 @@
   </url>
   
   <url>
-    <loc>https://week.wiki/posts/1c0fe1a22992/</loc>
+    <loc>https://week.wiki/posts/bf8c95438f25/</loc>
     
     <lastmod>2022-11-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/posts/74992397a0d0/</loc>
-    
-    <lastmod>2022-11-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/posts/f99caa9284bb/</loc>
-    
-    <lastmod>2022-11-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/posts/95ee15cc2eb9/</loc>
-    
-    <lastmod>2022-11-24</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -256,106 +220,106 @@
 
   <url>
     <loc>https://week.wiki/</loc>
-    <lastmod>2023-01-19</lastmod>
+    <lastmod>2023-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://week.wiki/tags/%E6%A0%87%E7%AD%BE1-%E6%A0%87%E7%AD%BE2/</loc>
-    <lastmod>2023-01-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://week.wiki/tags/t1/</loc>
-    <lastmod>2023-01-19</lastmod>
+    <lastmod>2023-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://week.wiki/tags/t2/</loc>
-    <lastmod>2023-01-19</lastmod>
+    <lastmod>2023-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://week.wiki/tags/tags1/</loc>
-    <lastmod>2023-01-19</lastmod>
+    <lastmod>2023-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://week.wiki/tags/tags2/</loc>
-    <lastmod>2023-01-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/tags/tags3/</loc>
-    <lastmod>2023-01-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/tags/ubuntu-%E6%A0%87%E7%AD%BE2/</loc>
-    <lastmod>2023-01-19</lastmod>
+    <lastmod>2023-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://week.wiki/tags/hexo-www/</loc>
-    <lastmod>2023-01-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/tags/music/</loc>
-    <lastmod>2023-01-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/tags/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0-ListeningEnglish/</loc>
-    <lastmod>2023-01-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/tags/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0-VocabularyEnglish/</loc>
-    <lastmod>2023-01-19</lastmod>
+    <lastmod>2023-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://week.wiki/tags/Aoao%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4-aoaoLinux%E5%91%BD%E4%BB%A4-linux%E5%91%BD%E4%BB%A4-aoaocrontab-crontab/</loc>
-    <lastmod>2023-01-19</lastmod>
+    <lastmod>2023-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://week.wiki/tags/Aoao%E9%9A%8F%E7%AC%94-%E7%A7%91%E6%8A%80/</loc>
-    <lastmod>2023-01-19</lastmod>
+    <loc>https://week.wiki/tags/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0-ListeningEnglish/</loc>
+    <lastmod>2023-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/tags/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0-VocabularyEnglish/</loc>
+    <lastmod>2023-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/tags/%E6%A0%87%E7%AD%BE1-%E6%A0%87%E7%AD%BE2/</loc>
+    <lastmod>2023-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/tags/music/</loc>
+    <lastmod>2023-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/tags/ubuntu/</loc>
+    <lastmod>2023-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/tags/linux/</loc>
+    <lastmod>2023-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://week.wiki/tags/%E6%97%A0%E4%BA%BA%E9%A9%BE%E9%A9%B6-%E6%A0%87%E7%AD%BE2/</loc>
-    <lastmod>2023-01-19</lastmod>
+    <lastmod>2023-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/tags/Aoao%E9%9A%8F%E7%AC%94-%E7%A7%91%E6%8A%80/</loc>
+    <lastmod>2023-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -363,148 +327,127 @@
 
   
   <url>
-    <loc>https://week.wiki/categories/Aoao%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2023-01-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://week.wiki/categories/%E4%B8%80%E7%BA%A7/</loc>
-    <lastmod>2023-01-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/categories/aji/</loc>
-    <lastmod>2023-01-19</lastmod>
+    <lastmod>2023-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://week.wiki/categories/Music/</loc>
-    <lastmod>2023-01-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/categories/Aoao%E9%9A%8F%E7%AC%94/%E7%A7%91%E6%8A%80/</loc>
-    <lastmod>2023-01-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
-    <lastmod>2023-01-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/categories/%E4%B8%80%E7%BA%A7/%E4%BA%8C%E7%BA%A7/</loc>
-    <lastmod>2023-01-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/categories/aji/bji/</loc>
-    <lastmod>2023-01-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/categories/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2023-01-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/categories/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2023-01-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/ubuntu/</loc>
-    <lastmod>2023-01-19</lastmod>
+    <lastmod>2023-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://week.wiki/categories/Aoao%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4/</loc>
-    <lastmod>2023-01-19</lastmod>
+    <lastmod>2023-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://week.wiki/categories/aji/bji/cj/</loc>
-    <lastmod>2023-01-19</lastmod>
+    <loc>https://week.wiki/categories/%E4%B8%80%E7%BA%A7/%E4%BA%8C%E7%BA%A7/</loc>
+    <lastmod>2023-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://week.wiki/categories/%E7%94%9F%E6%B4%BB/%E8%8B%B1%E8%AF%AD/</loc>
-    <lastmod>2023-01-19</lastmod>
+    <loc>https://week.wiki/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2023-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://week.wiki/categories/%E4%B8%80%E7%BA%A7/%E4%BA%8C%E7%BA%A7/%E4%B8%89%E7%BA%A7/</loc>
-    <lastmod>2023-01-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/categories/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/ListeningEnglish/</loc>
-    <lastmod>2023-01-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/categories/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/VocabularyEnglish/</loc>
-    <lastmod>2023-01-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/categories/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/emailenglish/</loc>
-    <lastmod>2023-01-19</lastmod>
+    <loc>https://week.wiki/categories/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2023-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://week.wiki/categories/Aoao%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4/aoaoLinux%E5%91%BD%E4%BB%A4/</loc>
-    <lastmod>2023-01-19</lastmod>
+    <lastmod>2023-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://week.wiki/categories/%E5%BF%83%E7%81%B5%E9%B8%A1%E6%B1%A4/</loc>
-    <lastmod>2023-01-19</lastmod>
+    <loc>https://week.wiki/categories/IT%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2023-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/categories/Aoao%E9%9A%8F%E7%AC%94/</loc>
+    <lastmod>2023-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/categories/%E7%94%9F%E6%B4%BB/%E8%8B%B1%E8%AF%AD/</loc>
+    <lastmod>2023-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/categories/%E4%B8%80%E7%BA%A7/%E4%BA%8C%E7%BA%A7/%E4%B8%89%E7%BA%A7/</loc>
+    <lastmod>2023-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/categories/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/ListeningEnglish/</loc>
+    <lastmod>2023-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/categories/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/VocabularyEnglish/</loc>
+    <lastmod>2023-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/categories/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/emailenglish/</loc>
+    <lastmod>2023-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/categories/IT%E6%8A%80%E6%9C%AF/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
+    <lastmod>2023-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/categories/Aoao%E9%9A%8F%E7%AC%94/%E7%A4%BE%E4%BC%9A/</loc>
+    <lastmod>2023-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/categories/Aoao%E9%9A%8F%E7%AC%94/%E7%A7%91%E6%8A%80/</loc>
+    <lastmod>2023-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://week.wiki/categories/%E7%94%9F%E6%B4%BB/%E8%8B%B1%E8%AF%AD2/</loc>
-    <lastmod>2023-01-19</lastmod>
+    <lastmod>2023-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
