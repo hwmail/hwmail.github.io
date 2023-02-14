@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://week.wiki/posts/42d416cb4ecb/</loc>
+    <lastmod>2023-02-14</lastmod>
+  </url>
+  <url>
     <loc>https://week.wiki/posts/7d36ca9125e9/</loc>
     <lastmod>2023-02-14</lastmod>
   </url>
@@ -75,9 +79,5 @@
   <url>
     <loc>https://week.wiki/posts/f02c63d71e5a/</loc>
     <lastmod>2023-02-08</lastmod>
-  </url>
-  <url>
-    <loc>https://week.wiki/posts/42d416cb4ecb/</loc>
-    <lastmod>2023-01-12</lastmod>
   </url>
 </urlset> 
