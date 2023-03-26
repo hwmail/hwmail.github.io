@@ -4,6 +4,64 @@
   
     
     <entry>
+      <title>幽默笑话-2023年3月</title>
+      <link href="/posts/b0c147989eb0/"/>
+      <url>/posts/b0c147989eb0/</url>
+      
+        <content type="html"><![CDATA[<div class="note primary flat"><p>幽默笑话-2023年3月</p></div><ol><li>中国的矛盾用哪四个字能平息？<br>神回复：大过年的。</li><li>和女朋友吵架怎么让他闭嘴？<br>神回复：说“你除了长得漂亮还有啥！”</li><li>神笔马良在墙上画了一个圆点，又在其 上方画三条弧线，然后___。<br>神回复：掏出手机连上了WiFi。</li><li>听说睡觉可以美容，我要去睡美容觉 了。<br>神回复：瓜子脸的女人睡的才是美容觉，你这样的包子脸只能睡回笼觉。</li><li>办公室是一个神奇的地方，手机、钱 包、钥匙放在桌子上，一个星期也不会有人碰一下，但只要你的笔脱离视线一 会儿，就会下落不明！<br>神回复：宿舍是一个神奇的地方，手 机、钱包、钥匙放在桌子上，一个星期也不会有人碰一下，但只要你的零食放在桌子上，出去一会儿，就会下落不明。</li><li>请问中国踢球为什么这么差？<br>神回复：因为体育课都被别的老师占去了。</li><li>你男朋友送过你什么东西啊？<br>神回复：送我回宿舍。</li><li>为什么我的脸长得这么大，身子这么宽呢？<br>神回复：因为你是被父母拉扯大的。</li><li>胖是什么感觉？<br>神回复：刚蹲下，钱已经被人捡走了……</li><li>真的要丢下一切去旅行吗？<br>神回复：带上一切去旅行，那叫搬家。</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Aoao随笔 </category>
+          
+          <category> 幽默笑话 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 好图 </tag>
+            
+            <tag> 幽默笑话 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>aoaoredhat</title>
+      <link href="/posts/3e76b46fe1b1/"/>
+      <url>/posts/3e76b46fe1b1/</url>
+      
+        <content type="html"><![CDATA[<div class="note success flat"><p>关于redhat操作系统的一些WIKI，希望本文对你有用</p></div><h1 id="1-ubuntu相关网站地址"><a href="#1-ubuntu相关网站地址" class="headerlink" title="1.ubuntu相关网站地址"></a>1.ubuntu相关网站地址</h1><h1 id="2-系统软件版本更新安装查看"><a href="#2-系统软件版本更新安装查看" class="headerlink" title="2.系统软件版本更新安装查看"></a>2.系统软件版本更新安装查看</h1><h2 id="系统更新"><a href="#系统更新" class="headerlink" title="系统更新"></a>系统更新</h2><h2 id="系统加固"><a href="#系统加固" class="headerlink" title="系统加固"></a>系统加固</h2><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">#! /bin/bash</span><br><span class="line">sudo cp /etc/login.defs /etc/login.defs.bak</span><br><span class="line">sudo cp /etc/pam.d/system-auth /etc/pam.d/system-auth.bak</span><br><span class="line">sudo cp /etc/pam.d/login /etc/pam.d/login.bak</span><br><span class="line">sudo cp /etc/ssh/ssh_config /etc/ssh/ssh_config.bak</span><br><span class="line">sudo cp /etc/profile /etc/profile.bak</span><br><span class="line">sudo cp /etc/bashrc /etc/bashrc.bak</span><br><span class="line">sudo sed -i "s/PASS_MAX_DAYS.*/PASS_MAX_DAYS  60/g" /etc/login.defs</span><br><span class="line">sudo sed -i "s/PASS_MIN_DAYS.*/PASS_MIN_DAYS  0/g" /etc/login.defs</span><br><span class="line">sudo sed -i "s/PASS_WARN_AGE.*/PASS_WARN_AGE  7/g" /etc/login.defs</span><br><span class="line">sudo sed -i "s/PASS_MIN_LEN.*/PASS_MIN_LEN  8/g" /etc/login.defs</span><br><span class="line">sudo sed -i 's#password    requisite     pam_pwquality.so.*#password requisite pam_cracklib.so try_first_pass retry=3 dcredit=-1 lcredit=-1 ucredit=-1 ocredit=-1 minlen=8#' /etc/pam.d/system-auth</span><br><span class="line">sudo sed -i '5 i auth required pam_tally2.so deny=3 unlock_time=300 even_deny_root root_unlock_time=300' /etc/pam.d/system-auth</span><br><span class="line">echo -e "\033[32m password policy changed! \033[0m"</span><br><span class="line">sudo sed -i '3 i auth required pam_tally2.so deny=3 lock_time=300 even_deny_root root_unlock_time=300' /etc/pam.d/login</span><br><span class="line">echo -e "\033[32m tty policy changed! \033[0m"</span><br><span class="line">echo "PermitEmptyPasswords no"&gt;&gt;/etc/ssh/ssh_config</span><br><span class="line">echo -e "\033[32m SSH policy changed! \033[0m"</span><br><span class="line">echo "export TMOUT=600"&gt;&gt;/etc/profile</span><br><span class="line">echo -e "\033[32m session timeout policy changed! \033[0m"</span><br><span class="line">sudo sed -i "s/umask.*/umask  027/g"   /etc/bashrc</span><br><span class="line">sudo sed -i "s/umask.*/umask  027/g"   /etc/profile</span><br><span class="line">echo -e "\033[32m umask policy changed! \033[0m"</span><br><span class="line">source /etc/profile</span><br><span class="line">echo -e "\033[32m profile excuted! \033[0m"</span><br><span class="line">sudo service sshd restart</span><br><span class="line">echo -e "\033[32m ssh reload! \033[0m"</span><br><span class="line"></span><br><span class="line">#CentOS</span><br><span class="line"># Install Splunk</span><br><span class="line"># Download Splunk</span><br><span class="line">wget -O splunkforwarder-7.3.4-13e97039fb65-linux-2.6-x86_64.rpm "https://automationstorageaccount.file.core.chinacloudapi.cn/software-onboardvm/AppSet01/Splunk/splunkforwarder-7.3.4-13e97039fb65-linux-2.6-x86_64.rpm?sv=2019-10-10&amp;ss=f&amp;srt=o&amp;sp=rl&amp;se=2021-12-31T10:50:30Z&amp;st=2020-06-17T02:50:30Z&amp;spr=https&amp;sig=axdnDIxI%2BbbLKsSbcBzHiGdETc00rYKlV7zZK5vHEZo%3D"</span><br><span class="line">sudo rpm -Uvh splunkforwarder-7.3.4-13e97039fb65-linux-2.6-x86_64.rpm</span><br><span class="line">sudo /opt/splunkforwarder/bin/splunk enable boot-start --accept-license --answer-yes --auto-ports --noprompt</span><br><span class="line">sudo /opt/splunkforwarder/bin/splunk set deploy-poll deabgsec201.d400.mh.grp:8089 --accept-license --answer-yes --auto-ports --no-prompt</span><br><span class="line">sudo /opt/splunkforwarder/bin/splunk start --accept-license --answer-yes --auto-ports --no-prompt</span><br><span class="line"></span><br><span class="line"># Install Qualys</span><br><span class="line"># Download Qualys</span><br><span class="line">wget -O qualys-cloud-agent.x86_64.rpm 'https://automationstorageaccount.file.core.chinacloudapi.cn/software-onboardvm/AppSet01/Qualys/qualys-cloud-agent.x86_64.rpm?sv=2019-10-10&amp;ss=f&amp;srt=o&amp;sp=rl&amp;se=2021-12-31T10:50:30Z&amp;st=2020-06-17T02:50:30Z&amp;spr=https&amp;sig=axdnDIxI%2BbbLKsSbcBzHiGdETc00rYKlV7zZK5vHEZo%3D'</span><br><span class="line">sudo rpm -ivh qualys-cloud-agent.x86_64.rpm</span><br><span class="line">sudo /usr/local/qualys/cloud-agent/bin/qualys-cloud-agent.sh ActivationId=bffacafc-4799-4b73-b89d-7a97fe01eefe CustomerId=595f28d9-c9ae-4059-82af-1faa088f8a2d</span><br><span class="line"></span><br><span class="line"># Install CrowdStrike</span><br><span class="line">#Download</span><br><span class="line">wget -O falcon-sensor-5.43.0-10803.el7.x86_64.rpm 'https://automationstorageaccount.file.core.chinacloudapi.cn/software-onboardvm/AppSet01/CrowdStrike/falcon-sensor-5.43.0-10803.el7.x86_64.rpm?sv=2019-10-10&amp;ss=f&amp;srt=o&amp;sp=rl&amp;se=2021-12-31T10:50:30Z&amp;st=2020-06-17T02:50:30Z&amp;spr=https&amp;sig=axdnDIxI%2BbbLKsSbcBzHiGdETc00rYKlV7zZK5vHEZo%3D'</span><br><span class="line">sudo yum install falcon-sensor-5.43.0-10803.el7.x86_64.rpm -y</span><br><span class="line">sudo /opt/CrowdStrike/falconctl -s --cid=93C41B8301374F7EB1D5C696D127F4A8-90</span><br><span class="line">sudo service falcon-sensor start</span><br><span class="line">sudo systemctl start falcon-sensor</span><br><span class="line"></span><br><span class="line"># Install Snow</span><br><span class="line">wget -O KION_snowagent_6.2.0-1_amd64.rpm 'https://automationstorageaccount.file.core.chinacloudapi.cn/software-onboardvm/AppSet01/snow/KION_snowagent-6.2.0-1.x86_64.rpm?sv=2019-10-10&amp;ss=f&amp;srt=o&amp;sp=rl&amp;se=2021-12-31T10:50:30Z&amp;st=2020-06-17T02:50:30Z&amp;spr=https&amp;sig=axdnDIxI%2BbbLKsSbcBzHiGdETc00rYKlV7zZK5vHEZo%3D'</span><br><span class="line">sudo yum localinstall -y KION_snow*</span><br></pre></td></tr></tbody></table></figure><hr><h2 id="系统软件版本查看"><a href="#系统软件版本查看" class="headerlink" title="系统软件版本查看"></a>系统软件版本查看</h2><h2 id="网络IPDNS配置"><a href="#网络IPDNS配置" class="headerlink" title="网络IPDNS配置"></a>网络IPDNS配置</h2><h2 id="新用户新建修改："><a href="#新用户新建修改：" class="headerlink" title="新用户新建修改："></a>新用户新建修改：</h2><p>useradd -m aoao</p><p>passwd aoao</p><p>usermod  -s /bin/bash aoao</p><h1 id="3-其它FAQ"><a href="#3-其它FAQ" class="headerlink" title="3.其它FAQ"></a>3.其它FAQ</h1><p>1、修改时区</p><p>1)tzselect</p><ol start="2"><li>sudo cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime</li></ol><p>​     date -R</p><p>2、subnet 192.168.1.0/24</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> AoaoIT技术 </category>
+          
+          <category> 操作系统 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> redhat </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>万恶的垃圾分类-一直伤害着我-我讨厌垃圾分类</title>
       <link href="/posts/4135a721308d/"/>
       <url>/posts/4135a721308d/</url>
