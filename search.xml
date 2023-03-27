@@ -4,6 +4,70 @@
   
     
     <entry>
+      <title>aoaosnmp-SNMPv1 SNMPv2高危漏洞</title>
+      <link href="/posts/d6cdfbda21ee/"/>
+      <url>/posts/d6cdfbda21ee/</url>
+      
+        <content type="html"><![CDATA[<div class="note success flat"><p>使用到 SNMPv1 SNMPv2就是最高危漏洞，wiki下</p></div><h1 id="漏洞情况"><a href="#漏洞情况" class="headerlink" title="漏洞情况"></a>漏洞情况</h1><h2 id="Vulnerability-Result"><a href="#Vulnerability-Result" class="headerlink" title="Vulnerability Result"></a>Vulnerability Result</h2><p>public allows SNMPv2 access which is an obsolete version. public allows SNMPv1 access which is an obsolete version.</p><h2 id="Vulnerability-Description"><a href="#Vulnerability-Description" class="headerlink" title="Vulnerability Description"></a>Vulnerability Description</h2><p>Simple Network Management Protocol (SNMP) is an “Internet-standard protocol for managing devices on IP networks.”<br> The authentication of clients of earlier versions of SNMP is performed only by a “community string”, in effect a type of password, which is transmitted in cleartext.<br> The Internet Engineering Task Force (IETF) has designated SNMPv3 a full Internet standard, the highest maturity level for an RFC. It considers earlier versions to be obsolete designating them <a href="http://www.ietf.org/rfc/rfc3410.txt">(“Historic”).</a></p><h2 id="Detection-Logic"><a href="#Detection-Logic" class="headerlink" title="Detection Logic"></a>Detection Logic</h2><p>QID Detection Logic (unauthentication):<br> This QID checks if the target allows SNMP access, if it is an end-of-life SNMP version the QID is posted.</p><h2 id="Impact"><a href="#Impact" class="headerlink" title="Impact"></a>Impact</h2><p>The system is at high risk of being exposed to security vulnerabilities.  Since the vendor no longer provides updates, obsolete software is more  vulnerable to viruses and other attacks.</p><p></p><h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>Disable or remove SNMPv1/2c authentication. Use SNMP version 3 authentication</p><p>SNMPv3 provides additional security features:<br> Confidentiality - Encryption of packets to prevent snooping by an unauthorized source.<br> Integrity - Message integrity to ensure that a packet has not been  tampered with in transit including an optional packet replay protection  mechanism.<br> Authentication - to verify that the message is from a valid source.</p><p> For IBM AIX users the following document is recommended  <a href="http://www-01.ibm.com/support/knowledgecenter/ssw_aix_71/com.ibm.aix.networkcomm/snmp_intro.htm">SNMP for network management</a></p><p>If SNMP can not be used, look into third party applications / remote services that can be a replacement for SNMP.</p><p>Workaround:</p><p>As a temporary measure, block access to SNMP services at the network perimeter. </p><p>In situations where blocking or disabling SNMP is not possible,restrict  all SNMP access to separate, isolated management networks that are not  publicly accessible.</p><h1 id="处理步骤"><a href="#处理步骤" class="headerlink" title="处理步骤"></a>处理步骤</h1><p>net-snmp-create-v3-user -ro -A password -x AES useraoao</p><p> snmp v1 v2 由于不安全，被PCI认证禁止，只能启用SNMP V3，现在把snmp的V3配置记录下来</p><p>snmp v1 v2c 关闭，要snmpd.conf把下面两行注释掉。</p><p>group  notConfigGroup v1      notConfigUser</p><p>group  notConfigGroup v2c      notConfigUser</p><p>安装软件</p><p>yum install net-snmp net-snmp-devel net-snmp-utils</p><p>加只读用户snmpuser 密码为123456</p><p>net-snmp-config –create-snmpv3-user -ro -A 123456 -a MD5 snmpuser</p><p> 用snmpuser用户来检查</p><p>snmpwalk -v 3 -u snmpuser -a md5 -A 123456 -l authNoPriv localhost .1  sysDescr </p><p>net-snmp-create-v3-user -ro -A H2kE3lAavyCtArMyx9yW -a SHA -X NBO8Tl4griZ9BViwvdi0 -x AES orionuser</p><p>snmpwalk -v 3 -u orionuser -a SHA -A H2kE3lAavyCtArMyx9yW -l authNoPriv localhost .1  sysDescr </p><p>snmpwalk -v 3 -u orionuser -l authPriv -a SHA -A H2kE3lAavyCtArMyx9yW -x DES -X NBO8Tl4griZ9BViwvdi0 localhost</p><p>snmpwalk -v 3 -u orionuser -l authPriv -a SHA -A NBO8Tl4griZ9BViwvdi0 -x DES -X H2kE3lAavyCtArMyx9yW localhost</p><p>snmp v3安全级别有三种，分别为noAuthNoPriv（不认证也不加密）、authNoPriv（认证但是不加密）、authPriv（既认证又加密）</p><p>systemctl status snmpd.service # 查看snmp服务当前状态</p><p>systemctl start snmpd.service # 启动snmp服务</p><p>systemctl enable snmpd.service # 设置开机启动snmp服务</p><p>firewall-cmd –list-all</p><p>firewall-cmd –permanent –zone=public –add-port=161/udp</p><p>systemctl restart firewalld.service</p><p>snmpwalk -v 2c -c public localhost .1.3.6.1.2.1.1</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> AoaoIT技术 </category>
+          
+          <category> 安全 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 安全 </tag>
+            
+            <tag> 漏洞 </tag>
+            
+            <tag> snmp </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>aoao邮箱-教育邮箱-edu邮箱-每个人都应该要有个教育邮箱</title>
+      <link href="/posts/dcc8f8eaece7/"/>
+      <url>/posts/dcc8f8eaece7/</url>
+      
+        <content type="html"><![CDATA[<div class="note success flat"><p>每个人都应该要有个教育邮箱</p></div><p>教育邮箱是一个专门为学生和教育工作者设计的电子邮件账户，由于其特殊的身份认证，它能够为使用者提供许多省钱、挣钱、以及免费的好处。以下是为什么每个人都应该拥有一个教育邮箱的原因：</p><ol><li>学生优惠</li></ol><p>许多公司和品牌都会提供专门的学生优惠，例如：Spotify，Amazon Prime和Microsoft Office等等。通过使用你的教育邮箱来验证你的学生身份，你可以获得这些公司和品牌的优惠，省下大量的钱。这些优惠通常是在学生邮箱上使用特定的链接或代码才能获得，所以记得检查你的垃圾邮件文件夹，以便及时获取这些优惠。</p><p>​    2.软件和工具</p><p>通过教育邮箱，你可以免费获取各种软件和工具，如Google Drive、GitHub Education、Notion、Canva和Adobe Creative Suite等等。这些软件和工具通常是为学生和教育工作者提供的，以帮助他们更好地完成学业和工作任务。通过使用教育邮箱注册并验证身份，你可以免费使用这些软件和工具，无需支付昂贵的订阅费用。</p><p>  3.免费课程</p><p>许多在线教育平台如Coursera、edX和Udemy都提供了大量的免费课程，而这些课程通常是对使用教育邮箱的学生和教育工作者开放的。如果你想学习新的技能或增强你的知识储备，教育邮箱可以帮助你节省大量的学习费用。</p><p>  4.挣钱机会</p><p>通过教育邮箱，你还可以获得各种挣钱机会，例如：校园代理、调查研究和远程兼职等等。许多公司和组织都寻找有经验和能力的学生来帮助他们完成各种任务和项目，而教育邮箱的认证可以帮助你获得这些机会。</p><p>总之，教育邮箱不仅是一个验证你学生身份的电子邮件账户，还可以为你提供各种省钱、挣钱、以及免费的好处。如果你还没有教育邮箱，可以联系我代接收，你只需要将你要注册的网站或应用的注册信息发送到我的edu教育邮箱，我们将会代你完成注册！</p><p>Q:1296454177  VX:weekwiki </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Aoao随笔 </category>
+          
+          <category> 生活 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教育邮箱 </tag>
+            
+            <tag> edu邮箱 </tag>
+            
+            <tag> edu </tag>
+            
+            <tag> edu.cn </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>幽默笑话-2023年3月</title>
       <link href="/posts/b0c147989eb0/"/>
       <url>/posts/b0c147989eb0/</url>
