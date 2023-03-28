@@ -1,0 +1,335 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>aoaoqualys-漏洞管理资产管理查询 | week.wiki</title><meta name="author" content="aoao,jlwu@vip.163.com"><meta name="copyright" content="aoao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="&#x2F;&#x2F; 在主页描述、若不选自动节选">
+<meta property="og:type" content="article">
+<meta property="og:title" content="aoaoqualys-漏洞管理资产管理查询">
+<meta property="og:url" content="https://week.wiki/posts/3f38e537504c/index.html">
+<meta property="og:site_name" content="week.wiki">
+<meta property="og:description" content="&#x2F;&#x2F; 在主页描述、若不选自动节选">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://aoao-1309691110.cos.ap-shanghai.myqcloud.com/img/coco.jpg">
+<meta property="article:published_time" content="2023-03-28T01:22:29.572Z">
+<meta property="article:modified_time" content="2023-03-28T01:32:39.832Z">
+<meta property="article:author" content="aoao">
+<meta property="article:tag" content="安全">
+<meta property="article:tag" content="漏洞">
+<meta property="article:tag" content="qualys">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://aoao-1309691110.cos.ap-shanghai.myqcloud.com/img/coco.jpg"><link rel="shortcut icon" href="https://aoao-1309691110.cos.ap-shanghai.myqcloud.com/img/favicon.png"><link rel="canonical" href="https://week.wiki/posts/3f38e537504c/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: aoao","link":"链接: ","source":"来源: week.wiki","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'aoaoqualys-漏洞管理资产管理查询',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: true,
+  isToc: true,
+  postUpdate: '2023-03-28 09:32:39'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/mainColor/heoMainColor.css"> <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/categoryBar/categoryBar.css"><meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://aoao-1309691110.cos.ap-shanghai.myqcloud.com/img/favicon.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">39</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">59</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">22</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 总分类目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 所有分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 所有标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 本站归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> Aoao随笔:</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/Aoao%E9%9A%8F%E7%AC%94/"><i class="fa-fw fas fa-folder-open"></i><span> Aoao随笔全部</span></a></li><li><a class="site-page child" href="/categories/Aoao%E9%9A%8F%E7%AC%94/%E7%A7%91%E6%8A%80/"><i class="fa-fw fas fa-folder-open"></i><span> Aoao随笔科技</span></a></li><li><a class="site-page child" href="/categories/Aoao%E9%9A%8F%E7%AC%94/%E7%94%9F%E6%B4%BB/"><i class="fa-fw fas fa-folder-open"></i><span> Aoao随笔生活</span></a></li><li><a class="site-page child" href="/categories/Aoao%E9%9A%8F%E7%AC%94/%E7%A4%BE%E4%BC%9A/"><i class="fa-fw fas fa-folder-open"></i><span> Aoao随笔社会</span></a></li><li><a class="site-page child" href="/categories/%E5%B9%BD%E9%BB%98%E7%AC%91%E8%AF%9D/"><i class="fa-fw fas fa-folder-open"></i><span> Aoao随笔幽默笑话</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 我的电影</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 英语学习</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/"><i class="fa-fw fas fa-folder-open"></i><span> 英语学习</span></a></li><li><a class="site-page child" href="/categories/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/emailenglish/"><i class="fa-fw fas fa-folder-open"></i><span> EmailEnglish</span></a></li><li><a class="site-page child" href="/categories/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/ListeningEnglish/"><i class="fa-fw fas fa-folder-open"></i><span> ListeningEnglish</span></a></li><li><a class="site-page child" href="/categories/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/VocabularyEnglish/"><i class="fa-fw fas fa-folder-open"></i><span> VocabularyEnglish</span></a></li><li><a class="site-page child" href="/categories/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/SpeakingEnglish/"><i class="fa-fw fas fa-folder-open"></i><span> SpeakingEnglish</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 工具命令</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/aoao%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4/"><i class="fa-fw fas fa-folder-open"></i><span> Aoao工具命令All</span></a></li><li><a class="site-page child" href="/categories/aoao%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4/AoaoLinux%E5%91%BD%E4%BB%A4/"><i class="fa-fw fas fa-folder-open"></i><span> AoaoLinux命令</span></a></li><li><a class="site-page child" href="/categories/aoao%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4/%E7%B3%BB%E7%BB%9F%E5%B7%A5%E5%85%B7/"><i class="fa-fw fas fa-folder-open"></i><span> 系统工具</span></a></li><li><a class="site-page child" href="/categories/aoao%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4/%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/"><i class="fa-fw fas fa-folder-open"></i><span> 网络工具</span></a></li><li><a class="site-page child" href="/categories/aoao%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4/%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/"><i class="fa-fw fas fa-folder-open"></i><span> 视频图片工具</span></a></li><li><a class="site-page child" href="/categories/aoao%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4/%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/"><i class="fa-fw fas fa-folder-open"></i><span> 工作办公工具</span></a></li><li><a class="site-page child" href="/categories/aoao%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4/%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/"><i class="fa-fw fas fa-folder-open"></i><span> 有意思工具</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> IT技术</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/AoaoIT%E6%8A%80%E6%9C%AF/"><i class="fa-fw fas fa-folder-open"></i><span> AoaoIT技术全部</span></a></li><li><a class="site-page child" href="/categories/AoaoIT%E6%8A%80%E6%9C%AF/%E5%AE%89%E5%85%A8/"><i class="fa-fw fas fa-folder-open"></i><span> AoaoIT技术-安全</span></a></li><li><a class="site-page child" href="/categories/AoaoIT%E6%8A%80%E6%9C%AF/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"><i class="fa-fw fas fa-folder-open"></i><span> AoaoIT技术-操作系统</span></a></li><li><a class="site-page child" href="/categories/AoaoIT%E6%8A%80%E6%9C%AF/%E6%95%B0%E6%8D%AE%E5%BA%93/"><i class="fa-fw fas fa-folder-open"></i><span> AoaoIT技术-数据库</span></a></li><li><a class="site-page child" href="/categories/AoaoIT%E6%8A%80%E6%9C%AF/%E4%B8%AD%E9%97%B4%E4%BB%B6/"><i class="fa-fw fas fa-folder-open"></i><span> AoaoIT技术-中间件</span></a></li><li><a class="site-page child" href="/categories/AoaoIT%E6%8A%80%E6%9C%AF/%E6%9C%8D%E5%8A%A1%E5%99%A8/"><i class="fa-fw fas fa-folder-open"></i><span> AoaoIT技术-服务器</span></a></li><li><a class="site-page child" href="/categories/AoaoIT%E6%8A%80%E6%9C%AF/%E7%A1%AC%E4%BB%B6%E5%AD%98%E5%82%A8/"><i class="fa-fw fas fa-folder-open"></i><span> AoaoIT技术-硬件存储</span></a></li><li><a class="site-page child" href="/categories/AoaoIT%E6%8A%80%E6%9C%AF/%E5%A4%87%E4%BB%BD%E5%AE%B9%E7%81%BE/"><i class="fa-fw fas fa-folder-open"></i><span> AoaoIT技术-备份容灾</span></a></li><li><a class="site-page child" href="/categories/AoaoIT%E6%8A%80%E6%9C%AF/%E5%A4%87%E4%BB%BD%E5%AE%B9%E7%81%BE/"><i class="fa-fw fas fa-folder-open"></i><span> AoaoIT技术-脚本</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 项目流程</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E7%94%9F%E6%B4%BB/%E8%8B%B1%E8%AF%AD/"><i class="fa-fw fas fa-folder-open"></i><span> 英语学习</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://aoao-1309691110.cos.ap-shanghai.myqcloud.com/img/coco.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">week.wiki</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 总分类目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 所有分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 所有标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 本站归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> Aoao随笔:</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/Aoao%E9%9A%8F%E7%AC%94/"><i class="fa-fw fas fa-folder-open"></i><span> Aoao随笔全部</span></a></li><li><a class="site-page child" href="/categories/Aoao%E9%9A%8F%E7%AC%94/%E7%A7%91%E6%8A%80/"><i class="fa-fw fas fa-folder-open"></i><span> Aoao随笔科技</span></a></li><li><a class="site-page child" href="/categories/Aoao%E9%9A%8F%E7%AC%94/%E7%94%9F%E6%B4%BB/"><i class="fa-fw fas fa-folder-open"></i><span> Aoao随笔生活</span></a></li><li><a class="site-page child" href="/categories/Aoao%E9%9A%8F%E7%AC%94/%E7%A4%BE%E4%BC%9A/"><i class="fa-fw fas fa-folder-open"></i><span> Aoao随笔社会</span></a></li><li><a class="site-page child" href="/categories/%E5%B9%BD%E9%BB%98%E7%AC%91%E8%AF%9D/"><i class="fa-fw fas fa-folder-open"></i><span> Aoao随笔幽默笑话</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 我的电影</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 英语学习</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/"><i class="fa-fw fas fa-folder-open"></i><span> 英语学习</span></a></li><li><a class="site-page child" href="/categories/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/emailenglish/"><i class="fa-fw fas fa-folder-open"></i><span> EmailEnglish</span></a></li><li><a class="site-page child" href="/categories/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/ListeningEnglish/"><i class="fa-fw fas fa-folder-open"></i><span> ListeningEnglish</span></a></li><li><a class="site-page child" href="/categories/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/VocabularyEnglish/"><i class="fa-fw fas fa-folder-open"></i><span> VocabularyEnglish</span></a></li><li><a class="site-page child" href="/categories/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/SpeakingEnglish/"><i class="fa-fw fas fa-folder-open"></i><span> SpeakingEnglish</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 工具命令</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/aoao%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4/"><i class="fa-fw fas fa-folder-open"></i><span> Aoao工具命令All</span></a></li><li><a class="site-page child" href="/categories/aoao%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4/AoaoLinux%E5%91%BD%E4%BB%A4/"><i class="fa-fw fas fa-folder-open"></i><span> AoaoLinux命令</span></a></li><li><a class="site-page child" href="/categories/aoao%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4/%E7%B3%BB%E7%BB%9F%E5%B7%A5%E5%85%B7/"><i class="fa-fw fas fa-folder-open"></i><span> 系统工具</span></a></li><li><a class="site-page child" href="/categories/aoao%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4/%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/"><i class="fa-fw fas fa-folder-open"></i><span> 网络工具</span></a></li><li><a class="site-page child" href="/categories/aoao%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4/%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/"><i class="fa-fw fas fa-folder-open"></i><span> 视频图片工具</span></a></li><li><a class="site-page child" href="/categories/aoao%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4/%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/"><i class="fa-fw fas fa-folder-open"></i><span> 工作办公工具</span></a></li><li><a class="site-page child" href="/categories/aoao%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4/%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/"><i class="fa-fw fas fa-folder-open"></i><span> 有意思工具</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> IT技术</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/AoaoIT%E6%8A%80%E6%9C%AF/"><i class="fa-fw fas fa-folder-open"></i><span> AoaoIT技术全部</span></a></li><li><a class="site-page child" href="/categories/AoaoIT%E6%8A%80%E6%9C%AF/%E5%AE%89%E5%85%A8/"><i class="fa-fw fas fa-folder-open"></i><span> AoaoIT技术-安全</span></a></li><li><a class="site-page child" href="/categories/AoaoIT%E6%8A%80%E6%9C%AF/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"><i class="fa-fw fas fa-folder-open"></i><span> AoaoIT技术-操作系统</span></a></li><li><a class="site-page child" href="/categories/AoaoIT%E6%8A%80%E6%9C%AF/%E6%95%B0%E6%8D%AE%E5%BA%93/"><i class="fa-fw fas fa-folder-open"></i><span> AoaoIT技术-数据库</span></a></li><li><a class="site-page child" href="/categories/AoaoIT%E6%8A%80%E6%9C%AF/%E4%B8%AD%E9%97%B4%E4%BB%B6/"><i class="fa-fw fas fa-folder-open"></i><span> AoaoIT技术-中间件</span></a></li><li><a class="site-page child" href="/categories/AoaoIT%E6%8A%80%E6%9C%AF/%E6%9C%8D%E5%8A%A1%E5%99%A8/"><i class="fa-fw fas fa-folder-open"></i><span> AoaoIT技术-服务器</span></a></li><li><a class="site-page child" href="/categories/AoaoIT%E6%8A%80%E6%9C%AF/%E7%A1%AC%E4%BB%B6%E5%AD%98%E5%82%A8/"><i class="fa-fw fas fa-folder-open"></i><span> AoaoIT技术-硬件存储</span></a></li><li><a class="site-page child" href="/categories/AoaoIT%E6%8A%80%E6%9C%AF/%E5%A4%87%E4%BB%BD%E5%AE%B9%E7%81%BE/"><i class="fa-fw fas fa-folder-open"></i><span> AoaoIT技术-备份容灾</span></a></li><li><a class="site-page child" href="/categories/AoaoIT%E6%8A%80%E6%9C%AF/%E5%A4%87%E4%BB%BD%E5%AE%B9%E7%81%BE/"><i class="fa-fw fas fa-folder-open"></i><span> AoaoIT技术-脚本</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 项目流程</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E7%94%9F%E6%B4%BB/%E8%8B%B1%E8%AF%AD/"><i class="fa-fw fas fa-folder-open"></i><span> 英语学习</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">aoaoqualys-漏洞管理资产管理查询</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-03-28T01:22:29.572Z" title="发表于 2023-03-28 09:22:29">2023-03-28</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-28T01:32:39.832Z" title="更新于 2023-03-28 09:32:39">2023-03-28</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/AoaoIT%E6%8A%80%E6%9C%AF/">AoaoIT技术</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/AoaoIT%E6%8A%80%E6%9C%AF/%E5%AE%89%E5%85%A8/">安全</a></span></div><div class="meta-secondline"></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><div class="note success flat"><p>公司新购买了Qualys CSAM （CyberSecurityAssetManagement）模块, wiki下查询功能</p>
+</div>
+
+<h1 id="啥是Qualys"><a href="#啥是Qualys" class="headerlink" title="啥是Qualys"></a>啥是Qualys</h1><p>Qualys是一家网络安全和合规性解决方案提供商，成立于1999年，总部位于美国加利福尼亚州的费利蒙市。该公司提供了一系列云安全解决方案，帮助企业识别、评估和保护其网络和应用程序免受网络攻击和数据泄露的风险。</p>
+<p>Qualys的解决方案包括漏洞管理、网络扫描、Web应用程序安全、网络流量分析、安全合规性以及IT资产管理等。它们的云安全平台是基于软件即服务（SaaS）模型构建的，可以在任何设备上使用，并且可以自动执行安全扫描和检测以及提供实时报告和警报。</p>
+<p>Qualys还提供了一系列API和插件，以便与其他安全工具和服务集成，从而为企业提供更全面和高效的网络安全解决方案。Qualys的客户遍布全球，包括许多知名企业和政府机构。</p>
+<h1 id="How-to-Search-如何搜索"><a href="#How-to-Search-如何搜索" class="headerlink" title="How to Search 如何搜索"></a>How to Search 如何搜索</h1><p><a target="_blank" rel="noopener" href="https://docs.qualys.com/en/csam/2.14.1.0/search/how_to_search.htm#field">Search by Field</a> | <a target="_blank" rel="noopener" href="https://docs.qualys.com/en/csam/2.14.1.0/search/how_to_search.htm#string">String matching</a>  | <a target="_blank" rel="noopener" href="https://docs.qualys.com/en/csam/2.14.1.0/search/how_to_search.htm#exact">Exact matching</a> | <a target="_blank" rel="noopener" href="https://docs.qualys.com/en/csam/2.14.1.0/search/how_to_search.htm#full_text">Full Text   Search</a> | <a target="_blank" rel="noopener" href="https://docs.qualys.com/en/csam/2.14.1.0/search/how_to_search.htm#null">Is Null Queries</a> | <a target="_blank" rel="noopener" href="https://docs.qualys.com/en/csam/2.14.1.0/search/how_to_search.htm#ranges">Range   searches</a> | <a target="_blank" rel="noopener" href="https://docs.qualys.com/en/csam/2.14.1.0/search/how_to_search.htm#dates">Date searches</a> | <a target="_blank" rel="noopener" href="https://docs.qualys.com/en/csam/2.14.1.0/search/how_to_search.htm#in">Match   multiple values</a> | <a target="_blank" rel="noopener" href="https://docs.qualys.com/en/csam/2.14.1.0/search/how_to_search.htm#suffix">Suffix Matching</a> | <a target="_blank" rel="noopener" href="https://docs.qualys.com/en/csam/2.14.1.0/search/how_to_search.htm#prefix">Prefix   Matching</a> | <a target="_blank" rel="noopener" href="https://docs.qualys.com/en/csam/2.14.1.0/search/how_to_search.htm#boolean">Boolean operators</a> | <a target="_blank" rel="noopener" href="https://docs.qualys.com/en/csam/2.14.1.0/search/how_to_search.htm#nested">Nested   Queries</a><br> 按字段搜索|字符串匹配|精确匹配|全文检索|为空查询|范围搜索|日期搜索|匹配多个值|后缀匹配|前缀匹配|布林运算子|嵌套查询 </p>
+<h2 id="Search-by-Field-按字段搜索"><a href="#Search-by-Field-按字段搜索" class="headerlink" title="Search by Field  按字段搜索"></a>Search by Field  按字段搜索</h2><p>Enter the field name, then a colon, then your query. Nested fields are  dot separated.<br>输入字段名称，然后输入冒号，然后输入查询。嵌套字段以点分隔。</p>
+<p>Examples:</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">asset.netbiosName: WIN7PATCH69-85</span><br><span class="line">asset.lastLoggedOnUser: .\Administrator</span><br><span class="line">asset.hostID: 43954857</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="String-matching-字符串匹配"><a href="#String-matching-字符串匹配" class="headerlink" title="String matching  字符串匹配"></a>String matching  字符串匹配</h2><p>Use single quotes or double quotes around your query to match a string.<br>在查询前后使用单引号或双引号来匹配字符串。</p>
+<p>Examples:</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">operatingSystem: "Windows 7 SP2  Enterprise"</span><br><span class="line">services.description: "Certificate Propagation"</span><br></pre></td></tr></tbody></table></figure>
+
+<p>Example using wildcard: If you want to search  for exact count you should use asterisk (<em>). For example to find assets  with name starting with WINDOWS2008 use this query:<br>使用通配符的示例：如果你想搜索精确的计数，你应该使用星号（</em>）。例如，要查找名称以WINDOWS2008开头的资产，请使用以下查询：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">asset.name: WINDOWS2008*</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="Exact-matching-完全匹配"><a href="#Exact-matching-完全匹配" class="headerlink" title="Exact matching  完全匹配"></a>Exact matching  完全匹配</h2><p>Use backticks to exactly match a string. Your results will include any  asset with the EXACT value returned.<br>使用反引号精确匹配字符串。您的结果将包括返回精确值的任何资产。</p>
+<p>Examples:</p>
+<p><code>operatingSystem: </code>Windows 7 Ultimate  Service Pack 1``</p>
+<p><code>hardware: </code>Dell Latitude e7470``</p>
+<h2 id="Full-Text-Search-全文检索"><a href="#Full-Text-Search-全文检索" class="headerlink" title="Full Text Search  全文检索"></a>Full Text Search  全文检索</h2><p>Many asset fields containing text allow you to use full text search  and advanced search capabilities.<br>许多包含文本的资产字段允许您使用全文搜索和高级搜索功能。</p>
+<p>​	<a target="_blank" rel="noopener" href="https://docs.qualys.com/en/csam/2.14.1.0/search/how_to_search.htm#full_text">Learn more &gt;&gt;<br> 了解更多〉〉  </a> </p>
+<p>Examples:</p>
+<p>Show any findings with this OS name<br>显示具有此OS名称的任何发现</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">operatingSystem: Windows</span><br></pre></td></tr></tbody></table></figure>
+
+<p>Show any findings that contain components  of OS name<br>显示包含OS名称组件的任何查找结果</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">operatingSystem: "Windows 2008  r2 service pack 2"</span><br></pre></td></tr></tbody></table></figure>
+
+<p>Show any findings that match exact value  “Windows 2002”<br>显示与精确值“Windows 2002”匹配的任何查找结果</p>
+<p><code>operatingSystem: </code>Windows 2002``</p>
+<h2 id="Is-Null-Queries-为空查询"><a href="#Is-Null-Queries-为空查询" class="headerlink" title="Is Null Queries  为空查询"></a>Is Null Queries  为空查询</h2><p>Want to match an empty/null value for a field? You’ll need to remove  the colon and then write “is null”. For example, quickly find  assets where the OS has not been identified.<br>想要为字段匹配空/null值？您需要删除冒号，然后写“is null”。例如，快速查找尚未识别操作系统的资产。</p>
+<p>Examples:</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">operatingSystem is null</span><br><span class="line">interfaces.macAddress is null</span><br><span class="line">asset.biosDescription is null</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="Range-searches-范围搜索"><a href="#Range-searches-范围搜索" class="headerlink" title="Range searches  范围搜索"></a>Range searches  范围搜索</h2><p>Ranges can be specified with the <code>[lower .. upper]</code> syntax  using () and/or [] as follows. This is supported for numeric and date  fields.<br>可以使用（）和/或[]使用 <code>[lower .. upper]</code> 语法指定范围，如下所示。数字和日期字段支持此操作。</p>
+<p>Example:</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">inventory.created: [2018-08-01 ..  2018-09-01]  // Between August 1st and September 1st 2018</span><br></pre></td></tr></tbody></table></figure>
+
+<p>Range options:</p>
+<p><code>inventory.created:(date1 .. date2)</code>   // Greater than but not equal to date1 and less than but not equal  to date2<br> <code>inventory.created:(date1 .. date2)</code> //大于但不等于date 1小于但不等于date 2</p>
+<p><code>inventory.created:(date1 .. date2]</code>   // Greater than but not equal to date1 and less than or equal to  date2<br> <code>inventory.created:(date1 .. date2]</code> //大于但不等于date 1且小于或等于date 2</p>
+<p><code>inventory.created:[date1.. date2)</code>   // Greater than or equal to date1 and less than but not equal to  date2<br> <code>inventory.created:[date1.. date2)</code> //大于等于date 1小于但不等于date 2</p>
+<p><code>inventory.created:[date1 .. date2]</code>   // Greater than but or equal to date1 and less than or equal to  date2<br> <code>inventory.created:[date1 .. date2]</code> //大于等于date 1且小于等于date 2</p>
+<p><code>inventory.created &gt; date1 </code>//  Greater than date1<br> <code>inventory.created &gt; date1 </code> //大于date 1</p>
+<p><code>inventory.created &gt;= date1 </code>//  Greater than or equal to date1<br> <code>inventory.created &gt;= date1 </code> //大于或等于date 1</p>
+<p><code>inventory.created &lt; date1 </code>//  Less than date1<br> <code>inventory.created &lt; date1 </code> //小于date 1</p>
+<p><code>inventory.created &lt;= date1 </code>//  Less than or equal to date1<br> <code>inventory.created &lt;= date1 </code> //小于或等于日期1</p>
+<h2 id="Date-searches-日期搜索"><a href="#Date-searches-日期搜索" class="headerlink" title="Date searches  日期搜索"></a>Date searches  日期搜索</h2><p>Use a date range [start date .. end date] or a specific date. Several  date variables are also available.<br>使用日期范围[开始日期..结束日期]或特定日期。还提供了几个日期变量。</p>
+<p>​	<a target="_blank" rel="noopener" href="https://docs.qualys.com/en/csam/2.14.1.0/search/dates.htm">Learn more &gt;&gt;<br> 了解更多〉〉  </a> </p>
+<p>Examples:</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">openPorts.lastFound: "2018-10-20"</span><br><span class="line">openPorts.lastFound &lt;= "2018-11-20"</span><br><span class="line">openPorts.lastFound: ["2018-10-20"  .. "2018-10-24"]</span><br><span class="line">openPorts.lastFound: [now-3d .. now-1s]</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="Match-multiple-values-匹配多个值"><a href="#Match-multiple-values-匹配多个值" class="headerlink" title="Match multiple values  匹配多个值"></a>Match multiple values  匹配多个值</h2><p>Use to match values “In” or “Not In” fields. Available  for all fields except analyzed fields (i.e. full text search fields).<br>用于匹配值“在”或“不在”字段。适用于除分析字段（即全文检索字段）以外的所有字段。</p>
+<p>Examples: </p>
+<p>Find assets with at least one of these three  scanner appliance locations:<br>查找至少具有以下三个扫描仪设备位置之一的资产：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">inventory.scannerLocation: [SanJose1, SanJose2, SanJose3]</span><br></pre></td></tr></tbody></table></figure>
+
+<p>Find assets not last booted on date: 2018-08-31  or 2018-09-12<br>查找上次启动日期不是以下日期的资产：2018-08-31或2018-09-12</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">NOT asset.lastBoot: ["2018-08-31","2018-09-12"]</span><br></pre></td></tr></tbody></table></figure>
+
+<p>Supported date formats: 支持的日期格式：</p>
+<p>YYYY example: <code>asset.lastBoot:["2017","2018"]</code>   // in 2017 or 2018<br>YYYY示例： <code>asset.lastBoot:["2017","2018"]</code> //在2017年或2018年</p>
+<p>YYYY-MM example: <code>asset.lastBoot:["2018-08","2018-09"]</code>   // in month of Aug or Sept<br>YYYY-MM示例： <code>asset.lastBoot:["2018-08","2018-09"]</code> //在8月或9月</p>
+<p>YYYY-MM-DD example: <code>asset.lastBoot:["2018-10-30","2018-11-05"]</code>   // on one of exact dates<br>YYYY-MM-DD示例： <code>asset.lastBoot:["2018-10-30","2018-11-05"]</code> //在一个确切的日期</p>
+<h2 id="Suffix-matching-后缀匹配"><a href="#Suffix-matching-后缀匹配" class="headerlink" title="Suffix matching  后缀匹配"></a>Suffix matching  后缀匹配</h2><p>Suffix matching is supported for some search tokens in QQL. Especially  when you search for assets based on asset names, tag names, NetBIOS names,  you can go for suffix matching for quicker results.<br>QQL中的某些搜索标记支持后缀匹配。特别是当您根据资产名称、标记名称、NetBIOS名称搜索资产时，您可以进行后缀匹配以获得更快的结果。<br>All you need to do  is, type the wildcard character ‘<em>‘ followed by the string you are looking  for. The search returns name values ending with the string that you specify  after ‘</em>‘. Matches are not case-sensitive.<br>您所需要做的就是键入通配符’<em>‘，后跟您要查找的字符串。搜索将返回以您在“</em>”之后指定的字符串结尾的名称值。匹配项不区分大小写。</p>
+<p>Examples:</p>
+<p>To find asset names ending with 110, form the following query: </p>
+<p>name: *110</p>
+<p>The query returns asset names such as bw2012-35-110 or vsweblogic12110  or stvsp2-32-110 and so on. </p>
+<p> To find assets based on tag names ending with ‘region east,’ form the  following query:  </p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tags.name:*Region East</span><br></pre></td></tr></tbody></table></figure>
+
+<p>The query returns assets having tag names ending with Region East, region  east, or Region EAST. </p>
+<p> Suffix and domain matching is supported for the token interfaces.hostname  but the syntax is different.  </p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">interfaces.hostname:qualys.com</span><br><span class="line">interfaces.hostname:sjc01.qualys.com</span><br><span class="line">interfaces.hostname:eng.sjc01.qualys.com</span><br><span class="line">interfaces.hostname:*lys.com</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="Prefix-matching"><a href="#Prefix-matching" class="headerlink" title="Prefix matching"></a>Prefix matching</h2><h2 id=""><a href="#" class="headerlink" title=""></a></h2><p>Prefix matching is supported for some search tokens in QQL. Especially  when you search for assets based on asset names, tag names, NetBIOS names,  you can go for prefix matching for quicker results.<br>All you need to do  is, type the string you are looking for followed by the wildcard character  ‘<em>‘. The search returns name values beginning with the string that you  specify before ‘</em>‘. Matches are case-sensitive.  Example: This query matches assets with  an asset name starting with “xp” like xpsp2-jp-26-111.  </p>
+<p>name:xp*</p>
+<p>Example: This query matches assets with  tag names starting with “Win” like Windows XP, Windows 2012,  Windows Hosts.<br>示例：此查询匹配标签名称以“Win”开头的资产，如Windows XP、Windows 2012、Windows Hosts。</p>
+<p>tags.name:Win*</p>
+<p>Example: This query matches assets with  a hostname starting with “com-pa30” like com-pa3020-36.eng.sjc01.qualys.com.<br>示例：此查询匹配主机名以“com-pa 30”开头的资产，如com-pa3020-36.eng.sjc01.qualys.com。</p>
+<p>interfaces.hostname:com-pa30* interfaces.hostname：com-pa30*</p>
+<p>Example: This query matches assets with  an operating system starting with “Lin” like Linux 2.4-2.6.<br>示例：此查询将资产与以“Lin”开头的操作系统（如Linux 2.4-2.6）匹配。</p>
+<p>operatingSystem:Lin* operatingSystem：Lin*</p>
+<h2 id="Boolean-Operators-布尔运算符"><a href="#Boolean-Operators-布尔运算符" class="headerlink" title="Boolean Operators  布尔运算符"></a>Boolean Operators  布尔运算符</h2><p>Use keywords AND, OR, NOT to narrow or broaden your search. Click the  link below for info on max query depth, using NOT with vulnerability queries.<br>使用关键字AND、OR、NOT来缩小或扩大搜索范围。单击下面的链接，了解有关在漏洞查询中使用NOT的最大查询深度的信息。</p>
+<p>​	<a target="_blank" rel="noopener" href="https://docs.qualys.com/en/csam/2.14.1.0/search/boolean.htm">Learn more &gt;&gt;<br> 了解更多〉〉  </a> </p>
+<p>Examples:</p>
+<p>Show findings that have one of these operating  systems:<br>显示具有以下操作系统之一的调查结果：</p>
+<p><code>operatingSystem: </code>Windows 2002<code>OR  operatingSystem:</code>Windows 7 Ultimate Service Pack 1``</p>
+<p>Show assets not created on or before date:<br>显示在以下日期或之前未创建的资产：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AND NOT inventory.created &lt;= "2018-11-05"</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="Nested-Queries-嵌套查询"><a href="#Nested-Queries-嵌套查询" class="headerlink" title="Nested Queries  嵌套查询"></a>Nested Queries  嵌套查询</h2><p>Use a single nested query, using parentheses, to include multiple fields  in your query. This is supported only for certain tokens like “asset”,  “hardware”, “interfaces”, etc.<br>使用单个嵌套查询（使用括号）可以在查询中包括多个字段。这仅支持某些令牌，如“资产”、“硬件”、“接口”等。</p>
+<p>Example: </p>
+<p>Find assets last booted on certain date  and have 2 CPUs:<br>查找在特定日期最后启动并具有2个CPU的资产：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">asset: (lastBoot: '2018-10-10' AND cpuCount: 2)</span><br></pre></td></tr></tbody></table></figure>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://week.wiki">aoao</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://week.wiki/posts/3f38e537504c/">https://week.wiki/posts/3f38e537504c/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://week.wiki" target="_blank">week.wiki</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AE%89%E5%85%A8/">安全</a><a class="post-meta__tags" href="/tags/%E6%BC%8F%E6%B4%9E/">漏洞</a><a class="post-meta__tags" href="/tags/qualys/">qualys</a></div><div class="post_share"><div class="social-share" data-image="https://aoao-1309691110.cos.ap-shanghai.myqcloud.com/img/coco.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/posts/d6cdfbda21ee/"><img class="next-cover" src="https://aoao-1309691110.cos.ap-shanghai.myqcloud.com/img/coco.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">aoaosnmp-SNMPv1 SNMPv2高危漏洞</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/d6cdfbda21ee/" title="aoaosnmp-SNMPv1 SNMPv2高危漏洞"><img class="cover" src="https://aoao-1309691110.cos.ap-shanghai.myqcloud.com/img/coco.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-03-27</div><div class="title">aoaosnmp-SNMPv1 SNMPv2高危漏洞</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://aoao-1309691110.cos.ap-shanghai.myqcloud.com/img/favicon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">aoao</div><div class="author-info__description">生活、IT笔记、其它</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">39</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">59</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">22</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://hwmail.vip"><i class="fab fa-github"></i><span>内站hwmail.vip</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://hwmail.vip" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://aoao-1309691110.cos.ap-shanghai.myqcloud.com/img/aoaowx.jpg" target="_blank" title="微信"><i class="fab fa-weixin"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">1、网站建中，有什么意见建议请联系 2、我的邮箱jlwu@vip.163.com</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%95%A5%E6%98%AFQualys"><span class="toc-number">1.</span> <span class="toc-text">啥是Qualys</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#How-to-Search-%E5%A6%82%E4%BD%95%E6%90%9C%E7%B4%A2"><span class="toc-number">2.</span> <span class="toc-text">How to Search 如何搜索</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Search-by-Field-%E6%8C%89%E5%AD%97%E6%AE%B5%E6%90%9C%E7%B4%A2"><span class="toc-number">2.1.</span> <span class="toc-text">Search by Field  按字段搜索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#String-matching-%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D"><span class="toc-number">2.2.</span> <span class="toc-text">String matching  字符串匹配</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Exact-matching-%E5%AE%8C%E5%85%A8%E5%8C%B9%E9%85%8D"><span class="toc-number">2.3.</span> <span class="toc-text">Exact matching  完全匹配</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Full-Text-Search-%E5%85%A8%E6%96%87%E6%A3%80%E7%B4%A2"><span class="toc-number">2.4.</span> <span class="toc-text">Full Text Search  全文检索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Is-Null-Queries-%E4%B8%BA%E7%A9%BA%E6%9F%A5%E8%AF%A2"><span class="toc-number">2.5.</span> <span class="toc-text">Is Null Queries  为空查询</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Range-searches-%E8%8C%83%E5%9B%B4%E6%90%9C%E7%B4%A2"><span class="toc-number">2.6.</span> <span class="toc-text">Range searches  范围搜索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Date-searches-%E6%97%A5%E6%9C%9F%E6%90%9C%E7%B4%A2"><span class="toc-number">2.7.</span> <span class="toc-text">Date searches  日期搜索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Match-multiple-values-%E5%8C%B9%E9%85%8D%E5%A4%9A%E4%B8%AA%E5%80%BC"><span class="toc-number">2.8.</span> <span class="toc-text">Match multiple values  匹配多个值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Suffix-matching-%E5%90%8E%E7%BC%80%E5%8C%B9%E9%85%8D"><span class="toc-number">2.9.</span> <span class="toc-text">Suffix matching  后缀匹配</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Prefix-matching"><span class="toc-number">2.10.</span> <span class="toc-text">Prefix matching</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">2.11.</span> <span class="toc-text"></span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Boolean-Operators-%E5%B8%83%E5%B0%94%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">2.12.</span> <span class="toc-text">Boolean Operators  布尔运算符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Nested-Queries-%E5%B5%8C%E5%A5%97%E6%9F%A5%E8%AF%A2"><span class="toc-number">2.13.</span> <span class="toc-text">Nested Queries  嵌套查询</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/3f38e537504c/" title="aoaoqualys-漏洞管理资产管理查询"><img src="https://aoao-1309691110.cos.ap-shanghai.myqcloud.com/img/coco.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="aoaoqualys-漏洞管理资产管理查询"/></a><div class="content"><a class="title" href="/posts/3f38e537504c/" title="aoaoqualys-漏洞管理资产管理查询">aoaoqualys-漏洞管理资产管理查询</a><time datetime="2023-03-28T01:22:29.572Z" title="发表于 2023-03-28 09:22:29">2023-03-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/d6cdfbda21ee/" title="aoaosnmp-SNMPv1 SNMPv2高危漏洞"><img src="https://aoao-1309691110.cos.ap-shanghai.myqcloud.com/img/coco.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="aoaosnmp-SNMPv1 SNMPv2高危漏洞"/></a><div class="content"><a class="title" href="/posts/d6cdfbda21ee/" title="aoaosnmp-SNMPv1 SNMPv2高危漏洞">aoaosnmp-SNMPv1 SNMPv2高危漏洞</a><time datetime="2023-03-27T09:18:20.156Z" title="发表于 2023-03-27 17:18:20">2023-03-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/dcc8f8eaece7/" title="aoao邮箱-教育邮箱-edu邮箱-每个人都应该要有个教育邮箱"><img src="https://aoao-1309691110.cos.ap-shanghai.myqcloud.com/img/image-20230217225859995.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="aoao邮箱-教育邮箱-edu邮箱-每个人都应该要有个教育邮箱"/></a><div class="content"><a class="title" href="/posts/dcc8f8eaece7/" title="aoao邮箱-教育邮箱-edu邮箱-每个人都应该要有个教育邮箱">aoao邮箱-教育邮箱-edu邮箱-每个人都应该要有个教育邮箱</a><time datetime="2023-03-27T08:29:21.415Z" title="发表于 2023-03-27 16:29:21">2023-03-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/b0c147989eb0/" title="幽默笑话-2023年3月"><img src="https://aoao-1309691110.cos.ap-shanghai.myqcloud.com/img/image-20230217225859995.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="幽默笑话-2023年3月"/></a><div class="content"><a class="title" href="/posts/b0c147989eb0/" title="幽默笑话-2023年3月">幽默笑话-2023年3月</a><time datetime="2023-03-26T13:14:25.367Z" title="发表于 2023-03-26 21:14:25">2023-03-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/3e76b46fe1b1/" title="aoaoredhat"><img src="https://aoao-1309691110.cos.ap-shanghai.myqcloud.com/img/coco.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="aoaoredhat"/></a><div class="content"><a class="title" href="/posts/3e76b46fe1b1/" title="aoaoredhat">aoaoredhat</a><time datetime="2023-03-24T15:46:46.753Z" title="发表于 2023-03-24 23:46:46">2023-03-24</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2010 - 2023 By aoao</div><div class="footer_custom_text">联系方式QQ:2516726319 邮箱：hi@week.wiki 邮箱2：jlwu@vip.163.com</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script async src="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/categoryBar/categoryBar.js"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="/movies/"]):not([href="/books/"]):not([href="/games/"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script></div></body></html>
