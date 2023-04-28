@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://week.wiki/posts/d7ba0d4acaea/</loc>
+    <lastmod>2023-04-28</lastmod>
+  </url>
+  <url>
+    <loc>https://week.wiki/posts/cb4d19e6a3db/</loc>
+    <lastmod>2023-04-28</lastmod>
+  </url>
+  <url>
+    <loc>https://week.wiki/posts/dc99409f2abd/</loc>
+    <lastmod>2023-04-28</lastmod>
+  </url>
+  <url>
     <loc>https://week.wiki/posts/2ebc185ca9ee/</loc>
     <lastmod>2023-04-20</lastmod>
   </url>
@@ -61,10 +73,6 @@
     <lastmod>2023-04-06</lastmod>
   </url>
   <url>
-    <loc>https://week.wiki/posts/dc99409f2abd/</loc>
-    <lastmod>2023-04-03</lastmod>
-  </url>
-  <url>
     <loc>https://week.wiki/posts/e14f3170e258/</loc>
     <lastmod>2023-04-02</lastmod>
   </url>
@@ -94,6 +102,10 @@
   </url>
   <url>
     <loc>https://week.wiki/posts/0278f240701b/</loc>
+    <lastmod>2023-03-29</lastmod>
+  </url>
+  <url>
+    <loc>https://week.wiki/posts/ef4ca57fcbd9/</loc>
     <lastmod>2023-03-29</lastmod>
   </url>
   <url>
@@ -221,11 +233,7 @@
     <lastmod>2023-02-17</lastmod>
   </url>
   <url>
-    <loc>https://week.wiki/posts/95d826ba4bdf/</loc>
-    <lastmod>2023-02-17</lastmod>
-  </url>
-  <url>
-    <loc>https://week.wiki/posts/cb4d19e6a3db/</loc>
+    <loc>https://week.wiki/posts/929696529873/</loc>
     <lastmod>2023-02-17</lastmod>
   </url>
 </urlset> 
