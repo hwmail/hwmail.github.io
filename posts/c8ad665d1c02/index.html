@@ -1,0 +1,1834 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>NSSM-应用程序exe程序封装成windows服务-the Non-Sucking Service Manager | week.wiki</title>
+  <meta name="keywords" content=" NSSM , Windows工具 ">
+  <meta name="description" content="NSSM-应用程序exe程序封装成windows服务-the Non-Sucking Service Manager | week.wiki">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="categories">
+<meta property="og:url" content="https://week.wiki/categories/index.html">
+<meta property="og:site_name" content="week.wiki">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-11-27T13:15:24.000Z">
+<meta property="article:modified_time" content="2022-11-27T16:06:59.253Z">
+<meta property="article:author" content="aoao">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>aoao</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="email"
+               href="mailto:xieaoao@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=2516726319&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="全部文章">全部文章
+            
+                <small>(58)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                
+    <li>
+        <div data-rel="aoao随笔">
+            <i class="fold iconfont icon-right"></i>
+            aoao随笔
+            <small>(16)</small>
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="aoao随笔&lt;---&gt;aoao科技技术">
+            
+            aoao科技技术
+            <small>(6)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoao随笔&lt;---&gt;aoao生活感悟">
+            
+            aoao生活感悟
+            <small>(7)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoao随笔&lt;---&gt;aoao文化教育">
+            
+            aoao文化教育
+            <small>(9)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoao随笔&lt;---&gt;aoao政治经济">
+            
+            aoao政治经济
+            <small>(2)</small>
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="aoao工具命令">
+            <i class="fold iconfont icon-right"></i>
+            aoao工具命令
+            <small>(13)</small>
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="aoao工具命令&lt;---&gt;好玩工具">
+            
+            好玩工具
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoao工具命令&lt;---&gt;网络工具">
+            
+            网络工具
+            <small>(3)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoao工具命令&lt;---&gt;系统工具">
+            
+            系统工具
+            <small>(5)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoao工具命令&lt;---&gt;aoao工具">
+            
+            aoao工具
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoao工具命令&lt;---&gt;Linux命令">
+            
+            Linux命令
+            <small>(3)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoao工具命令&lt;---&gt;Windows命令">
+            
+            Windows命令
+            <small>(3)</small>
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="aoao生活">
+            <i class="fold iconfont icon-right"></i>
+            aoao生活
+            <small>(8)</small>
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="aoao生活&lt;---&gt;鸡汤名言">
+            
+            鸡汤名言
+            <small>(5)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoao生活&lt;---&gt;内涵幽默">
+            
+            内涵幽默
+            <small>(2)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoao生活&lt;---&gt;aoao音乐">
+            
+            aoao音乐
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="aoaoIT技术管理">
+            <i class="fold iconfont icon-right"></i>
+            aoaoIT技术管理
+            <small>(21)</small>
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="aoaoIT技术管理&lt;---&gt;操作系统虚拟化">
+            <i class="fold iconfont icon-right"></i>
+            操作系统虚拟化
+            <small>(4)</small>
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="aoaoIT技术管理&lt;---&gt;操作系统虚拟化&lt;---&gt;Linux系统">
+            
+            Linux系统
+            <small>(4)</small>
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoaoIT技术管理&lt;---&gt;脚本开发运营">
+            <i class="fold iconfont icon-right"></i>
+            脚本开发运营
+            <small>(7)</small>
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="aoaoIT技术管理&lt;---&gt;脚本开发运营&lt;---&gt;python脚本">
+            
+            python脚本
+            <small>(3)</small>
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoaoIT技术管理&lt;---&gt;人工智能AI">
+            
+            人工智能AI
+            <small>(2)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoaoIT技术管理&lt;---&gt;数据库中间件">
+            <i class="fold iconfont icon-right"></i>
+            数据库中间件
+            <small>(2)</small>
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="aoaoIT技术管理&lt;---&gt;数据库中间件&lt;---&gt;HANA数据库">
+            
+            HANA数据库
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoaoIT技术管理&lt;---&gt;数据库中间件&lt;---&gt;MSSQL数据库">
+            
+            MSSQL数据库
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoaoIT技术管理&lt;---&gt;信息网络安全">
+            
+            信息网络安全
+            <small>(2)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoaoIT技术管理&lt;---&gt;硬件服务器存储">
+            
+            硬件服务器存储
+            <small>(2)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoaoIT技术管理&lt;---&gt;IT应用项目制度">
+            <i class="fold iconfont icon-right"></i>
+            IT应用项目制度
+            <small>(2)</small>
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="aoaoIT技术管理&lt;---&gt;IT应用项目制度&lt;---&gt;堡垒机-安全运维审计系统">
+            
+            堡垒机-安全运维审计系统
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoaoIT技术管理&lt;---&gt;IT应用项目制度&lt;---&gt;FTP-FTPServer">
+            
+            FTP-FTPServer
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">关于</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">友链</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="58">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="https://hwmail.vip">HWmail</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>5G</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>安全</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>常用药</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>翻墙</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>佛法</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>桂花</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>鸡汤</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>脚本</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>教育邮箱</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>经济</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>科技</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>垃圾分类</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>漏洞</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>蜜蜂</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>内存</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>内涵</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>人生意义</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>社会</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>数据库中间件</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>腾讯云</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>网络工具</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>无人驾驶</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>无损音乐</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>无线耳机</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>性能测试</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>硬件服务器存储</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>幽默</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>政治</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>终端工具</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>aoao工具命令</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>aoao随笔,科技</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>aoaocrontab</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>aoaoLinux命令</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>bench</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ChatGPT</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>chatGPT,科技</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>crontab</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ditto</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>edu</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>edu.cn</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>edu邮箱</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>FTP</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>HANA</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>hexo</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>iperf</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>IT技术</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>kernel</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>linux</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Linux</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>linux命令</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Linux命令</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>markdown</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>mssql</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>NSSM</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>picgo</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>python</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>qualys</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>redhat</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>shell</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>sql server</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SSH工具</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tabby</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tcpdump</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>twikoo</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>twitter</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>typora</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ubuntu</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>VPN</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>vsFTP</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>webserver</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Windows工具</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Windows命令</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>www</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        
+        <a id="top" class="全部文章 aoao随笔 aoao文化教育 "
+           href="/posts/94a5aa703a1a/"
+           data-tag="佛法"
+           data-author="" >
+            <span class="post-title" title="aoao佛法">aoao佛法</span>
+            <span class="post-date" title="2023-07-12 11:02:29">2023/07/12</span>
+        </a>
+        
+        
+        <a id="top" class="全部文章 aoao随笔 aoao文化教育 aoao生活感悟 "
+           href="/posts/d26ace476102/"
+           data-tag="人生意义"
+           data-author="" >
+            <span class="post-title" title="aoao人生意义">aoao人生意义</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a id="top" class="全部文章 aoao随笔 aoao政治经济 "
+           href="/posts/a58f46c5e4bf/"
+           data-tag="政治,经济"
+           data-author="" >
+            <span class="post-title" title="aoao中国经济-月薪3000多一点谈中国经济">aoao中国经济-月薪3000多一点谈中国经济</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 脚本开发运营 "
+           href="/posts/b0770529e0d8/"
+           data-tag="hexo,www,webserver"
+           data-author="" >
+            <span class="post-title" title="aoaohexo">aoaohexo</span>
+            <span class="post-date" title="2023-07-13 11:34:18">2023/07/13</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 脚本开发运营 python脚本 "
+           href="/posts/ed20f249d666/"
+           data-tag="脚本,python,shell"
+           data-author="" >
+            <span class="post-title" title="aoaopython-爬虫网页上邮箱">aoaopython-爬虫网页上邮箱</span>
+            <span class="post-date" title="2023-07-12 16:34:48">2023/07/12</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 脚本开发运营 python脚本 "
+           href="/posts/3d71638c2ca0/"
+           data-tag="脚本,python,shell"
+           data-author="" >
+            <span class="post-title" title="使用qq邮箱自动备份文件夹">使用qq邮箱自动备份文件夹</span>
+            <span class="post-date" title="2023-07-12 16:33:21">2023/07/12</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 脚本开发运营 python脚本 "
+           href="/posts/4b2b721334b1/"
+           data-tag="脚本,python,shell"
+           data-author="" >
+            <span class="post-title" title="批量投递邮件脚本轮询投递邮件">批量投递邮件脚本轮询投递邮件</span>
+            <span class="post-date" title="2023-07-12 16:28:31">2023/07/12</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 脚本开发运营 "
+           href="/posts/a99c48c406f7/"
+           data-tag="脚本,shell,twikoo"
+           data-author="" >
+            <span class="post-title" title="twikoo评论系统搭建">twikoo评论系统搭建</span>
+            <span class="post-date" title="2023-07-12 16:26:53">2023/07/12</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao工具命令 网络工具 "
+           href="/posts/d3b3a8d2f335/"
+           data-tag="脚本,python,VPN,翻墙"
+           data-author="" >
+            <span class="post-title" title="trojan搭建">trojan搭建</span>
+            <span class="post-date" title="2023-07-12 16:16:01">2023/07/12</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 脚本开发运营 "
+           href="/posts/7f0a8efc9a93/"
+           data-tag="脚本,python,shell"
+           data-author="" >
+            <span class="post-title" title="trojan搭建">trojan搭建</span>
+            <span class="post-date" title="2023-07-12 16:10:13">2023/07/12</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao生活 内涵幽默 "
+           href="/posts/9c6f2eed1a66/"
+           data-tag="内涵,幽默"
+           data-author="" >
+            <span class="post-title" title="爱情生命周期">爱情生命周期</span>
+            <span class="post-date" title="2023-07-11 08:57:26">2023/07/11</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao生活 鸡汤名言 "
+           href="/posts/4c553616a32d/"
+           data-tag="鸡汤"
+           data-author="" >
+            <span class="post-title" title="达克效应">达克效应</span>
+            <span class="post-date" title="2023-06-09 13:42:33">2023/06/09</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao生活 鸡汤名言 "
+           href="/posts/c68d299997f0/"
+           data-tag="鸡汤"
+           data-author="" >
+            <span class="post-title" title="苏格拉底风格：用对话的力量探寻真理">苏格拉底风格：用对话的力量探寻真理</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao生活 鸡汤名言 "
+           href="/posts/2492920357ab/"
+           data-tag="鸡汤"
+           data-author="" >
+            <span class="post-title" title="永恒的春天-爱情永恒">永恒的春天-爱情永恒</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao生活 鸡汤名言 "
+           href="/posts/d7086c49c3b3/"
+           data-tag="鸡汤"
+           data-author="" >
+            <span class="post-title" title="忙碌的七个级别-「疯狂七级」：探究当代忙碌的极限-「从不忙到崩溃」：揭开忙碌的七重境界-「零到崩溃：忙碌的七个层次」">忙碌的七个级别-「疯狂七级」：探究当代忙碌的极限-「从不忙到崩溃」：揭开忙碌的七重境界-「零到崩溃：忙碌的七个层次」</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao生活 鸡汤名言 "
+           href="/posts/4786dbb5530e/"
+           data-tag="鸡汤"
+           data-author="" >
+            <span class="post-title" title="aoao鸡汤-2023年">aoao鸡汤-2023年</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao随笔 aoao文化教育 aoao科技技术 "
+           href="/posts/fd5b054e59f2/"
+           data-tag="chatGPT,科技"
+           data-author="" >
+            <span class="post-title" title="aoaoChatGPT">aoaoChatGPT</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao随笔 aoao生活感悟 "
+           href="/posts/4a0105d9ddc0/"
+           data-tag="垃圾分类"
+           data-author="" >
+            <span class="post-title" title="万恶的垃圾分类-一直伤害着我-我讨厌垃圾分类">万恶的垃圾分类-一直伤害着我-我讨厌垃圾分类</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao随笔 aoao文化教育 aoao生活感悟 "
+           href="/posts/c465097d1b70/"
+           data-tag="教育邮箱,edu邮箱,edu,edu.cn"
+           data-author="" >
+            <span class="post-title" title="aoao邮箱-教育邮箱-edu邮箱-每个人都应该要有个教育邮箱">aoao邮箱-教育邮箱-edu邮箱-每个人都应该要有个教育邮箱</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao随笔 aoao生活感悟 "
+           href="/posts/95dc3f431b89/"
+           data-tag="蜜蜂"
+           data-author="" >
+            <span class="post-title" title="aoao蜜蜂-我和蜜蜂的故事">aoao蜜蜂-我和蜜蜂的故事</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao随笔 aoao文化教育 aoao生活感悟 "
+           href="/posts/0e4eb0d93254/"
+           data-tag="常用药"
+           data-author="" >
+            <span class="post-title" title="aoao药药-常用药">aoao药药-常用药</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao随笔 aoao生活感悟 "
+           href="/posts/23dd0f2de5a7/"
+           data-tag="桂花"
+           data-author="" >
+            <span class="post-title" title="aoao桂花-买桂花记录">aoao桂花-买桂花记录</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao随笔 aoao生活感悟 aoao科技技术 "
+           href="/posts/19a03eb2f9ad/"
+           data-tag="无线耳机"
+           data-author="" >
+            <span class="post-title" title="aoao无线耳机-WIKI下购买了个索尼WH1000XM5耳机过程">aoao无线耳机-WIKI下购买了个索尼WH1000XM5耳机过程</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao随笔 aoao科技技术 "
+           href="/posts/c3dbe6666c9a/"
+           data-tag="twitter"
+           data-author="" >
+            <span class="post-title" title="aoaotwitter-twitter关注限制策略">aoaotwitter-twitter关注限制策略</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao随笔 aoao政治经济 "
+           href="/posts/6382e8a297c5/"
+           data-tag="政治,经济"
+           data-author="" >
+            <span class="post-title" title="硅谷银行倒闭-硅谷银行暴雷-会金融危机么-跟中国股市有什么有关系么">硅谷银行倒闭-硅谷银行暴雷-会金融危机么-跟中国股市有什么有关系么</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao生活 内涵幽默 "
+           href="/posts/3614e71f7132/"
+           data-tag="内涵,幽默"
+           data-author="" >
+            <span class="post-title" title="幽默笑话-2023年3月">幽默笑话-2023年3月</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao工具命令 网络工具 "
+           href="/posts/c82f567d3cfe/"
+           data-tag="Linux,tcpdump,网络工具"
+           data-author="" >
+            <span class="post-title" title="aoaotcpdump">aoaotcpdump</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao工具命令 系统工具 "
+           href="/posts/c8ad665d1c02/"
+           data-tag="NSSM,Windows工具"
+           data-author="" >
+            <span class="post-title" title="NSSM-应用程序exe程序封装成windows服务-the Non-Sucking Service Manager">NSSM-应用程序exe程序封装成windows服务-the Non-Sucking Service Manager</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao工具命令 系统工具 "
+           href="/posts/1285132f3dfb/"
+           data-tag="tabby,SSH工具,终端工具"
+           data-author="" >
+            <span class="post-title" title="aoaotabby-好用好酷终端工具-SSH利器-跨堡垒机连接">aoaotabby-好用好酷终端工具-SSH利器-跨堡垒机连接</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao工具命令 系统工具 "
+           href="/posts/a0b4eade39b6/"
+           data-tag="tabby,SSH工具,终端工具"
+           data-author="" >
+            <span class="post-title" title="aoaotabby-好用好酷终端工具-SSH利器-跨堡垒机连接">aoaotabby-好用好酷终端工具-SSH利器-跨堡垒机连接</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao工具命令 好玩工具 "
+           href="/posts/92d1297da7e2/"
+           data-tag="bench,性能测试,Linux"
+           data-author="" >
+            <span class="post-title" title="手写模拟器-把文字变手写">手写模拟器-把文字变手写</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao工具命令 Linux命令 Windows命令 "
+           href="/posts/b28b6a9d61cb/"
+           data-tag="aoao工具命令,aoaoLinux命令,aoaocrontab,crontab,Windows命令,Linux命令"
+           data-author="" >
+            <span class="post-title" title="aoaontpdate-aoaodate-date-ntpdate">aoaontpdate-aoaodate-date-ntpdate</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao工具命令 Linux命令 Windows命令 "
+           href="/posts/b99845046c8d/"
+           data-tag="aoao工具命令,aoaoLinux命令,linux命令,aoaocrontab,crontab,Windows命令"
+           data-author="" >
+            <span class="post-title" title="aoaocrontab-crontab">aoaocrontab-crontab</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao工具命令 aoao工具 "
+           href="/posts/e4a9e2f7e2cf/"
+           data-tag="markdown,typora,picgo,腾讯云"
+           data-author="" >
+            <span class="post-title" title="aoaomarkdown-aoaotypora-markdown-typora">aoaomarkdown-aoaotypora-markdown-typora</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 数据库中间件 MSSQL数据库 "
+           href="/posts/8e1d025a2728/"
+           data-tag="mssql,sql server"
+           data-author="" >
+            <span class="post-title" title="aoaomssql-sqlserver-mssql">aoaomssql-sqlserver-mssql</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 操作系统虚拟化 Linux系统 "
+           href="/posts/df17df1ceb98/"
+           data-tag="linux,redhat,kernel"
+           data-author="" >
+            <span class="post-title" title="aoao-linux性能问题排查">aoao-linux性能问题排查</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 操作系统虚拟化 Linux系统 "
+           href="/posts/b34b54656556/"
+           data-tag="linux,redhat"
+           data-author="" >
+            <span class="post-title" title="aoaoredhat-aoaocentos">aoaoredhat-aoaocentos</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 操作系统虚拟化 Linux系统 "
+           href="/posts/5a54738843d5/"
+           data-tag="linux,redhat,kernel"
+           data-author="" >
+            <span class="post-title" title="aoaokernel-linux内核升级降级">aoaokernel-linux内核升级降级</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 脚本开发运营 "
+           href="/posts/e0200353a8a3/"
+           data-tag="hexo,www,webserver"
+           data-author="" >
+            <span class="post-title" title="aoaohexo-all-butterfly">aoaohexo-all-butterfly</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 信息网络安全 "
+           href="/posts/16f038be3929/"
+           data-tag="安全,漏洞,qualys"
+           data-author="" >
+            <span class="post-title" title="aoao渗透测试-渗透测试分享培训记录">aoao渗透测试-渗透测试分享培训记录</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 信息网络安全 "
+           href="/posts/0cc3a3fb4c24/"
+           data-tag="安全,漏洞,qualys"
+           data-author="" >
+            <span class="post-title" title="aoaoqualys-漏洞管理资产管理查询">aoaoqualys-漏洞管理资产管理查询</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 人工智能AI "
+           href="/posts/cd7608623579/"
+           data-tag="linux,redhat"
+           data-author="" >
+            <span class="post-title" title="超酷!与人工智能Claude聊天,它会知道你想说什么">超酷!与人工智能Claude聊天,它会知道你想说什么</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 人工智能AI "
+           href="/posts/50c8c163f289/"
+           data-tag="ChatGPT,linux"
+           data-author="" >
+            <span class="post-title" title="想用ChatGPT，却遇到Access Denied？这里有解决方法！">想用ChatGPT，却遇到Access Denied？这里有解决方法！</span>
+            <span class="post-date" title="2023-04-18 15:38:56">2023/04/18</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao工具命令 Linux命令 Windows命令 "
+           href="/posts/17b8ed72e31a/"
+           data-tag="aoao工具命令"
+           data-author="" >
+            <span class="post-title" title="aoaocrontab-crontab">aoaocrontab-crontab</span>
+            <span class="post-date" title="2023-02-20 11:31:03">2023/02/20</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 数据库中间件 HANA数据库 "
+           href="/posts/2659332638e4/"
+           data-tag="IT技术,HANA,数据库中间件"
+           data-author="" >
+            <span class="post-title" title="aoaoHANA数据库">aoaoHANA数据库</span>
+            <span class="post-date" title="2023-02-20 11:31:03">2023/02/20</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 硬件服务器存储 "
+           href="/posts/870d1ced6ee2/"
+           data-tag="IT技术,硬件服务器存储,内存"
+           data-author="" >
+            <span class="post-title" title="aoao内存-计算机内存频率的演进">aoao内存-计算机内存频率的演进</span>
+            <span class="post-date" title="2023-02-20 11:31:03">2023/02/20</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 硬件服务器存储 "
+           href="/posts/15ea15c7df2e/"
+           data-tag="IT技术,硬件服务器存储"
+           data-author="" >
+            <span class="post-title" title="计算机内存频率的演进：从SDRAM到DDR5">计算机内存频率的演进：从SDRAM到DDR5</span>
+            <span class="post-date" title="2023-02-20 11:31:03">2023/02/20</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 IT应用项目制度 FTP-FTPServer "
+           href="/posts/7f9b9234f47d/"
+           data-tag="IT技术,FTP,vsFTP"
+           data-author="" >
+            <span class="post-title" title="aoaoFTP-aoaovsFTP">aoaoFTP-aoaovsFTP</span>
+            <span class="post-date" title="2023-02-20 11:31:03">2023/02/20</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 IT应用项目制度 堡垒机-安全运维审计系统 "
+           href="/posts/6f5cf149f78d/"
+           data-tag="IT技术"
+           data-author="" >
+            <span class="post-title" title="JumpServer简单介绍">JumpServer简单介绍</span>
+            <span class="post-date" title="2023-02-20 11:31:03">2023/02/20</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao工具命令 系统工具 "
+           href="/posts/94cf12888333/"
+           data-tag="ditto"
+           data-author="" >
+            <span class="post-title" title="aoaoditto-惊人的发现！这个工具可以让你管理剪贴板，节省你的时间并提高效率！">aoaoditto-惊人的发现！这个工具可以让你管理剪贴板，节省你的时间并提高效率！</span>
+            <span class="post-date" title="2023-02-08 11:31:03">2023/02/08</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao工具命令 系统工具 "
+           href="/posts/7ee06d85797f/"
+           data-tag="bench,性能测试,Linux"
+           data-author="" >
+            <span class="post-title" title="性能测试工具整理">性能测试工具整理</span>
+            <span class="post-date" title="2023-02-08 11:31:03">2023/02/08</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao工具命令 网络工具 "
+           href="/posts/20d1e6158c05/"
+           data-tag="Linux,网络工具,iperf"
+           data-author="" >
+            <span class="post-title" title="主机网络速度测试">主机网络速度测试</span>
+            <span class="post-date" title="2023-02-08 11:31:03">2023/02/08</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao随笔 aoao文化教育 "
+           href="/posts/104fa9fc9e92/"
+           data-tag="社会"
+           data-author="" >
+            <span class="post-title" title="中国人口14亿是什么概念">中国人口14亿是什么概念</span>
+            <span class="post-date" title="2023-02-03 11:22:02">2023/02/03</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao随笔 aoao文化教育 aoao科技技术 "
+           href="/posts/b60aa7b1aeba/"
+           data-tag="无人驾驶"
+           data-author="" >
+            <span class="post-title" title="aoao无人驾驶">aoao无人驾驶</span>
+            <span class="post-date" title="2023-01-19 15:38:56">2023/01/19</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao随笔 aoao文化教育 aoao科技技术 "
+           href="/posts/e3e6e65689f9/"
+           data-tag="5G,科技"
+           data-author="" >
+            <span class="post-title" title="aoao5G">aoao5G</span>
+            <span class="post-date" title="2023-01-13 09:57:43">2023/01/13</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao随笔 aoao文化教育 aoao科技技术 "
+           href="/posts/31686f5a0962/"
+           data-tag="aoao随笔,科技"
+           data-author="" >
+            <span class="post-title" title="aoao新能源汽车">aoao新能源汽车</span>
+            <span class="post-date" title="2023-01-11 14:52:32">2023/01/11</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 操作系统虚拟化 Linux系统 "
+           href="/posts/4e46db58cbea/"
+           data-tag="linux,ubuntu"
+           data-author="" >
+            <span class="post-title" title="aoaoubuntu">aoaoubuntu</span>
+            <span class="post-date" title="2022-12-21 15:26:31">2022/12/21</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao生活 aoao音乐 "
+           href="/posts/08bef4f4b93d/"
+           data-tag="无损音乐"
+           data-author="" >
+            <span class="post-title" title="高清无损音乐合集1">高清无损音乐合集1</span>
+            <span class="post-date" title="2022-11-26 20:50:11">2022/11/26</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-01-我的应用工具命令-MyToolCommands/08-系统工具-SystemTools/NSSM-应用程序exe程序封装成windows服务" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">NSSM-应用程序exe程序封装成windows服务-the Non-Sucking Service Manager</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="aoao工具命令">aoao工具命令</a> > 
+            
+            <a  data-rel="aoao工具命令&lt;---&gt;系统工具">系统工具</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color5">NSSM</a>
+            
+            <a class="color5">Windows工具</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2023-07-12 16:05:44'>2023-06-01 23:28</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%A8%8B%E5%BA%8F%E4%BB%8B%E7%BB%8D"><span class="toc-text">程序介绍</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85"><span class="toc-text">服务安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E7%AE%A1%E7%90%86%EF%BC%9A"><span class="toc-text">服务管理：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E5%88%A0%E9%99%A4%EF%BC%9A"><span class="toc-text">服务删除：</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p><span class="github-emoji"><span>🌺</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f33a.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>NSSM是一个服务封装程序，它可以将普通exe程序封装成服务，使之像windows服务一样运行。</p>
+</blockquote>
+<h1 id="程序介绍"><a href="#程序介绍" class="headerlink" title="程序介绍"></a>程序介绍</h1><p>NSSM是一个服务封装程序，它可以将普通exe程序封装成服务，使之像windows服务一样运行。同类型的工具还有微软自己的srvany，不过nssm更加简单易用，并且功能强大。它的特点如下：</p>
+<ul>
+<li><ul>
+<li><ol>
+<li>支持普通exe程序（控制台程序或者带界面的Windows程序都可以）</li>
+<li>安装简单，修改方便</li>
+<li>可以重定向输出（并且支持Rotation）</li>
+<li>可以自动守护封装了的服务，程序挂掉了后可以自动重启</li>
+<li>可以自定义环境变量</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<p>这里面的每一个功能都非常实用，使用NSSM来封装服务可以大大简化我们的开发流程了。</p>
+<ul>
+<li><ul>
+<li><ul>
+<li>开发的时候是一个普通程序，降低了开发难度，调试起来非常方便</li>
+<li>安装简单，并且可以随时修改服务属性，更新也更加方便</li>
+<li>可以利用控制台输出直接实现一个简单的日志系统</li>
+<li>不用考虑再加一个服务实现服务守护功能</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>我觉得它还可以需要增加的一个功能是将输入输出重定向为一个tcp连接，这样可以通过telnet的方式实现程序的交互了，那样就更加好用了。</p>
+<p>下面就简单的介绍一下如何使用这个工具。</p>
+<p>首先去nssm的<a target="_blank" rel="noopener" href="https://nssm.cc/">官网</a>下载</p>
+<h1 id="服务安装"><a href="#服务安装" class="headerlink" title="服务安装"></a>服务安装</h1><p>1、打开cmd窗口，输入nssm install Linde_GetEnteranceLog</p>
+<p>2、弹出的窗口中选择卡钟应用.exe程序地址，然后点击install service完成安装。</p>
+<p>3、安装后可以在服务中找到已安装的服务，</p>
+<p>4、选中Allow service to interact with desktop复选框点确定。</p>
+<p>服务安装可以使用如下命令： nssm install <servicename></servicename></p>
+<p>执行此命令后，会出现一个界面，基本上看着就知道怎么用了，大多数情况下，只需要填第一个界面的程序路径就可以了。</p>
+<p><img src="data:image/png;base64,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" alt="img"></p>
+<p>其它界面的是高级参数的配置，可以根据需要自行选择。</p>
+<p>参数填完后执行”install service”按钮即可将服务安装到系统，可以使用系统的服务管理工具查看了。</p>
+<p>当然，如果要自动化安装，可以直接带上程序路径： nssm install <servicename> <program> [<arguments>]</arguments></program></servicename></p>
+<p>NSSM本身win7及以上的系统基本都是支持的，我测试过win7，2008,2016系统，都是没有问题的，如果安装失败，请首先检查是否装了某国产管家或国产杀毒软件。</p>
+<p>安装完成后，服务还没有启动，需要通过下面的服务管理的命令启动服务。</p>
+<h2 id="服务管理："><a href="#服务管理：" class="headerlink" title="服务管理："></a>服务管理：</h2><p>服务管理主要有启动、停止和重启，其命令如下：</p>
+<ul>
+<li><ul>
+<li><ul>
+<li>启动服务：　nssm start <servicename></servicename></li>
+<li>停止服务： nssm stop <servicename></servicename></li>
+<li>重启服务:  nssm restart <servicename></servicename></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>当然，也可以使用系统自带的服务管理器操作和使用系统的命令。</p>
+<p>修改参数：</p>
+<p>NSSM安装的服务修改起来非常方便，命令如下：</p>
+<p>nssm edit <servicename></servicename></p>
+<p>会自动启动操作界面，直接更改即可。</p>
+<h2 id="服务删除："><a href="#服务删除：" class="headerlink" title="服务删除："></a>服务删除：</h2><p>服务删除可以使用如下命令之一：</p>
+<ul>
+<li><ul>
+<li><ul>
+<li>nssm remove <servicename></servicename></li>
+<li>nssm remove <servicename> confirm</servicename></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>功能没有大的区别，后面的命令是自动确认的，没有交互界面。</p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 xieaoao@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2008-2023 aoao.club
+</p>
+<p class="footer-entry"><a href="https://hwmail.vip" target="_blank">aoao</a></p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 608px;
+    }
+    .nav.fullscreen {
+        margin-left: -608px;
+    }
+    .nav-left {
+        width: 186px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>

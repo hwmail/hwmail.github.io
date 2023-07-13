@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>aoao渗透测试-渗透测试分享培训记录 | week.wiki</title>
+  <meta name="keywords" content=" 安全 , 漏洞 , qualys ">
+  <meta name="description" content="aoao渗透测试-渗透测试分享培训记录 | week.wiki">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="categories">
+<meta property="og:url" content="https://week.wiki/categories/index.html">
+<meta property="og:site_name" content="week.wiki">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-11-27T13:15:24.000Z">
+<meta property="article:modified_time" content="2022-11-27T16:06:59.253Z">
+<meta property="article:author" content="aoao">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>aoao</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="email"
+               href="mailto:xieaoao@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=2516726319&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="全部文章">全部文章
+            
+                <small>(58)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                
+    <li>
+        <div data-rel="aoao随笔">
+            <i class="fold iconfont icon-right"></i>
+            aoao随笔
+            <small>(16)</small>
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="aoao随笔&lt;---&gt;aoao科技技术">
+            
+            aoao科技技术
+            <small>(6)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoao随笔&lt;---&gt;aoao生活感悟">
+            
+            aoao生活感悟
+            <small>(7)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoao随笔&lt;---&gt;aoao文化教育">
+            
+            aoao文化教育
+            <small>(9)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoao随笔&lt;---&gt;aoao政治经济">
+            
+            aoao政治经济
+            <small>(2)</small>
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="aoao工具命令">
+            <i class="fold iconfont icon-right"></i>
+            aoao工具命令
+            <small>(13)</small>
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="aoao工具命令&lt;---&gt;好玩工具">
+            
+            好玩工具
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoao工具命令&lt;---&gt;网络工具">
+            
+            网络工具
+            <small>(3)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoao工具命令&lt;---&gt;系统工具">
+            
+            系统工具
+            <small>(5)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoao工具命令&lt;---&gt;aoao工具">
+            
+            aoao工具
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoao工具命令&lt;---&gt;Linux命令">
+            
+            Linux命令
+            <small>(3)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoao工具命令&lt;---&gt;Windows命令">
+            
+            Windows命令
+            <small>(3)</small>
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="aoao生活">
+            <i class="fold iconfont icon-right"></i>
+            aoao生活
+            <small>(8)</small>
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="aoao生活&lt;---&gt;鸡汤名言">
+            
+            鸡汤名言
+            <small>(5)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoao生活&lt;---&gt;内涵幽默">
+            
+            内涵幽默
+            <small>(2)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoao生活&lt;---&gt;aoao音乐">
+            
+            aoao音乐
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="aoaoIT技术管理">
+            <i class="fold iconfont icon-right"></i>
+            aoaoIT技术管理
+            <small>(21)</small>
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="aoaoIT技术管理&lt;---&gt;操作系统虚拟化">
+            <i class="fold iconfont icon-right"></i>
+            操作系统虚拟化
+            <small>(4)</small>
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="aoaoIT技术管理&lt;---&gt;操作系统虚拟化&lt;---&gt;Linux系统">
+            
+            Linux系统
+            <small>(4)</small>
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoaoIT技术管理&lt;---&gt;脚本开发运营">
+            <i class="fold iconfont icon-right"></i>
+            脚本开发运营
+            <small>(7)</small>
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="aoaoIT技术管理&lt;---&gt;脚本开发运营&lt;---&gt;python脚本">
+            
+            python脚本
+            <small>(3)</small>
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoaoIT技术管理&lt;---&gt;人工智能AI">
+            
+            人工智能AI
+            <small>(2)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoaoIT技术管理&lt;---&gt;数据库中间件">
+            <i class="fold iconfont icon-right"></i>
+            数据库中间件
+            <small>(2)</small>
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="aoaoIT技术管理&lt;---&gt;数据库中间件&lt;---&gt;HANA数据库">
+            
+            HANA数据库
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoaoIT技术管理&lt;---&gt;数据库中间件&lt;---&gt;MSSQL数据库">
+            
+            MSSQL数据库
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoaoIT技术管理&lt;---&gt;信息网络安全">
+            
+            信息网络安全
+            <small>(2)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoaoIT技术管理&lt;---&gt;硬件服务器存储">
+            
+            硬件服务器存储
+            <small>(2)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoaoIT技术管理&lt;---&gt;IT应用项目制度">
+            <i class="fold iconfont icon-right"></i>
+            IT应用项目制度
+            <small>(2)</small>
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="aoaoIT技术管理&lt;---&gt;IT应用项目制度&lt;---&gt;堡垒机-安全运维审计系统">
+            
+            堡垒机-安全运维审计系统
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="aoaoIT技术管理&lt;---&gt;IT应用项目制度&lt;---&gt;FTP-FTPServer">
+            
+            FTP-FTPServer
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">关于</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">友链</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="58">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="https://hwmail.vip">HWmail</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>5G</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>安全</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>常用药</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>翻墙</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>佛法</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>桂花</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>鸡汤</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>脚本</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>教育邮箱</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>经济</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>科技</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>垃圾分类</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>漏洞</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>蜜蜂</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>内存</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>内涵</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>人生意义</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>社会</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>数据库中间件</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>腾讯云</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>网络工具</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>无人驾驶</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>无损音乐</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>无线耳机</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>性能测试</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>硬件服务器存储</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>幽默</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>政治</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>终端工具</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>aoao工具命令</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>aoao随笔,科技</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>aoaocrontab</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>aoaoLinux命令</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>bench</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ChatGPT</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>chatGPT,科技</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>crontab</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ditto</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>edu</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>edu.cn</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>edu邮箱</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>FTP</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>HANA</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>hexo</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>iperf</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>IT技术</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>kernel</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>linux</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Linux</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>linux命令</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Linux命令</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>markdown</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>mssql</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>NSSM</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>picgo</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>python</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>qualys</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>redhat</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>shell</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>sql server</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SSH工具</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tabby</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tcpdump</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>twikoo</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>twitter</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>typora</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ubuntu</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>VPN</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>vsFTP</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>webserver</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Windows工具</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Windows命令</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>www</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        
+        <a id="top" class="全部文章 aoao随笔 aoao文化教育 "
+           href="/posts/94a5aa703a1a/"
+           data-tag="佛法"
+           data-author="" >
+            <span class="post-title" title="aoao佛法">aoao佛法</span>
+            <span class="post-date" title="2023-07-12 11:02:29">2023/07/12</span>
+        </a>
+        
+        
+        <a id="top" class="全部文章 aoao随笔 aoao文化教育 aoao生活感悟 "
+           href="/posts/d26ace476102/"
+           data-tag="人生意义"
+           data-author="" >
+            <span class="post-title" title="aoao人生意义">aoao人生意义</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a id="top" class="全部文章 aoao随笔 aoao政治经济 "
+           href="/posts/a58f46c5e4bf/"
+           data-tag="政治,经济"
+           data-author="" >
+            <span class="post-title" title="aoao中国经济-月薪3000多一点谈中国经济">aoao中国经济-月薪3000多一点谈中国经济</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 脚本开发运营 "
+           href="/posts/b0770529e0d8/"
+           data-tag="hexo,www,webserver"
+           data-author="" >
+            <span class="post-title" title="aoaohexo">aoaohexo</span>
+            <span class="post-date" title="2023-07-13 11:34:18">2023/07/13</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 脚本开发运营 python脚本 "
+           href="/posts/ed20f249d666/"
+           data-tag="脚本,python,shell"
+           data-author="" >
+            <span class="post-title" title="aoaopython-爬虫网页上邮箱">aoaopython-爬虫网页上邮箱</span>
+            <span class="post-date" title="2023-07-12 16:34:48">2023/07/12</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 脚本开发运营 python脚本 "
+           href="/posts/3d71638c2ca0/"
+           data-tag="脚本,python,shell"
+           data-author="" >
+            <span class="post-title" title="使用qq邮箱自动备份文件夹">使用qq邮箱自动备份文件夹</span>
+            <span class="post-date" title="2023-07-12 16:33:21">2023/07/12</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 脚本开发运营 python脚本 "
+           href="/posts/4b2b721334b1/"
+           data-tag="脚本,python,shell"
+           data-author="" >
+            <span class="post-title" title="批量投递邮件脚本轮询投递邮件">批量投递邮件脚本轮询投递邮件</span>
+            <span class="post-date" title="2023-07-12 16:28:31">2023/07/12</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 脚本开发运营 "
+           href="/posts/a99c48c406f7/"
+           data-tag="脚本,shell,twikoo"
+           data-author="" >
+            <span class="post-title" title="twikoo评论系统搭建">twikoo评论系统搭建</span>
+            <span class="post-date" title="2023-07-12 16:26:53">2023/07/12</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao工具命令 网络工具 "
+           href="/posts/d3b3a8d2f335/"
+           data-tag="脚本,python,VPN,翻墙"
+           data-author="" >
+            <span class="post-title" title="trojan搭建">trojan搭建</span>
+            <span class="post-date" title="2023-07-12 16:16:01">2023/07/12</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 脚本开发运营 "
+           href="/posts/7f0a8efc9a93/"
+           data-tag="脚本,python,shell"
+           data-author="" >
+            <span class="post-title" title="trojan搭建">trojan搭建</span>
+            <span class="post-date" title="2023-07-12 16:10:13">2023/07/12</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao生活 内涵幽默 "
+           href="/posts/9c6f2eed1a66/"
+           data-tag="内涵,幽默"
+           data-author="" >
+            <span class="post-title" title="爱情生命周期">爱情生命周期</span>
+            <span class="post-date" title="2023-07-11 08:57:26">2023/07/11</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao生活 鸡汤名言 "
+           href="/posts/4c553616a32d/"
+           data-tag="鸡汤"
+           data-author="" >
+            <span class="post-title" title="达克效应">达克效应</span>
+            <span class="post-date" title="2023-06-09 13:42:33">2023/06/09</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao生活 鸡汤名言 "
+           href="/posts/c68d299997f0/"
+           data-tag="鸡汤"
+           data-author="" >
+            <span class="post-title" title="苏格拉底风格：用对话的力量探寻真理">苏格拉底风格：用对话的力量探寻真理</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao生活 鸡汤名言 "
+           href="/posts/2492920357ab/"
+           data-tag="鸡汤"
+           data-author="" >
+            <span class="post-title" title="永恒的春天-爱情永恒">永恒的春天-爱情永恒</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao生活 鸡汤名言 "
+           href="/posts/d7086c49c3b3/"
+           data-tag="鸡汤"
+           data-author="" >
+            <span class="post-title" title="忙碌的七个级别-「疯狂七级」：探究当代忙碌的极限-「从不忙到崩溃」：揭开忙碌的七重境界-「零到崩溃：忙碌的七个层次」">忙碌的七个级别-「疯狂七级」：探究当代忙碌的极限-「从不忙到崩溃」：揭开忙碌的七重境界-「零到崩溃：忙碌的七个层次」</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao生活 鸡汤名言 "
+           href="/posts/4786dbb5530e/"
+           data-tag="鸡汤"
+           data-author="" >
+            <span class="post-title" title="aoao鸡汤-2023年">aoao鸡汤-2023年</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao随笔 aoao文化教育 aoao科技技术 "
+           href="/posts/fd5b054e59f2/"
+           data-tag="chatGPT,科技"
+           data-author="" >
+            <span class="post-title" title="aoaoChatGPT">aoaoChatGPT</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao随笔 aoao生活感悟 "
+           href="/posts/4a0105d9ddc0/"
+           data-tag="垃圾分类"
+           data-author="" >
+            <span class="post-title" title="万恶的垃圾分类-一直伤害着我-我讨厌垃圾分类">万恶的垃圾分类-一直伤害着我-我讨厌垃圾分类</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao随笔 aoao文化教育 aoao生活感悟 "
+           href="/posts/c465097d1b70/"
+           data-tag="教育邮箱,edu邮箱,edu,edu.cn"
+           data-author="" >
+            <span class="post-title" title="aoao邮箱-教育邮箱-edu邮箱-每个人都应该要有个教育邮箱">aoao邮箱-教育邮箱-edu邮箱-每个人都应该要有个教育邮箱</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao随笔 aoao生活感悟 "
+           href="/posts/95dc3f431b89/"
+           data-tag="蜜蜂"
+           data-author="" >
+            <span class="post-title" title="aoao蜜蜂-我和蜜蜂的故事">aoao蜜蜂-我和蜜蜂的故事</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao随笔 aoao文化教育 aoao生活感悟 "
+           href="/posts/0e4eb0d93254/"
+           data-tag="常用药"
+           data-author="" >
+            <span class="post-title" title="aoao药药-常用药">aoao药药-常用药</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao随笔 aoao生活感悟 "
+           href="/posts/23dd0f2de5a7/"
+           data-tag="桂花"
+           data-author="" >
+            <span class="post-title" title="aoao桂花-买桂花记录">aoao桂花-买桂花记录</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao随笔 aoao生活感悟 aoao科技技术 "
+           href="/posts/19a03eb2f9ad/"
+           data-tag="无线耳机"
+           data-author="" >
+            <span class="post-title" title="aoao无线耳机-WIKI下购买了个索尼WH1000XM5耳机过程">aoao无线耳机-WIKI下购买了个索尼WH1000XM5耳机过程</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao随笔 aoao科技技术 "
+           href="/posts/c3dbe6666c9a/"
+           data-tag="twitter"
+           data-author="" >
+            <span class="post-title" title="aoaotwitter-twitter关注限制策略">aoaotwitter-twitter关注限制策略</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao随笔 aoao政治经济 "
+           href="/posts/6382e8a297c5/"
+           data-tag="政治,经济"
+           data-author="" >
+            <span class="post-title" title="硅谷银行倒闭-硅谷银行暴雷-会金融危机么-跟中国股市有什么有关系么">硅谷银行倒闭-硅谷银行暴雷-会金融危机么-跟中国股市有什么有关系么</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao生活 内涵幽默 "
+           href="/posts/3614e71f7132/"
+           data-tag="内涵,幽默"
+           data-author="" >
+            <span class="post-title" title="幽默笑话-2023年3月">幽默笑话-2023年3月</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao工具命令 网络工具 "
+           href="/posts/c82f567d3cfe/"
+           data-tag="Linux,tcpdump,网络工具"
+           data-author="" >
+            <span class="post-title" title="aoaotcpdump">aoaotcpdump</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao工具命令 系统工具 "
+           href="/posts/c8ad665d1c02/"
+           data-tag="NSSM,Windows工具"
+           data-author="" >
+            <span class="post-title" title="NSSM-应用程序exe程序封装成windows服务-the Non-Sucking Service Manager">NSSM-应用程序exe程序封装成windows服务-the Non-Sucking Service Manager</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao工具命令 系统工具 "
+           href="/posts/1285132f3dfb/"
+           data-tag="tabby,SSH工具,终端工具"
+           data-author="" >
+            <span class="post-title" title="aoaotabby-好用好酷终端工具-SSH利器-跨堡垒机连接">aoaotabby-好用好酷终端工具-SSH利器-跨堡垒机连接</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao工具命令 系统工具 "
+           href="/posts/a0b4eade39b6/"
+           data-tag="tabby,SSH工具,终端工具"
+           data-author="" >
+            <span class="post-title" title="aoaotabby-好用好酷终端工具-SSH利器-跨堡垒机连接">aoaotabby-好用好酷终端工具-SSH利器-跨堡垒机连接</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao工具命令 好玩工具 "
+           href="/posts/92d1297da7e2/"
+           data-tag="bench,性能测试,Linux"
+           data-author="" >
+            <span class="post-title" title="手写模拟器-把文字变手写">手写模拟器-把文字变手写</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao工具命令 Linux命令 Windows命令 "
+           href="/posts/b28b6a9d61cb/"
+           data-tag="aoao工具命令,aoaoLinux命令,aoaocrontab,crontab,Windows命令,Linux命令"
+           data-author="" >
+            <span class="post-title" title="aoaontpdate-aoaodate-date-ntpdate">aoaontpdate-aoaodate-date-ntpdate</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao工具命令 Linux命令 Windows命令 "
+           href="/posts/b99845046c8d/"
+           data-tag="aoao工具命令,aoaoLinux命令,linux命令,aoaocrontab,crontab,Windows命令"
+           data-author="" >
+            <span class="post-title" title="aoaocrontab-crontab">aoaocrontab-crontab</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao工具命令 aoao工具 "
+           href="/posts/e4a9e2f7e2cf/"
+           data-tag="markdown,typora,picgo,腾讯云"
+           data-author="" >
+            <span class="post-title" title="aoaomarkdown-aoaotypora-markdown-typora">aoaomarkdown-aoaotypora-markdown-typora</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 数据库中间件 MSSQL数据库 "
+           href="/posts/8e1d025a2728/"
+           data-tag="mssql,sql server"
+           data-author="" >
+            <span class="post-title" title="aoaomssql-sqlserver-mssql">aoaomssql-sqlserver-mssql</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 操作系统虚拟化 Linux系统 "
+           href="/posts/df17df1ceb98/"
+           data-tag="linux,redhat,kernel"
+           data-author="" >
+            <span class="post-title" title="aoao-linux性能问题排查">aoao-linux性能问题排查</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 操作系统虚拟化 Linux系统 "
+           href="/posts/b34b54656556/"
+           data-tag="linux,redhat"
+           data-author="" >
+            <span class="post-title" title="aoaoredhat-aoaocentos">aoaoredhat-aoaocentos</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 操作系统虚拟化 Linux系统 "
+           href="/posts/5a54738843d5/"
+           data-tag="linux,redhat,kernel"
+           data-author="" >
+            <span class="post-title" title="aoaokernel-linux内核升级降级">aoaokernel-linux内核升级降级</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 脚本开发运营 "
+           href="/posts/e0200353a8a3/"
+           data-tag="hexo,www,webserver"
+           data-author="" >
+            <span class="post-title" title="aoaohexo-all-butterfly">aoaohexo-all-butterfly</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 信息网络安全 "
+           href="/posts/16f038be3929/"
+           data-tag="安全,漏洞,qualys"
+           data-author="" >
+            <span class="post-title" title="aoao渗透测试-渗透测试分享培训记录">aoao渗透测试-渗透测试分享培训记录</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 信息网络安全 "
+           href="/posts/0cc3a3fb4c24/"
+           data-tag="安全,漏洞,qualys"
+           data-author="" >
+            <span class="post-title" title="aoaoqualys-漏洞管理资产管理查询">aoaoqualys-漏洞管理资产管理查询</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 人工智能AI "
+           href="/posts/cd7608623579/"
+           data-tag="linux,redhat"
+           data-author="" >
+            <span class="post-title" title="超酷!与人工智能Claude聊天,它会知道你想说什么">超酷!与人工智能Claude聊天,它会知道你想说什么</span>
+            <span class="post-date" title="2023-06-01 23:28:28">2023/06/01</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 人工智能AI "
+           href="/posts/50c8c163f289/"
+           data-tag="ChatGPT,linux"
+           data-author="" >
+            <span class="post-title" title="想用ChatGPT，却遇到Access Denied？这里有解决方法！">想用ChatGPT，却遇到Access Denied？这里有解决方法！</span>
+            <span class="post-date" title="2023-04-18 15:38:56">2023/04/18</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao工具命令 Linux命令 Windows命令 "
+           href="/posts/17b8ed72e31a/"
+           data-tag="aoao工具命令"
+           data-author="" >
+            <span class="post-title" title="aoaocrontab-crontab">aoaocrontab-crontab</span>
+            <span class="post-date" title="2023-02-20 11:31:03">2023/02/20</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 数据库中间件 HANA数据库 "
+           href="/posts/2659332638e4/"
+           data-tag="IT技术,HANA,数据库中间件"
+           data-author="" >
+            <span class="post-title" title="aoaoHANA数据库">aoaoHANA数据库</span>
+            <span class="post-date" title="2023-02-20 11:31:03">2023/02/20</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 硬件服务器存储 "
+           href="/posts/870d1ced6ee2/"
+           data-tag="IT技术,硬件服务器存储,内存"
+           data-author="" >
+            <span class="post-title" title="aoao内存-计算机内存频率的演进">aoao内存-计算机内存频率的演进</span>
+            <span class="post-date" title="2023-02-20 11:31:03">2023/02/20</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 硬件服务器存储 "
+           href="/posts/15ea15c7df2e/"
+           data-tag="IT技术,硬件服务器存储"
+           data-author="" >
+            <span class="post-title" title="计算机内存频率的演进：从SDRAM到DDR5">计算机内存频率的演进：从SDRAM到DDR5</span>
+            <span class="post-date" title="2023-02-20 11:31:03">2023/02/20</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 IT应用项目制度 FTP-FTPServer "
+           href="/posts/7f9b9234f47d/"
+           data-tag="IT技术,FTP,vsFTP"
+           data-author="" >
+            <span class="post-title" title="aoaoFTP-aoaovsFTP">aoaoFTP-aoaovsFTP</span>
+            <span class="post-date" title="2023-02-20 11:31:03">2023/02/20</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 IT应用项目制度 堡垒机-安全运维审计系统 "
+           href="/posts/6f5cf149f78d/"
+           data-tag="IT技术"
+           data-author="" >
+            <span class="post-title" title="JumpServer简单介绍">JumpServer简单介绍</span>
+            <span class="post-date" title="2023-02-20 11:31:03">2023/02/20</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao工具命令 系统工具 "
+           href="/posts/94cf12888333/"
+           data-tag="ditto"
+           data-author="" >
+            <span class="post-title" title="aoaoditto-惊人的发现！这个工具可以让你管理剪贴板，节省你的时间并提高效率！">aoaoditto-惊人的发现！这个工具可以让你管理剪贴板，节省你的时间并提高效率！</span>
+            <span class="post-date" title="2023-02-08 11:31:03">2023/02/08</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao工具命令 系统工具 "
+           href="/posts/7ee06d85797f/"
+           data-tag="bench,性能测试,Linux"
+           data-author="" >
+            <span class="post-title" title="性能测试工具整理">性能测试工具整理</span>
+            <span class="post-date" title="2023-02-08 11:31:03">2023/02/08</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao工具命令 网络工具 "
+           href="/posts/20d1e6158c05/"
+           data-tag="Linux,网络工具,iperf"
+           data-author="" >
+            <span class="post-title" title="主机网络速度测试">主机网络速度测试</span>
+            <span class="post-date" title="2023-02-08 11:31:03">2023/02/08</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao随笔 aoao文化教育 "
+           href="/posts/104fa9fc9e92/"
+           data-tag="社会"
+           data-author="" >
+            <span class="post-title" title="中国人口14亿是什么概念">中国人口14亿是什么概念</span>
+            <span class="post-date" title="2023-02-03 11:22:02">2023/02/03</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao随笔 aoao文化教育 aoao科技技术 "
+           href="/posts/b60aa7b1aeba/"
+           data-tag="无人驾驶"
+           data-author="" >
+            <span class="post-title" title="aoao无人驾驶">aoao无人驾驶</span>
+            <span class="post-date" title="2023-01-19 15:38:56">2023/01/19</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao随笔 aoao文化教育 aoao科技技术 "
+           href="/posts/e3e6e65689f9/"
+           data-tag="5G,科技"
+           data-author="" >
+            <span class="post-title" title="aoao5G">aoao5G</span>
+            <span class="post-date" title="2023-01-13 09:57:43">2023/01/13</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao随笔 aoao文化教育 aoao科技技术 "
+           href="/posts/31686f5a0962/"
+           data-tag="aoao随笔,科技"
+           data-author="" >
+            <span class="post-title" title="aoao新能源汽车">aoao新能源汽车</span>
+            <span class="post-date" title="2023-01-11 14:52:32">2023/01/11</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoaoIT技术管理 操作系统虚拟化 Linux系统 "
+           href="/posts/4e46db58cbea/"
+           data-tag="linux,ubuntu"
+           data-author="" >
+            <span class="post-title" title="aoaoubuntu">aoaoubuntu</span>
+            <span class="post-date" title="2022-12-21 15:26:31">2022/12/21</span>
+        </a>
+        
+        
+        <a  class="全部文章 aoao生活 aoao音乐 "
+           href="/posts/08bef4f4b93d/"
+           data-tag="无损音乐"
+           data-author="" >
+            <span class="post-title" title="高清无损音乐合集1">高清无损音乐合集1</span>
+            <span class="post-date" title="2022-11-26 20:50:11">2022/11/26</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-00-我的产品项目-MyproductProject/信息网络安全/aoao渗透测试-Penetration Test" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">aoao渗透测试-渗透测试分享培训记录</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="aoaoIT技术管理">aoaoIT技术管理</a> > 
+            
+            <a  data-rel="aoaoIT技术管理&lt;---&gt;信息网络安全">信息网络安全</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color3">安全</a>
+            
+            <a class="color3">漏洞</a>
+            
+            <a class="color2">qualys</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2023-07-13 09:36:44'>2023-06-01 23:28</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0"><span class="toc-text">概述</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E7%9B%AE%E7%9A%84"><span class="toc-text">渗透测试的定义和目的</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%87%E5%87%86%E6%B5%81%E7%A8%8B%EF%BC%9A"><span class="toc-text">标准流程：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E7%B1%BB%E5%9E%8B"><span class="toc-text">渗透测试的类型</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E5%AF%B9%E8%B1%A1"><span class="toc-text">渗透测试的对象</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%9A%84%E5%B7%A5%E5%85%B7%E5%92%8C%E6%8A%80%E6%9C%AF"><span class="toc-text">渗透测试的工具和技术</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%81%8C%E8%B4%A3"><span class="toc-text">职责</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%BC%8F%E6%B4%9E%E4%BF%AE%E5%A4%8D%E6%97%B6%E9%97%B4"><span class="toc-text">漏洞修复时间</span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天做了个分享关于渗透测试的 WIKI下</p>
+<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>在当前复杂的网络环境背景下，网络安全事件频发，集团公司及国家对网络安全极其重视。相关的法律法规及集团公司的网络安全相关标准等，时刻提醒着我们对网络安全不容忽视。渗透测试作为一种安全技术服务，可以有效的帮助降低软件漏洞造成的数据泄露风险，确定系统存在的安全威胁，及时提醒相关人员，完善安全策略降低风险。新的系统可能存在未知的风险；未雨绸缪，禁忌亡羊补牢；专业的渗透测试能有效地评估系统的安全状况，提出合理的改进方案从而加强对企业内部数据的保护。同时能有效避免无意中触犯某些法律而导致被有关部门处罚，影响公司品牌形象。</p>
+<p>当谈到网络安全时，渗透测试是一个重要的概念，它可以帮助组织发现网络系统中的漏洞和弱点。</p>
+<h1 id="渗透测试的定义和目的"><a href="#渗透测试的定义和目的" class="headerlink" title="渗透测试的定义和目的"></a>渗透测试的定义和目的</h1><p>渗透测试（Penetration Testing）是通过模拟攻击者的行为来评估计算机系统、网络或应用程序的安全性的一种技术。渗透测试的目的是发现和利用系统中的漏洞和弱点，以测试系统是否能够抵御攻击并保持安全。</p>
+<p>渗透测试通常包括以下步骤：</p>
+<p>1.信息收集：渗透测试人员使用各种技术和工具来收集与目标系统相关的信息，例如网络拓扑、系统架构、安全配置等。</p>
+<p>2.漏洞分析：根据收集的信息，渗透测试人员分析系统的漏洞和弱点。</p>
+<p>3.攻击尝试：渗透测试人员使用已知的漏洞和攻击技术，尝试入侵目标系统。</p>
+<p>4.权限提升：如果攻击成功，渗透测试人员将尝试提升权限并进一步深入系统。</p>
+<p>5.保持访问：一旦成功入侵，渗透测试人员将尝试维持对系统的访问，并探索目标系统中的其他漏洞。</p>
+<p>6.报告编写：渗透测试人员将收集到的信息和攻击过程记录在报告中，以便组织能够了解目标系统中的安全问题，并采取相应的措施来加强安全性。</p>
+<p>PTES（Penetration Testing Execution Standard）是2010年最新发起的渗透测试过程规范标准项目，其核心理念是通过建立起进行渗透测试所要求的基本准则基线，来定义一次真正的渗透测试过程，并得到安全业界的广泛认同，也是安全公司目前通用的是标准。</p>
+<h2 id="标准流程："><a href="#标准流程：" class="headerlink" title="标准流程："></a>标准流程：</h2><p>前期交互-情报收集-威胁建模-漏洞分析-渗透攻击-后渗透攻击-报告整理</p>
+<p>技术安全性的验证：渗透测试作为独立的安全技术服务，其主要目的就在于验证整个目标系统的技术安全性，通过渗透测试，可在技术层面定性的分析系统的安全性。<br>查找安全隐患点：渗透测试是对传统安全弱点的串联并形成路径，最终通过路径式的利用而达到模拟入侵的效果。所以，在渗透测试的整个过程中，可有效地验证每个安全隐患点的存在及其可利用程度。<br>安全教育：渗透测试的结果可作为内部安全意识的案例，在对相关的接口人员进行安全普及时使用。<br> 安全技能的提升：一份专业的渗透测试报告不但作为案例，更可作为常见安全原理的学习参考。</p>
+<p>渗透测试标准流程通常包括以下阶段：</p>
+<p>1.需求分析和范围确定：在这个阶段，需要与客户或项目组进行沟通，明确测试的目的、测试对象、测试范围、测试时间和测试资源等。</p>
+<p>2.信息搜集：在这个阶段，测试人员需要通过各种方式搜集目标系统、网络或应用程序的信息，例如收集IP地址、域名、邮箱、用户名等。</p>
+<p>3.漏洞扫描：在这个阶段，测试人员需要使用各种漏洞扫描工具对目标系统、网络或应用程序进行扫描，以发现潜在的漏洞和弱点。</p>
+<p>4.漏洞利用和渗透：在这个阶段，测试人员需要使用各种技术和工具，如社会工程学、口令猜测、暴力破解等，尝试利用漏洞渗透进入目标系统、网络或应用程序，获取敏感信息或控制目标系统。</p>
+<p>5.提供报告和建议：在这个阶段，测试人员需要整理测试结果，编写详细的测试报告，列出漏洞清单，并给出修复建议和改进措施。</p>
+<p>6.漏洞修复和再次测试：在这个阶段，测试人员需要与客户或项目组合作，修复测试中发现的漏洞和弱点，并进行再次测试，以确保漏洞已经被修复。</p>
+<p>7.报告总结：在这个阶段，测试人员需要对测试过程进行总结，反思测试中存在的问题和不足，以提高测试的质量和效率。</p>
+<p>需要注意的是，渗透测试标准流程并不是固定不变的，具体的测试流程和步骤可能会因为项目的不同而有所不同。但是，以上的流程阶段可以作为基本的指导方针，帮助测试人员进行有组织、有效的渗透测试工作。</p>
+<h1 id="渗透测试的类型"><a href="#渗透测试的类型" class="headerlink" title="渗透测试的类型"></a>渗透测试的类型</h1><p>渗透测试可以分为两种类型：黑盒测试和白盒测试。</p>
+<p>1.黑盒测试：黑盒测试是在不知道目标系统内部结构和配置的情况下进行测试。渗透测试人员只有一个外部视角，以模拟攻击者的行为，尽可能多地发现系统的漏洞和弱点。</p>
+<p>2.白盒测试：白盒测试是在完全了解目标系统的内部结构和配置的情况下进行测试。渗透测试人员可以通过代码审计等方法来发现漏洞和弱点，并进行测试。</p>
+<h1 id="渗透测试的对象"><a href="#渗透测试的对象" class="headerlink" title="渗透测试的对象"></a>渗透测试的对象</h1><p>原则上所有应用系统都需要做渗透测试，且都应有等同于生产环境的测试环境用于渗透测试；<br>    未正式上线的应用，需在上线前做渗透测试，并具有符合上线条件的渗透测试正式报告，<br>    对于供应商开发或提供的应用系统，需具有资质的第三方检测机构出具的渗透测试报告。<br>    对于已上线运行的应用系统，需每年不少于一次的渗透测试，另外根据系统业务的重要性、运行环境及其数据的密级等因素，可适当增加渗透测试的频率。<br>    依据渗透测试的目标不同分为以下对象：<br>    主机操作系统渗透测试<br>    数据库系统渗透测试<br>    应用系统渗透测试<br>    网络设备渗透测试<br>    内网渗透测试（模仿内部违规操作行为）<br>    外网渗透测试（模仿内部状态一无所知的外部攻击行为）</p>
+<h1 id="渗透测试的工具和技术"><a href="#渗透测试的工具和技术" class="headerlink" title="渗透测试的工具和技术"></a>渗透测试的工具和技术</h1><p>在渗透测试过程中，渗透测试人员使用各种工具和技术来发现和利用漏洞和弱点。以下是一些流行的工具和技术：</p>
+<p>1.端口扫描工具：端口扫描工具</p>
+<p>可以帮助渗透测试人员查找目标系统上开放的端口和服务。</p>
+<p>2.漏洞扫描器：漏洞扫描器可以扫描系统中的漏洞和弱点，并生成报告。</p>
+<p>3.密码破解工具：密码破解工具可以帮助渗透测试人员破解系统中的密码，以获得对系统的访问权限。</p>
+<p>4.社会工程学：社会工程学是一种通过欺骗人员来获取信息或访问系统的技术。渗透测试人员可以使用社会工程学来测试组织的安全意识和响应能力。</p>
+<p>5.漏洞利用框架：漏洞利用框架是一组工具和技术，可以帮助渗透测试人员自动化攻击过程。</p>
+<p>6.反向Shell：反向Shell是一种攻击技术，可以通过在目标系统上安装后门，从而使攻击者能够远程控制系统。</p>
+<p>四、渗透测试的注意事项</p>
+<p>渗透测试可能会对目标系统造成一些负面影响，因此在进行渗透测试时，需要遵循以下注意事项：</p>
+<p>1.授权：在进行渗透测试之前，必须获得组织的明确授权，并且明确规定测试的范围和目的。</p>
+<p>2.测试环境：在进行渗透测试之前，必须创建一个测试环境，以防止对生产环境造成负面影响。</p>
+<p>3.风险评估：在进行渗透测试之前，必须评估测试可能造成的风险，并采取相应的措施来减轻风险。</p>
+<p>4.记录和报告：在进行渗透测试期间，必须记录测试的每一个步骤，并编写详细的报告，以便组织了解测试的结果和建议的改进措施。</p>
+<p>五、结论</p>
+<p>渗透测试是评估计算机系统、网络或应用程序安全性的一种重要技术。在进行渗透测试之前，必须获得组织的授权，并遵循一些注意事项，以确保测试的安全和有效性。渗透测试人员需要使用各种工具和技术，以发现和利用目标系统的漏洞和弱点，并编写详细的报告，以便组织能够了解测试的结果并采取相应的措施来加强安全性。</p>
+<h1 id="职责"><a href="#职责" class="headerlink" title="职责"></a>职责</h1><p>渗透测试通常是一个团队工作，IT部门是其中一个非常关键的角色。以下是IT部门在渗透测试中的职责：</p>
+<p>1.确定测试的范围：IT部门负责确定需要进行渗透测试的系统、网络或应用程序，以及测试的范围和时间。</p>
+<p>2.为测试环境做准备：IT部门需要为测试环境做好准备，例如创建一个独立的测试环境，以避免对生产环境造成不必要的影响。</p>
+<p>3.提供测试工具和技术：IT部门需要提供各种渗透测试工具和技术，以帮助测试团队发现和利用目标系统的漏洞和弱点。</p>
+<p>4.监控测试过程：IT部门需要监控渗透测试的过程，以确保测试团队在测试期间不会对生产环境造成影响，并及时响应任何出现的问题。</p>
+<p>5.评估测试结果：IT部门需要评估测试的结果，以确保测试团队发现的漏洞和弱点被及时修复，并提出改进措施以加强系统、网络或应用程序的安全性。</p>
+<p>6.与测试团队沟通：IT部门需要与渗透测试团队保持密切的沟通，以确保测试团队了解系统、网络或应用程序的结构和功能，并协调测试的进程和结果。</p>
+<h1 id="漏洞修复时间"><a href="#漏洞修复时间" class="headerlink" title="漏洞修复时间"></a>漏洞修复时间</h1><p>1.紧急漏洞：对于发现的紧急漏洞，需要立即采取措施进行修复，并在24小时内完成修复。</p>
+<p>2.高危漏洞：对于发现的高危漏洞，需要在72小时内采取措施进行修复，并在一周内完成修复。</p>
+<p>3.中危漏洞：对于发现的中危漏洞，需要在两周内采取措施进行修复，并在一个月内完成修复。</p>
+<p>4.低危漏洞：对于发现的低危漏洞，需要在三个月内采取措施进行修复，并在六个月内完成修复。</p>
+<p>在进行漏洞修复的过程中，需要建立一个跟进处理修复时间表，并监测漏洞修复的进度。在漏洞修复完成后，需要进行再次测试，以确保漏洞已经被彻底修复。同时，需要更新渗透测试报告，并记录修复漏洞的日期和方法，以供以后参考和审查。</p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 xieaoao@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2008-2023 aoao.club
+</p>
+<p class="footer-entry"><a href="https://hwmail.vip" target="_blank">aoao</a></p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 608px;
+    }
+    .nav.fullscreen {
+        margin-left: -608px;
+    }
+    .nav-left {
+        width: 186px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
