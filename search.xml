@@ -198,37 +198,6 @@
     
     
     <entry>
-      <title>trojan搭建</title>
-      <link href="/posts/7f0a8efc9a93/"/>
-      <url>/posts/7f0a8efc9a93/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>这个好像不能写的私人的，wiki下</p></blockquote><h1 id="trojan搭建"><a href="#trojan搭建" class="headerlink" title="trojan搭建"></a>trojan搭建</h1><pre><code>Trojan是一种轻量级的代理协议,可以很方便地搭建代理服务器。以下是使用Trojan搭建代理的详细步骤:1. 购买VPS。购买一台支持BGP路由的VPS,地区选香港或海外机房较好。2. 安装Trojan。在VPS上安装Trojan代理软件。可以直接下载编译好的版本:bashwget https://trojan-gfw.github.io/trojan/download/trojan-1.15.0-linux-amd64.tar.xztar xvf trojan-1.15.0-linux-amd64.tar.xz cd trojan 3. 生成证书。使用`trojan gen`命令生成Trojan证书,或者自己提供已有证书。这里我们选择生成新的证书:bash ./trojan gen 4. 配置配置文件。编辑`./config.json`文件,内容如下:json{    "run_type": "server",    "local_addr": "0.0.0.0",    "local_port": 443,    "remote_addr": "127.0.0.1",     "remote_port": 80,    "password": [生成的密码],    "log_level": 1,     "ssl": {        "cert": "/path/to/certificate.crt",        "key": "/path/to/certificate.key"    }}5. 启动Trojan服务端。使用`./trojan run`命令后台启动Trojan代理。6. 生成客户端配置。使用`./trojan genclientconfig`命令生成客户端配置文件download.json和download.txt。7. 配置Trojan客户端。下载安装Trojan客户端,导入步骤6生成的`download.json`文件即可。8. 开启代理。在Trojan客户端开启代理,模式选择PAC或全局,所有流量将通过Trojan代理服务器转发。9. (可选)配置内网穿透。如果需要内网机器也使用代理,可以配置路由让VPS的80端口流量转发到本地机器。这样你就成功部署了一个Trojan代理服务器,并配置好了Trojan客户端。可以畅快地翻墙或加密你的网络流量。2. 安装Clash客户端。下载安装Clash for Windows或ClashX等Clash客户端。3. 导入Trojan节点。在Clash客户端,点击添加节点或订阅,选择导入外部节点,导入步骤1生成的download.json文件。4. 启用Trojan节点。找到刚导入的Trojan节点,点击启用即可。5. 配置浏览器代理。以Chrome浏览器举例,点击右上角设置菜单,选择代理,手动配置代理服务器,填入:地址:本地IP(127.0.0.1)端口:7890(Clash默认HTTP代理端口)不使用代理:127.0.0.1,localhost6. 开启系统代理(可选)。如果需要系统全局代理,在Clash客户端开启系统代理,然后填入本地IP和代理端口,点击确定即可在系统代理设置中看到。7. 测试连接。打开浏览器访问测试网站http://httpbin.org/ip,如果显示的IP地址不是你的本地IP,则连接成功。这样,你就成功配置了Clash与Trojan的结合使用。之后所有的流量都会通过Trojan代理服务器进行转发。当Trojan节点不可用时,Clash会自动切换到备选节点,保证代理稳定。</code></pre><p>查看你的ip是否被chatgpt封</p><pre><code>bash &lt;(curl -Ls https://cpp.li/openai)    </code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> aoaoIT技术管理 </category>
-          
-          <category> 脚本开发运营 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 脚本 </tag>
-            
-            <tag> python </tag>
-            
-            <tag> shell </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>aoao佛法</title>
       <link href="/posts/94a5aa703a1a/"/>
       <url>/posts/94a5aa703a1a/</url>
@@ -930,9 +899,9 @@
           
           <category> aoao工具命令 </category>
           
-          <category> Linux命令 </category>
-          
           <category> Windows命令 </category>
+          
+          <category> Linux命令 </category>
           
       </categories>
       
@@ -969,9 +938,9 @@
           
           <category> aoao工具命令 </category>
           
-          <category> Linux命令 </category>
-          
           <category> Windows命令 </category>
+          
+          <category> Linux命令 </category>
           
       </categories>
       
@@ -1320,9 +1289,9 @@
           
           <category> aoao工具命令 </category>
           
-          <category> Linux命令 </category>
-          
           <category> Windows命令 </category>
+          
+          <category> Linux命令 </category>
           
       </categories>
       
@@ -1493,33 +1462,6 @@
     
     
     <entry>
-      <title>aoaoditto-惊人的发现！这个工具可以让你管理剪贴板，节省你的时间并提高效率！</title>
-      <link href="/posts/94cf12888333/"/>
-      <url>/posts/94cf12888333/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p><span class="github-emoji"><span>🌺</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f33a.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>惊人的发现！这个工具可以让你管理剪贴板，节省你的时间并提高效率！</p></blockquote><h1 id="1-Ditto-Clipboard-Manager"><a href="#1-Ditto-Clipboard-Manager" class="headerlink" title="1 Ditto Clipboard Manager"></a>1 Ditto Clipboard Manager</h1><p>今天我要向大家介绍一个非常实用的剪贴板管理工具——Ditto Clipboard Manager！</p><p>Ditto Clipboard Manager是一个免费的Windows剪贴板扩展工具，它可以让你轻松管理复制和粘贴的内容。与其他剪贴板管理工具相比，Ditto Clipboard Manager的最大特点就是它可以保存你最近复制和粘贴的所有内容，让你随时查看和重新使用它们。</p><p>使用Ditto Clipboard Manager，你可以轻松访问你最常用的内容，例如邮件地址，电话号码，网址等等。当你需要重新使用这些内容时，只需要在Ditto Clipboard Manager中查找它们，然后复制并粘贴即可。这样不仅可以节省你的时间，还可以减少输入错误。</p><p>此外，Ditto Clipboard Manager还支持搜索功能，可以让你快速找到你需要的内容。同时，它还可以保存你的剪贴板历史记录，让你随时回溯查看。</p><p>总之，Ditto Clipboard Manager是一个非常实用的工具，它可以帮助你更高效地管理剪贴板内容，节省你的时间和减少输入错误。如果你经常需要复制和粘贴内容，那么Ditto Clipboard Manager一定会成为你的好帮手。</p><p><a href="https://ditto-cp.sourceforge.io/">https://ditto-cp.sourceforge.io/</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> aoao工具命令 </category>
-          
-          <category> 系统工具 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> ditto </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>性能测试工具整理</title>
       <link href="/posts/7ee06d85797f/"/>
       <url>/posts/7ee06d85797f/</url>
@@ -1543,6 +1485,33 @@
             <tag> 性能测试 </tag>
             
             <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>aoaoditto-惊人的发现！这个工具可以让你管理剪贴板，节省你的时间并提高效率！</title>
+      <link href="/posts/94cf12888333/"/>
+      <url>/posts/94cf12888333/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p><span class="github-emoji"><span>🌺</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f33a.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>惊人的发现！这个工具可以让你管理剪贴板，节省你的时间并提高效率！</p></blockquote><h1 id="1-Ditto-Clipboard-Manager"><a href="#1-Ditto-Clipboard-Manager" class="headerlink" title="1 Ditto Clipboard Manager"></a>1 Ditto Clipboard Manager</h1><p>今天我要向大家介绍一个非常实用的剪贴板管理工具——Ditto Clipboard Manager！</p><p>Ditto Clipboard Manager是一个免费的Windows剪贴板扩展工具，它可以让你轻松管理复制和粘贴的内容。与其他剪贴板管理工具相比，Ditto Clipboard Manager的最大特点就是它可以保存你最近复制和粘贴的所有内容，让你随时查看和重新使用它们。</p><p>使用Ditto Clipboard Manager，你可以轻松访问你最常用的内容，例如邮件地址，电话号码，网址等等。当你需要重新使用这些内容时，只需要在Ditto Clipboard Manager中查找它们，然后复制并粘贴即可。这样不仅可以节省你的时间，还可以减少输入错误。</p><p>此外，Ditto Clipboard Manager还支持搜索功能，可以让你快速找到你需要的内容。同时，它还可以保存你的剪贴板历史记录，让你随时回溯查看。</p><p>总之，Ditto Clipboard Manager是一个非常实用的工具，它可以帮助你更高效地管理剪贴板内容，节省你的时间和减少输入错误。如果你经常需要复制和粘贴内容，那么Ditto Clipboard Manager一定会成为你的好帮手。</p><p><a href="https://ditto-cp.sourceforge.io/">https://ditto-cp.sourceforge.io/</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> aoao工具命令 </category>
+          
+          <category> 系统工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ditto </tag>
             
         </tags>
       
