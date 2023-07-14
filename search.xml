@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>aoaoVmware-vmware模板-Vmware模板管理</title>
+      <link href="/posts/55447cdf7abb/"/>
+      <url>/posts/55447cdf7abb/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p><span class="github-emoji"><span>🌸</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f338.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 最新要建很多Ubuntu22.04机器，各种安全套件，各种更新，各种加固，虽然有脚本但还是搞个模板方便点，Linux系统其实用克隆好像也差不多。</p></blockquote><h1 id="Vmware模板创建"><a href="#Vmware模板创建" class="headerlink" title="Vmware模板创建"></a>Vmware模板创建</h1><p>打开vSphere client - 右键虚拟机-模板-转换成模板.</p><blockquote><p><span class="github-emoji"><span>🎶</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f3b6.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>要关机搞</p><p><span class="github-emoji"><span>🎶</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f3b6.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>转完再主机列表就看不到了放在第二列模板列</p></blockquote><h2 id="Vmware模板编辑"><a href="#Vmware模板编辑" class="headerlink" title="Vmware模板编辑"></a>Vmware模板编辑</h2><p>不能支持编辑。要先选择模板-转换为虚拟机 ，然后再安装删除应用变更，保存后再转成模板</p><h1 id="Vmware从模板创建虚拟机"><a href="#Vmware从模板创建虚拟机" class="headerlink" title="Vmware从模板创建虚拟机"></a>Vmware从模板创建虚拟机</h1><p>右键-新建虚拟机-从模板部署</p><h1 id="Vmware策略和配置文件-系统初始化规则脚本"><a href="#Vmware策略和配置文件-系统初始化规则脚本" class="headerlink" title="Vmware策略和配置文件-系统初始化规则脚本"></a>Vmware策略和配置文件-系统初始化规则脚本</h1><p>菜单-策略和配置文件</p><ol><li>在创建虚拟机的过程中，选择自定义规范（Custom Specification）选项。这个选项通常会要求你提供一些关于虚拟机的配置信息。</li><li>在自定义规范中，你可以设置以下内容：<ul><li>虚拟机名称：为虚拟机指定一个唯一的名称。</li><li>操作系统类型：选择虚拟机将运行的操作系统类型和版本。</li><li>硬件配置：包括处理器数量、内存容量、磁盘空间等。</li><li>网络设置：配置虚拟机的网络适配器、IP地址、子网掩码等。</li><li>存储设置：指定虚拟机的存储位置、磁盘类型和大小等。</li><li>高级设置：根据需要进行其他高级配置，如启动顺序、BIOS设置等。</li></ul></li><li>完成自定义规范后，可以继续完成虚拟机的创建过程。根据VMware产品的不同，可能会有其他设置和选项需要配置，如虚拟机的网络连接、安全设置、共享文件夹等。</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> aoaoIT技术管理 </category>
+          
+          <category> 操作系统虚拟化 </category>
+          
+          <category> Vmware </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 操作系统虚拟化 </tag>
+            
+            <tag> vmware </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>aoaohexo</title>
       <link href="/posts/b0770529e0d8/"/>
       <url>/posts/b0770529e0d8/</url>
@@ -57,9 +88,9 @@
             
             <tag> 脚本 </tag>
             
-            <tag> python </tag>
-            
             <tag> shell </tag>
+            
+            <tag> python </tag>
             
         </tags>
       
@@ -90,9 +121,9 @@
             
             <tag> 脚本 </tag>
             
-            <tag> python </tag>
-            
             <tag> shell </tag>
+            
+            <tag> python </tag>
             
         </tags>
       
@@ -123,9 +154,9 @@
             
             <tag> 脚本 </tag>
             
-            <tag> python </tag>
-            
             <tag> shell </tag>
+            
+            <tag> python </tag>
             
         </tags>
       
@@ -154,9 +185,9 @@
             
             <tag> 脚本 </tag>
             
-            <tag> shell </tag>
-            
             <tag> twikoo </tag>
+            
+            <tag> shell </tag>
             
         </tags>
       
@@ -1462,6 +1493,33 @@
     
     
     <entry>
+      <title>aoaoditto-惊人的发现！这个工具可以让你管理剪贴板，节省你的时间并提高效率！</title>
+      <link href="/posts/94cf12888333/"/>
+      <url>/posts/94cf12888333/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p><span class="github-emoji"><span>🌺</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f33a.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>惊人的发现！这个工具可以让你管理剪贴板，节省你的时间并提高效率！</p></blockquote><h1 id="1-Ditto-Clipboard-Manager"><a href="#1-Ditto-Clipboard-Manager" class="headerlink" title="1 Ditto Clipboard Manager"></a>1 Ditto Clipboard Manager</h1><p>今天我要向大家介绍一个非常实用的剪贴板管理工具——Ditto Clipboard Manager！</p><p>Ditto Clipboard Manager是一个免费的Windows剪贴板扩展工具，它可以让你轻松管理复制和粘贴的内容。与其他剪贴板管理工具相比，Ditto Clipboard Manager的最大特点就是它可以保存你最近复制和粘贴的所有内容，让你随时查看和重新使用它们。</p><p>使用Ditto Clipboard Manager，你可以轻松访问你最常用的内容，例如邮件地址，电话号码，网址等等。当你需要重新使用这些内容时，只需要在Ditto Clipboard Manager中查找它们，然后复制并粘贴即可。这样不仅可以节省你的时间，还可以减少输入错误。</p><p>此外，Ditto Clipboard Manager还支持搜索功能，可以让你快速找到你需要的内容。同时，它还可以保存你的剪贴板历史记录，让你随时回溯查看。</p><p>总之，Ditto Clipboard Manager是一个非常实用的工具，它可以帮助你更高效地管理剪贴板内容，节省你的时间和减少输入错误。如果你经常需要复制和粘贴内容，那么Ditto Clipboard Manager一定会成为你的好帮手。</p><p><a href="https://ditto-cp.sourceforge.io/">https://ditto-cp.sourceforge.io/</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> aoao工具命令 </category>
+          
+          <category> 系统工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ditto </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>性能测试工具整理</title>
       <link href="/posts/7ee06d85797f/"/>
       <url>/posts/7ee06d85797f/</url>
@@ -1485,33 +1543,6 @@
             <tag> 性能测试 </tag>
             
             <tag> Linux </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>aoaoditto-惊人的发现！这个工具可以让你管理剪贴板，节省你的时间并提高效率！</title>
-      <link href="/posts/94cf12888333/"/>
-      <url>/posts/94cf12888333/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p><span class="github-emoji"><span>🌺</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f33a.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>惊人的发现！这个工具可以让你管理剪贴板，节省你的时间并提高效率！</p></blockquote><h1 id="1-Ditto-Clipboard-Manager"><a href="#1-Ditto-Clipboard-Manager" class="headerlink" title="1 Ditto Clipboard Manager"></a>1 Ditto Clipboard Manager</h1><p>今天我要向大家介绍一个非常实用的剪贴板管理工具——Ditto Clipboard Manager！</p><p>Ditto Clipboard Manager是一个免费的Windows剪贴板扩展工具，它可以让你轻松管理复制和粘贴的内容。与其他剪贴板管理工具相比，Ditto Clipboard Manager的最大特点就是它可以保存你最近复制和粘贴的所有内容，让你随时查看和重新使用它们。</p><p>使用Ditto Clipboard Manager，你可以轻松访问你最常用的内容，例如邮件地址，电话号码，网址等等。当你需要重新使用这些内容时，只需要在Ditto Clipboard Manager中查找它们，然后复制并粘贴即可。这样不仅可以节省你的时间，还可以减少输入错误。</p><p>此外，Ditto Clipboard Manager还支持搜索功能，可以让你快速找到你需要的内容。同时，它还可以保存你的剪贴板历史记录，让你随时回溯查看。</p><p>总之，Ditto Clipboard Manager是一个非常实用的工具，它可以帮助你更高效地管理剪贴板内容，节省你的时间和减少输入错误。如果你经常需要复制和粘贴内容，那么Ditto Clipboard Manager一定会成为你的好帮手。</p><p><a href="https://ditto-cp.sourceforge.io/">https://ditto-cp.sourceforge.io/</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> aoao工具命令 </category>
-          
-          <category> 系统工具 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> ditto </tag>
             
         </tags>
       
