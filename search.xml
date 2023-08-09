@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>生命公式</title>
+      <link href="/posts/29e934ba3743/"/>
+      <url>/posts/29e934ba3743/</url>
+      
+        <content type="html"><![CDATA[<h1 id="生命公式："><a href="#生命公式：" class="headerlink" title="生命公式："></a>生命公式：</h1><p>生命公式：<br>→幸福=健康+财富+良好的人际关系<br>→健康=锻炼+饮食+睡眠<br>→锻炼=高强度耐力训练+体育运动+休息<br>→饮食=天然食物+间歇性禁食+植物<br>→睡眠=不要闹钟+8～9小时+昼夜节律<br>→财富=收入+财富×（投资回报率）<br>→收入=责任+杠杆+专长<br>→责任=个人品牌+个人平台+承担风险？<br>→杠杆=资本+人力+知识产权<br>→专长=无法通过培训获得的知识<br>→投资回报=“买入并持有”+估值+安全边际</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> aoao生活 </category>
+          
+          <category> 鸡汤名言 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 鸡汤 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>008.Hotel california - The Eagles 加州旅馆(老鹰乐队)</title>
       <link href="/posts/3cf012b8e074/"/>
       <url>/posts/3cf012b8e074/</url>
@@ -1441,9 +1468,9 @@
       
         <tags>
             
-            <tag> linux </tag>
-            
             <tag> redhat </tag>
+            
+            <tag> linux </tag>
             
             <tag> kernel </tag>
             
@@ -1474,9 +1501,9 @@
       
         <tags>
             
-            <tag> linux </tag>
-            
             <tag> redhat </tag>
+            
+            <tag> linux </tag>
             
         </tags>
       
@@ -1505,9 +1532,9 @@
       
         <tags>
             
-            <tag> linux </tag>
-            
             <tag> redhat </tag>
+            
+            <tag> linux </tag>
             
             <tag> kernel </tag>
             
@@ -1629,9 +1656,9 @@
       
         <tags>
             
-            <tag> linux </tag>
-            
             <tag> redhat </tag>
+            
+            <tag> linux </tag>
             
         </tags>
       
@@ -1658,9 +1685,9 @@
       
         <tags>
             
-            <tag> ChatGPT </tag>
-            
             <tag> linux </tag>
+            
+            <tag> ChatGPT </tag>
             
         </tags>
       
@@ -1683,35 +1710,6 @@
           <category> Windows命令 </category>
           
           <category> Linux命令 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> aoao工具命令 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>aoaossl-aoao证书-aoao加密</title>
-      <link href="/posts/009d7744d4cc/"/>
-      <url>/posts/009d7744d4cc/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p><span class="github-emoji"><span>🌸</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f338.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> </p></blockquote>]]></content>
-      
-      
-      <categories>
-          
-          <category> aoaoIT技术管理 </category>
-          
-          <category> 信息网络安全 </category>
-          
-          <category> ssl证书加密 </category>
           
       </categories>
       
@@ -1812,6 +1810,35 @@
             <tag> IT技术 </tag>
             
             <tag> 硬件服务器存储 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>aoaossl-aoao证书-aoao加密</title>
+      <link href="/posts/009d7744d4cc/"/>
+      <url>/posts/009d7744d4cc/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p><span class="github-emoji"><span>🌸</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f338.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> </p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> aoaoIT技术管理 </category>
+          
+          <category> 信息网络安全 </category>
+          
+          <category> ssl证书加密 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> aoao工具命令 </tag>
             
         </tags>
       
