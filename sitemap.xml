@@ -855,20 +855,6 @@
   </url>
   
   <url>
-    <loc>https://week.wiki/tags/%E8%99%9A%E6%8B%9F%E5%8C%96/</loc>
-    <lastmod>2023-08-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/</loc>
-    <lastmod>2023-08-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://week.wiki/tags/ChatGPT/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -890,28 +876,14 @@
   </url>
   
   <url>
-    <loc>https://week.wiki/tags/%E6%97%A0%E6%8D%9F%E9%9F%B3%E4%B9%90/</loc>
+    <loc>https://week.wiki/tags/%E8%99%9A%E6%8B%9F%E5%8C%96/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://week.wiki/tags/IT%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2023-08-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/tags/%E7%A1%AC%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AD%98%E5%82%A8/</loc>
-    <lastmod>2023-08-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/tags/%E5%86%85%E5%AD%98/</loc>
+    <loc>https://week.wiki/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -933,6 +905,55 @@
   
   <url>
     <loc>https://week.wiki/tags/qualys/</loc>
+    <lastmod>2023-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/tags/IT%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2023-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/tags/HANA/</loc>
+    <lastmod>2023-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E9%97%B4%E4%BB%B6/</loc>
+    <lastmod>2023-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/tags/mssql/</loc>
+    <lastmod>2023-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/tags/sql-server/</loc>
+    <lastmod>2023-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/tags/%E7%A1%AC%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AD%98%E5%82%A8/</loc>
+    <lastmod>2023-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/tags/%E5%86%85%E5%AD%98/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -981,20 +1002,6 @@
   </url>
   
   <url>
-    <loc>https://week.wiki/tags/%E5%86%85%E6%B6%B5/</loc>
-    <lastmod>2023-08-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/tags/%E5%B9%BD%E9%BB%98/</loc>
-    <lastmod>2023-08-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://week.wiki/tags/markdown/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -1017,48 +1024,6 @@
   
   <url>
     <loc>https://week.wiki/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/</loc>
-    <lastmod>2023-08-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/tags/%E9%B8%A1%E6%B1%A4/</loc>
-    <lastmod>2023-08-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/tags/HANA/</loc>
-    <lastmod>2023-08-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E9%97%B4%E4%BB%B6/</loc>
-    <lastmod>2023-08-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/tags/bench/</loc>
-    <lastmod>2023-08-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/tags/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2023-08-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/tags/Linux/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1107,14 +1072,21 @@
   </url>
   
   <url>
-    <loc>https://week.wiki/tags/mssql/</loc>
+    <loc>https://week.wiki/tags/bench/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://week.wiki/tags/sql-server/</loc>
+    <loc>https://week.wiki/tags/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2023-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/tags/Linux/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1156,6 +1128,13 @@
   </url>
   
   <url>
+    <loc>https://week.wiki/tags/ditto/</loc>
+    <lastmod>2023-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://week.wiki/tags/tcpdump/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -1191,7 +1170,35 @@
   </url>
   
   <url>
-    <loc>https://week.wiki/tags/ditto/</loc>
+    <loc>https://week.wiki/tags/iperf/</loc>
+    <lastmod>2023-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/tags/%E6%97%A0%E6%8D%9F%E9%9F%B3%E4%B9%90/</loc>
+    <lastmod>2023-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/tags/%E5%86%85%E6%B6%B5/</loc>
+    <lastmod>2023-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/tags/%E5%B9%BD%E9%BB%98/</loc>
+    <lastmod>2023-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/tags/%E9%B8%A1%E6%B1%A4/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1212,14 +1219,14 @@
   </url>
   
   <url>
-    <loc>https://week.wiki/tags/iperf/</loc>
+    <loc>https://week.wiki/tags/%E4%BD%9B%E6%B3%95/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://week.wiki/tags/aoao/</loc>
+    <loc>https://week.wiki/tags/%E7%A4%BE%E4%BC%9A/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1247,14 +1254,7 @@
   </url>
   
   <url>
-    <loc>https://week.wiki/tags/%E4%BD%9B%E6%B3%95/</loc>
-    <lastmod>2023-08-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/tags/%E7%A4%BE%E4%BC%9A/</loc>
+    <loc>https://week.wiki/tags/%E6%A1%82%E8%8A%B1/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1262,6 +1262,13 @@
   
   <url>
     <loc>https://week.wiki/tags/%E6%97%A0%E7%BA%BF%E8%80%B3%E6%9C%BA/</loc>
+    <lastmod>2023-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/tags/%E5%B8%B8%E7%94%A8%E8%8D%AF/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1296,7 +1303,21 @@
   </url>
   
   <url>
+    <loc>https://week.wiki/tags/%E8%9C%9C%E8%9C%82/</loc>
+    <lastmod>2023-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://week.wiki/tags/%E5%9E%83%E5%9C%BE%E5%88%86%E7%B1%BB/</loc>
+    <lastmod>2023-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/tags/aoao/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1317,7 +1338,7 @@
   </url>
   
   <url>
-    <loc>https://week.wiki/tags/%E6%A1%82%E8%8A%B1/</loc>
+    <loc>https://week.wiki/tags/chatGPT-%E7%A7%91%E6%8A%80/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1325,27 +1346,6 @@
   
   <url>
     <loc>https://week.wiki/tags/twitter/</loc>
-    <lastmod>2023-08-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/tags/%E5%B8%B8%E7%94%A8%E8%8D%AF/</loc>
-    <lastmod>2023-08-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/tags/%E8%9C%9C%E8%9C%82/</loc>
-    <lastmod>2023-08-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/tags/chatGPT-%E7%A7%91%E6%8A%80/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1438,14 +1438,7 @@
   </url>
   
   <url>
-    <loc>https://week.wiki/categories/aoao%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2023-08-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/categories/aoaoIT%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/%E4%BA%91%E8%AE%A1%E7%AE%97%E5%B9%B3%E5%8F%B0%E5%B7%A5%E7%A8%8B/</loc>
+    <loc>https://week.wiki/categories/aoaoIT%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/%E4%BF%A1%E6%81%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1459,6 +1452,13 @@
   </url>
   
   <url>
+    <loc>https://week.wiki/categories/aoaoIT%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E9%97%B4%E4%BB%B6/</loc>
+    <lastmod>2023-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://week.wiki/categories/aoaoIT%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/%E7%A1%AC%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AD%98%E5%82%A8/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -1466,21 +1466,7 @@
   </url>
   
   <url>
-    <loc>https://week.wiki/categories/aoao%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4/Linux%E5%91%BD%E4%BB%A4/</loc>
-    <lastmod>2023-08-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/categories/aoao%E7%94%9F%E6%B4%BB/aoao%E9%9F%B3%E4%B9%90/</loc>
-    <lastmod>2023-08-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/categories/aoaoIT%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/%E4%BF%A1%E6%81%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</loc>
+    <loc>https://week.wiki/categories/aoaoIT%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/%E4%BA%91%E8%AE%A1%E7%AE%97%E5%B9%B3%E5%8F%B0%E5%B7%A5%E7%A8%8B/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1494,14 +1480,7 @@
   </url>
   
   <url>
-    <loc>https://week.wiki/categories/aoaoIT%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%99%9A%E6%8B%9F%E5%8C%96/</loc>
-    <lastmod>2023-08-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/categories/aoao%E7%94%9F%E6%B4%BB/%E5%86%85%E6%B6%B5%E5%B9%BD%E9%BB%98/</loc>
+    <loc>https://week.wiki/categories/aoao%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4/Linux%E5%91%BD%E4%BB%A4/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1515,14 +1494,7 @@
   </url>
   
   <url>
-    <loc>https://week.wiki/categories/aoao%E7%94%9F%E6%B4%BB/%E9%B8%A1%E6%B1%A4%E5%90%8D%E8%A8%80/</loc>
-    <lastmod>2023-08-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/categories/aoaoIT%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E9%97%B4%E4%BB%B6/</loc>
+    <loc>https://week.wiki/categories/aoaoIT%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/%E4%BF%A1%E6%81%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/ssl%E8%AF%81%E4%B9%A6%E5%8A%A0%E5%AF%86/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1550,7 +1522,28 @@
   </url>
   
   <url>
-    <loc>https://week.wiki/categories/aoaoIT%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/%E4%BF%A1%E6%81%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/ssl%E8%AF%81%E4%B9%A6%E5%8A%A0%E5%AF%86/</loc>
+    <loc>https://week.wiki/categories/aoaoIT%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E9%97%B4%E4%BB%B6/HANA%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <lastmod>2023-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/categories/aoao%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2023-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/categories/aoaoIT%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E9%97%B4%E4%BB%B6/MSSQL%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <lastmod>2023-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/categories/aoaoIT%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%99%9A%E6%8B%9F%E5%8C%96/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1571,7 +1564,7 @@
   </url>
   
   <url>
-    <loc>https://week.wiki/categories/aoaoIT%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%99%9A%E6%8B%9F%E5%8C%96/Vmware/</loc>
+    <loc>https://week.wiki/categories/aoao%E7%94%9F%E6%B4%BB/aoao%E9%9F%B3%E4%B9%90/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1585,28 +1578,14 @@
   </url>
   
   <url>
-    <loc>https://week.wiki/categories/aoaoIT%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%99%9A%E6%8B%9F%E5%8C%96/Linux%E7%B3%BB%E7%BB%9F/</loc>
+    <loc>https://week.wiki/categories/aoao%E7%94%9F%E6%B4%BB/%E5%86%85%E6%B6%B5%E5%B9%BD%E9%BB%98/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://week.wiki/categories/aoaoIT%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%99%9A%E6%8B%9F%E5%8C%96/Windows%E7%B3%BB%E7%BB%9F/</loc>
-    <lastmod>2023-08-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/categories/aoaoIT%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E9%97%B4%E4%BB%B6/HANA%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
-    <lastmod>2023-08-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/categories/aoaoIT%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E9%97%B4%E4%BB%B6/MSSQL%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <loc>https://week.wiki/categories/aoao%E7%94%9F%E6%B4%BB/%E9%B8%A1%E6%B1%A4%E5%90%8D%E8%A8%80/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1614,13 +1593,6 @@
   
   <url>
     <loc>https://week.wiki/categories/aoao%E9%9A%8F%E7%AC%94/aoao%E6%94%BF%E6%B2%BB%E7%BB%8F%E6%B5%8E/</loc>
-    <lastmod>2023-08-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://week.wiki/categories/aoao%E9%9A%8F%E7%AC%94/aoao%E7%A4%BE%E4%BC%9A%E5%A8%B1%E4%B9%90/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1641,7 +1613,35 @@
   </url>
   
   <url>
+    <loc>https://week.wiki/categories/aoao%E9%9A%8F%E7%AC%94/aoao%E7%A4%BE%E4%BC%9A%E5%A8%B1%E4%B9%90/</loc>
+    <lastmod>2023-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://week.wiki/categories/aoao%E9%9A%8F%E7%AC%94/aoao%E7%A7%91%E6%8A%80%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2023-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/categories/aoaoIT%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/IT%E5%BA%94%E7%94%A8%E9%A1%B9%E7%9B%AE%E5%88%B6%E5%BA%A6/FTP-FTPServer/</loc>
+    <lastmod>2023-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/categories/aoaoIT%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%99%9A%E6%8B%9F%E5%8C%96/Vmware/</loc>
+    <lastmod>2023-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://week.wiki/categories/aoaoIT%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%99%9A%E6%8B%9F%E5%8C%96/Linux%E7%B3%BB%E7%BB%9F/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1655,7 +1655,7 @@
   </url>
   
   <url>
-    <loc>https://week.wiki/categories/aoaoIT%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/IT%E5%BA%94%E7%94%A8%E9%A1%B9%E7%9B%AE%E5%88%B6%E5%BA%A6/FTP-FTPServer/</loc>
+    <loc>https://week.wiki/categories/aoaoIT%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%99%9A%E6%8B%9F%E5%8C%96/Windows%E7%B3%BB%E7%BB%9F/</loc>
     <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
