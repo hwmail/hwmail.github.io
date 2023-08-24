@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>about | week.wiki</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="about | week.wiki">
+  <title>mssql查询占用CPU过高进程及语句 | week.wiki</title>
+  <meta name="keywords" content=" mssql , sql server ">
+  <meta name="description" content="mssql查询占用CPU过高进程及语句 | week.wiki">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="heloworld!aoao">
 <meta property="og:type" content="website">
@@ -1873,19 +1873,40 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="about-" class="article article-type-about" itemscope itemprop="blogPost">
+        <article id="post-00-我的产品项目-MyproductProject/数据库中间件/mssql查询占用CPU过高进程及语句" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">about</h1>
+        <h1 class="article-title">mssql查询占用CPU过高进程及语句</h1>
     
     <div class="article-meta">
         
         
         
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="aoaoIT技术管理">aoaoIT技术管理</a> > 
+            
+            <a  data-rel="aoaoIT技术管理&lt;---&gt;数据库中间件">数据库中间件</a> > 
+            
+            <a  data-rel="aoaoIT技术管理&lt;---&gt;数据库中间件&lt;---&gt;MSSQL数据库">MSSQL数据库</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color1">mssql</a>
+            
+            <a class="color1">sql server</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-08-17 09:45:18'>2022-12-02 23:40</time>
+            发布时间 : <time class="date" title='最后更新: 2023-08-24 19:14:12'>2023-08-24 18:07</time>
         
     </div>
     <div class="article-meta">
@@ -1907,7 +1928,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#heloworld"><span class="toc-text">heloworld!</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E5%8D%A0%E7%94%A8CPU%E8%BF%87%E9%AB%98%E8%BF%9B%E7%A8%8B"><span class="toc-text">查询占用CPU过高进程</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E5%8D%A0%E7%94%A8CPU%E9%AB%98%E7%9A%84%E8%AF%AD%E5%8F%A5"><span class="toc-text">查询占用CPU高的语句</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9F%A5%E6%89%BE%E6%9C%80%E6%96%B0%E7%9A%8430%E6%9D%A1%E5%91%8A%E8%AD%A6%E4%BA%8B%E4%BB%B6"><span class="toc-text">查找最新的30条告警事件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%9F%A5%E7%9C%8B%E5%BD%93%E5%89%8D%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E7%94%A8%E6%88%B7%E8%BF%9E%E6%8E%A5%E6%9C%89%E5%A4%9A%E5%B0%91"><span class="toc-text">一、查看当前的数据库用户连接有多少</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E9%80%89%E5%8F%96%E5%89%8D10%E4%B8%AA%E6%9C%80%E8%80%97CPU%E6%97%B6%E9%97%B4%E7%9A%84%E4%BC%9A%E8%AF%9D"><span class="toc-text">二、选取前10个最耗CPU时间的会话</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E6%9F%A5%E8%AF%A2%E5%89%8D10%E4%B8%AA%E6%9C%80%E8%80%97CPU%E6%97%B6%E9%97%B4%E7%9A%84SQL%E8%AF%AD%E5%8F%A5"><span class="toc-text">三、查询前10个最耗CPU时间的SQL语句</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%9F%A5%E8%AF%A2%E4%BC%9A%E8%AF%9D%E4%B8%AD%E6%9C%89%E5%A4%9A%E5%B0%91%E4%B8%AAworker%E5%9C%A8%E7%AD%89%E5%BE%85"><span class="toc-text">四、查询会话中有多少个worker在等待</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E6%9F%A5%E8%AF%A2CPU%E5%8D%A0%E7%94%A8%E9%AB%98%E7%9A%84%E8%AF%AD%E5%8F%A5"><span class="toc-text">五、查询CPU占用高的语句</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E6%89%BE%E5%87%BA%E6%89%A7%E8%A1%8C%E6%97%B6%E9%97%B4%E6%9C%80%E9%95%BF%E7%9A%8410%E6%9D%A1SQL%EF%BC%88%E9%80%82%E7%94%A8%E4%BA%8ESQL-SERVER-2005%E5%8F%8A%E5%85%B6%E4%BB%A5%E4%B8%8A%E7%89%88%E6%9C%AC%EF%BC%89"><span class="toc-text">1.找出执行时间最长的10条SQL（适用于SQL SERVER 2005及其以上版本）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E6%89%BE%E5%87%BA%E5%B9%B3%E5%9D%87%E6%B6%88%E8%80%97CPU%E6%9C%80%E5%A4%9A%E7%9A%84%E5%89%8D%E4%B8%AASQL-%EF%BC%88SQL-SERVER-2005%E6%88%96%E4%BB%A5%E4%B8%8A%E7%89%88%E6%9C%AC%EF%BC%89"><span class="toc-text">2.找出平均消耗CPU最多的前个SQL （SQL SERVER 2005或以上版本）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-%E5%B9%B3%E5%9D%87%E8%80%97CPU%E6%9C%80%E5%A4%9A%E7%9A%84%E5%89%8D20%E4%B8%AASQL-%EF%BC%88SQL-SERVER-2008%E6%88%96%E4%BB%A5%E4%B8%8A%E7%89%88%E6%9C%AC%EF%BC%89"><span class="toc-text">3.平均耗CPU最多的前20个SQL （SQL SERVER 2008或以上版本）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-%E6%80%BB%E8%80%97CPU%E6%9C%80%E5%A4%9A%E7%9A%84%E5%89%8D20%E4%B8%AASQL-%EF%BC%88SQL-SERVER-2008%E6%88%96%E4%BB%A5%E4%B8%8A%E7%89%88%E6%9C%AC%EF%BC%89"><span class="toc-text">4.总耗CPU最多的前20个SQL （SQL SERVER 2008或以上版本）</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1923,7 +1944,119 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="heloworld"><a href="#heloworld" class="headerlink" title="heloworld!"></a>heloworld!</h2><p>aoao</p>
+        <blockquote>
+<p>妈的服务器老是经常半夜CPU过高报警，得查下</p>
+</blockquote>
+<h1 id="查询占用CPU过高进程"><a href="#查询占用CPU过高进程" class="headerlink" title="查询占用CPU过高进程"></a>查询占用CPU过高进程</h1><p>SELECT r.session_id, r.start_time, r.status, r.command, r.cpu_time, s.text<br>FROM sys.dm_exec_requests r<br>CROSS APPLY sys.dm_exec_sql_text(r.sql_handle) s<br>WHERE r.cpu_time &gt; 0<br>ORDER BY r.cpu_time DESC;</p>
+<h1 id="查询占用CPU高的语句"><a href="#查询占用CPU高的语句" class="headerlink" title="查询占用CPU高的语句"></a>查询占用CPU高的语句</h1><pre><code>SELECT TOP 10 TEXT AS 'SQL Statement'
+    ,last_execution_time AS 'Last Execution Time'
+    ,(total_logical_reads + total_physical_reads + total_logical_writes) / execution_count AS [Average IO]
+    ,(total_worker_time / execution_count) / 1000000.0 AS [Average CPU Time (sec)]
+    ,(total_elapsed_time / execution_count) / 1000000.0 AS [Average Elapsed Time (sec)]
+    ,execution_count AS "Execution Count",qs.total_physical_reads,qs.total_logical_writes
+    ,qp.query_plan AS "Query Plan"
+FROM sys.dm_exec_query_stats qs
+CROSS APPLY sys.dm_exec_sql_text(qs.plan_handle) st
+CROSS APPLY sys.dm_exec_query_plan(qs.plan_handle) qp
+ORDER BY total_elapsed_time / execution_count DESC
+</code></pre>
+<h1 id="查找最新的30条告警事件"><a href="#查找最新的30条告警事件" class="headerlink" title="查找最新的30条告警事件"></a>查找最新的30条告警事件</h1><pre><code>select top 30  a.orderno,a.AgentBm,a.AlarmTime,a.RemoveTime,c.Name as AddrName,b.Name as MgrObjName,a.Ch,a.Value,a.Content,a.Level
+    ,ag.Name as AgentServerName,a.EventBm,a.MgrObjId,a.Id,a.Cfmoper,a.Cfm,a.Cfmtime,a.State,a.IgnoreStartTime,a.IgnoreEndTime
+    ,a.OpUserId,d.Name as MgrObjTypeName,l.UserName as userName,f.Name as AddrName2 
+from eventlog as a left join mgrobj as b on a.MgrObjId=b.Id and a.AgentBm=b.AgentBm 
+    left join addrnode as c on b.AddrId=c.Id left join mgrobjtype as d on b.MgrObjTypeId=d.Id 
+    left join eventdir as e on a.EventBm=e.Bm left join agentserver as ag on a.AgentBm=ag.AgentBm 
+    left join loginUser as l on a.cfmoper=l.loginGuid left join addrnode as f on ag.AddrId=f.Id 
+where ((MgrObjId in (
+    select Id from MgrObj 
+    where AddrId in ('','02100000','02113000','02113001','02113002','02113003','02113004'
+        ,'02113005','02113006','02113007','02113008','02113009','02113010','02113011','02113012'
+        ,'02113013','02113014','02113015','02113016','02113017','02113018','02113019','02113020'
+        ,'02113021','02113022','02113023','02113024','02113025','02113026'))) 
+    or (mgrobjid in ('00000000-0000-0000-0000-000000000000','00000000-0000-0000-0000-000000000000'
+        ,'00000000-0000-0000-0000-000000000000','11111111-1111-1111-1111-111111111111'
+        ,'11111111-1111-1111-1111-111111111111'))
+    ) 
+order by alarmtime DESC
+</code></pre>
+<h1 id="一、查看当前的数据库用户连接有多少"><a href="#一、查看当前的数据库用户连接有多少" class="headerlink" title="一、查看当前的数据库用户连接有多少"></a>一、查看当前的数据库用户连接有多少</h1><p>USE master</p>
+<p>GO<br>SELECT *<br>FROM sys.[sysprocesses]<br>WHERE [spid] &gt; 50<br>–AND DB_NAME([dbid])=’gposdb’</p>
+<p>SELECT COUNT(*)<br>FROM [sys].[dm_exec_sessions]<br>WHERE [session_id] &gt; 50</p>
+<h1 id="二、选取前10个最耗CPU时间的会话"><a href="#二、选取前10个最耗CPU时间的会话" class="headerlink" title="二、选取前10个最耗CPU时间的会话"></a>二、选取前10个最耗CPU时间的会话</h1><p>SELECT TOP 10<br>[session_id] ,<br>[request_id] ,<br>[start_time] AS ‘开始时间’ ,<br>[status] AS ‘状态’ ,<br>[command] AS ‘命令’ ,<br>dest.[text] AS ‘sql语句’ ,<br>DB_NAME([database_id]) AS ‘数据库名’ ,<br>[blocking_session_id] AS ‘正在阻塞其他会话的会话ID’ ,<br>[wait_type] AS ‘等待资源类型’ ,<br>[wait_time] AS ‘等待时间’ ,<br>[wait_resource] AS ‘等待的资源’ ,<br>[reads] AS ‘物理读次数’ ,<br>[writes] AS ‘写次数’ ,<br>[logical_reads] AS ‘逻辑读次数’ ,<br>[row_count] AS ‘返回结果行数’<br>FROM sys.[dm_exec_requests] AS der<br>CROSS APPLY sys.<a href="der.%5Bsql_handle%5D">dm_exec_sql_text</a> AS dest<br>WHERE [session_id] &gt; 50<br>AND DB_NAME(der.[database_id]) = ‘gposdb’<br>ORDER BY [cpu_time] DESC</p>
+<h1 id="三、查询前10个最耗CPU时间的SQL语句"><a href="#三、查询前10个最耗CPU时间的SQL语句" class="headerlink" title="三、查询前10个最耗CPU时间的SQL语句"></a>三、查询前10个最耗CPU时间的SQL语句</h1><p>SELECT TOP 10<br>dest.[text] AS ‘sql语句’<br>FROM sys.[dm_exec_requests] AS der<br>CROSS APPLY sys.<a href="der.%5Bsql_handle%5D">dm_exec_sql_text</a> AS dest<br>WHERE [session_id] &gt; 50<br>ORDER BY [cpu_time] DESC</p>
+<h1 id="四、查询会话中有多少个worker在等待"><a href="#四、查询会话中有多少个worker在等待" class="headerlink" title="四、查询会话中有多少个worker在等待"></a>四、查询会话中有多少个worker在等待</h1><p>SELECT TOP 10<br>[session_id] ,<br>[request_id] ,<br>[start_time] AS ‘开始时间’ ,<br>[status] AS ‘状态’ ,<br>[command] AS ‘命令’ ,<br>dest.[text] AS ‘sql语句’ ,<br>DB_NAME([database_id]) AS ‘数据库名’ ,<br>[blocking_session_id] AS ‘正在阻塞其他会话的会话ID’ ,<br>der.[wait_type] AS ‘等待资源类型’ ,<br>[wait_time] AS ‘等待时间’ ,<br>[wait_resource] AS ‘等待的资源’ ,<br>[dows].[waiting_tasks_count] AS ‘当前正在进行等待的任务数’ ,<br>[reads] AS ‘物理读次数’ ,<br>[writes] AS ‘写次数’ ,<br>[logical_reads] AS ‘逻辑读次数’ ,<br>[row_count] AS ‘返回结果行数’<br>FROM sys.[dm_exec_requests] AS der<br>INNER JOIN [sys].[dm_os_wait_stats] AS dows ON der.[wait_type] = [dows].[wait_type]<br>CROSS APPLY sys.<a href="der.%5Bsql_handle%5D">dm_exec_sql_text</a> AS dest<br>WHERE [session_id] &gt; 50<br>ORDER BY [cpu_time] DESC</p>
+<h1 id="五、查询CPU占用高的语句"><a href="#五、查询CPU占用高的语句" class="headerlink" title="五、查询CPU占用高的语句"></a>五、查询CPU占用高的语句</h1><p>SELECT TOP 10<br>total_worker_time / execution_count AS avg_cpu_cost ,<br>plan_handle ,<br>execution_count ,<br>( SELECT SUBSTRING(text, statement_start_offset / 2 + 1,<br>( CASE WHEN statement_end_offset = -1<br>THEN LEN(CONVERT(NVARCHAR(MAX), text))<br>* 2<br>ELSE statement_end_offset<br>END - statement_start_offset ) / 2)<br>FROM sys.dm_exec_sql_text(sql_handle)<br>) AS query_text<br>FROM sys.dm_exec_query_stats<br>ORDER BY [avg_cpu_cost] DESC</p>
+<h1 id="1-找出执行时间最长的10条SQL（适用于SQL-SERVER-2005及其以上版本）"><a href="#1-找出执行时间最长的10条SQL（适用于SQL-SERVER-2005及其以上版本）" class="headerlink" title="1.找出执行时间最长的10条SQL（适用于SQL SERVER 2005及其以上版本）"></a>1.找出执行时间最长的10条SQL（适用于SQL SERVER 2005及其以上版本）</h1><pre><code>SELECT
+    (total_elapsed_time / execution_count)/1000 N'平均时间ms'
+    ,total_elapsed_time/1000 N'总花费时间ms'
+    ,total_worker_time/1000 N'所用的CPU总时间ms'
+    ,total_physical_reads N'物理读取总次数'
+    ,total_logical_reads/execution_count N'每次逻辑读次数'
+    ,total_logical_reads N'逻辑读取总次数'
+    ,total_logical_writes N'逻辑写入总次数'
+    ,execution_count N'执行次数'
+    ,SUBSTRING(st.text, (qs.statement_start_offset/2) + 1
+    ,((CASE statement_end_offset
+    WHEN -1 THEN DATALENGTH(st.text)
+    ELSE qs.statement_end_offset END
+    - qs.statement_start_offset)/2) + 1) N'执行语句'
+    ,creation_time N'语句编译时间'
+    ,last_execution_time N'上次执行时间'
+    ,qp.query_plan
+    FROM
+    sys.dm_exec_query_stats AS qs 
+    CROSS APPLY sys.dm_exec_sql_text(qs.sql_handle) st 
+    CROSS APPLY sys.dm_exec_query_plan(qs.plan_handle) qp 
+    WHERESUBSTRING(st.text, (qs.statement_start_offset/2) + 1,
+((CASE statement_end_offsetWHEN -1 THEN DATALENGTH(st.text)ELSE qs.statement_end_offset END- qs.statement_start_offset)/2) + 1) not like 'fetch%'ORDER BY
+total_elapsed_time / execution_count DESC;
+</code></pre>
+<p>如果想对SQL作筛选，可以更换not like ‘%fetch%’ 部分，如将not like ‘%fetch%’ 换成 like ‘%user%’就可以找出SQL语句中含有user关键字的SQL 。</p>
+<h1 id="2-找出平均消耗CPU最多的前个SQL-（SQL-SERVER-2005或以上版本）"><a href="#2-找出平均消耗CPU最多的前个SQL-（SQL-SERVER-2005或以上版本）" class="headerlink" title="2.找出平均消耗CPU最多的前个SQL （SQL SERVER 2005或以上版本）"></a>2.找出平均消耗CPU最多的前个SQL （SQL SERVER 2005或以上版本）</h1><pre><code>SELECT TOP 5 total_worker_time / execution_count AS [Avg CPU Time],  
+    SUBSTRING(st.text, (qs.statement_start_offset/2)+1,   
+        ((CASE qs.statement_end_offset  
+            WHEN -1 THEN DATALENGTH(st.text)  
+            ELSE qs.statement_end_offset  
+            END - qs.statement_start_offset)/2) + 1) AS statement_text   
+ FROM sys.dm_exec_query_stats AS qs   
+ CROSS APPLY sys.dm_exec_sql_text(qs.sql_handle) AS st   
+ ORDER BY total_worker_time/execution_count DESC  
+</code></pre>
+<h1 id="3-平均耗CPU最多的前20个SQL-（SQL-SERVER-2008或以上版本）"><a href="#3-平均耗CPU最多的前20个SQL-（SQL-SERVER-2008或以上版本）" class="headerlink" title="3.平均耗CPU最多的前20个SQL （SQL SERVER 2008或以上版本）"></a>3.平均耗CPU最多的前20个SQL （SQL SERVER 2008或以上版本）</h1><pre><code>SELECT TOP 20
+    total_worker_time/1000 AS [总消耗CPU 时间(ms)],
+    execution_count [运行次数],
+    qs.total_worker_time/qs.execution_count/1000 AS [平均消耗CPU 时间(ms)],
+    last_execution_time AS [最后一次执行时间],
+    min_worker_time /1000 AS [最小执行时间(ms)],
+    max_worker_time /1000 AS [最大执行时间(ms)],
+    SUBSTRING(qt.text,qs.statement_start_offset/2+1, 
+        (CASE WHEN qs.statement_end_offset = -1 
+        THEN DATALENGTH(qt.text) 
+        ELSE qs.statement_end_offset END -qs.statement_start_offset)/2 + 1) 
+    AS [使用CPU的语法], qt.text [完整语法],
+    qt.dbid, dbname=db_name(qt.dbid),
+    qt.objectid,object_name(qt.objectid,qt.dbid) ObjectName 
+    FROM sys.dm_exec_query_stats qs WITH(nolock)
+    CROSS apply sys.dm_exec_sql_text(qs.sql_handle) AS qt
+    WHERE  execution_count&gt;1
+    ORDER BY (qs.total_worker_time/qs.execution_count/1000) DESC
+</code></pre>
+<h1 id="4-总耗CPU最多的前20个SQL-（SQL-SERVER-2008或以上版本）"><a href="#4-总耗CPU最多的前20个SQL-（SQL-SERVER-2008或以上版本）" class="headerlink" title="4.总耗CPU最多的前20个SQL （SQL SERVER 2008或以上版本）"></a>4.总耗CPU最多的前20个SQL （SQL SERVER 2008或以上版本）</h1><pre><code>SELECT TOP 20
+    total_worker_time/1000 AS [总消耗CPU 时间(ms)],execution_count [运行次数],
+    qs.total_worker_time/qs.execution_count/1000 AS [平均消耗CPU 时间(ms)],
+    last_execution_time AS [最后一次执行时间],min_worker_time /1000 AS [最小执行时间(ms)],max_worker_time /1000 AS [最大执行时间(ms)],
+    SUBSTRING(qt.text,qs.statement_start_offset/2+1, 
+        (CASE WHEN qs.statement_end_offset = -1 
+        THEN DATALENGTH(qt.text) 
+        ELSE qs.statement_end_offset END -qs.statement_start_offset)/2 + 1) 
+    AS [使用CPU的语法], qt.text [完整语法],
+    qt.dbid, dbname=db_name(qt.dbid),
+    qt.objectid,object_name(qt.objectid,qt.dbid) ObjectName
+FROM sys.dm_exec_query_stats qs WITH(nolock)
+CROSS apply sys.dm_exec_sql_text(qs.sql_handle) AS qt
+WHERE execution_count&gt;1
+ORDER BY  total_worker_time DESC
+</code></pre>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 xieaoao@qq.com QQ:1296454177 </span>
