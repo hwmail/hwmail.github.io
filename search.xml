@@ -4,6 +4,74 @@
   
     
     <entry>
+      <title>samba-smb-linuxwindows共享-aoaosmb</title>
+      <link href="/posts/47360269b705/"/>
+      <url>/posts/47360269b705/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p><span class="github-emoji"><span>🌸</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f338.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 搭建个smb服务器做为生产系统备份系统备份</p></blockquote><h1 id="smb部署步骤"><a href="#smb部署步骤" class="headerlink" title="smb部署步骤"></a>smb部署步骤</h1><p><strong>步骤 1：安装Samba</strong></p><p>首先，确保您的Ubuntu系统已经安装了Samba。您可以使用以下命令来安装它：</p><pre><code class="bash">sudo apt-get updatesudo apt-get install samba</code></pre><p><strong>步骤 2：创建共享目录</strong></p><p>选择您希望共享的目录，并为其创建一个共享目录。在此示例中，我们将创建一个名为”myshare”的共享目录：</p><pre><code class="bash">sudo mkdir /srv/aoaoshare</code></pre><p><strong>步骤 3：配置Samba</strong></p><p>编辑Samba的配置文件以定义共享。打开终端并运行以下命令：</p><pre><code class="bash">sudo nano /etc/samba/smb.conf</code></pre><p>在文件底部添加以下内容：</p><pre><code class="plaintext">[myshare]   comment = My Shared Folder   path = /srv/myshare   browseable = yes   read only = no   create mask = 0775   directory mask = 0775   valid users = aoao,aoao</code></pre><p>确保将<code>your_username</code>替换为您自己的用户名。</p><p><strong>步骤 4：设置Samba密码</strong></p><p>在Samba中，您需要为您的用户设置密码。运行以下命令：</p><pre><code class="bash">sudo smbpasswd -a aoao</code></pre><p>按照提示输入密码并确认。</p><p><strong>步骤 5：重启Samba服务</strong></p><p>为了使配置生效，重启Samba服务：</p><pre><code class="bash">sudo service smbd restart</code></pre><p><strong>步骤 6：设置防火墙规则</strong></p><p>如果您的Ubuntu系统启用了防火墙，您需要确保SMB端口（TCP 139和445）已在防火墙上打开。运行以下命令：</p><pre><code class="bash">sudo ufw allow 139/tcpsudo ufw allow 445/tcp</code></pre><p><strong>步骤 7：访问共享文件夹</strong></p><p>现在，您可以在Windows计算机上使用资源管理器访问Ubuntu共享的文件夹。打开资源管理器，然后输入以下地址：</p><pre><code>\\ubuntu_hostname\myshare</code></pre><p>请将<code>ubuntu_hostname</code>替换为运行Samba服务的Ubuntu计算机的主机名或IP地址。您应该能够看到共享文件夹并访问其中的文件。</p><p>希望这个指南对您有帮助！如果您遇到问题，请随时提问。</p><p>[aoaoshare]<br>   comment = My Shared Folder<br>   path = /srv/myshare<br>   browseable = yes<br>   read only = no<br>   create mask = 0777<br>   directory mask = 0777<br>   guest ok = yes</p><h1 id="smb常见问题"><a href="#smb常见问题" class="headerlink" title="smb常见问题"></a>smb常见问题</h1><p><strong>1. 无法访问共享目录：</strong></p><ul><li><p><strong>检查Samba服务是否正在运行：</strong> 使用以下命令检查Samba服务的状态，确保它正在运行：</p><pre><code>sudo systemctl status smbd</code></pre></li><li><p><strong>检查共享目录权限：</strong> 确保共享目录的权限设置正确，以允许SMB客户端访问。</p></li><li><p><strong>检查Samba配置文件：</strong> 检查<code>/etc/samba/smb.conf</code>文件中的共享配置是否正确。确保共享名称、路径、权限和用户访问设置都正确。</p></li></ul><p><strong>2. 访问权限问题：</strong></p><ul><li><p><strong>用户身份验证：</strong> 如果用户无法访问共享，确保他们具有正确的Samba用户名和密码，并且在Samba的用户数据库中存在。使用<code>sudo smbpasswd -a 用户名</code>来创建Samba用户。</p></li><li><p><strong>用户组权限：</strong> 确保Samba共享配置中的<code>valid users</code>或<code>valid groups</code>选项正确设置，以控制谁可以访问共享。</p></li></ul><p><strong>3. Windows访问问题：</strong></p><ul><li><p><strong>工作组/域设置：</strong> 如果您的网络中有Windows计算机，确保它们在相同的工作组或域中。这可以在Windows计算机的系统设置中配置。</p></li><li><p><strong>NTLM身份验证：</strong> 部分Windows版本可能需要在Samba配置中启用NTLM身份验证，以确保与Samba服务器的连接。请检查<code>smb.conf</code>中的相关选项。</p></li></ul><p><strong>4. Samba服务崩溃或错误：</strong></p><ul><li><p><strong>查看日志：</strong> 在<code>/var/log/samba/</code>目录中查看Samba日志文件，特别是<code>log.smbd</code>和<code>log.nmbd</code>。这些日志可能包含有关问题的详细信息。</p></li><li><p><strong>重启Samba服务：</strong> 如果Samba服务崩溃，尝试使用以下命令重启服务：</p><pre><code>sudo systemctl restart smbd</code></pre></li></ul><p><strong>5. 防火墙和端口问题：</strong></p><ul><li><strong>防火墙规则：</strong> 确保防火墙规则允许SMB流量通过，包括TCP端口139和445。您可以使用防火墙工具（如iptables或firewalld）进行配置。</li></ul><p><strong>6. SMB协议版本问题：</strong></p><ul><li><strong>协议版本兼容性：</strong> 确保SMB客户端和服务器之间的SMB协议版本是兼容的。在<code>/etc/samba/smb.conf</code>中，可以通过设置<code>server min protocol</code>和<code>client min protocol</code>来控制使用的SMB协议版本。</li></ul><p><strong>7. 更新Samba：</strong></p><ul><li><strong>更新Samba软件包：</strong> 如果问题仍然存在，尝试升级或更新Samba软件包，因为新版本通常修复了许多问题和漏洞。</li></ul><p><strong>8. 高级故障排除：</strong></p><ul><li><p><strong>使用Samba工具：</strong> Samba提供了一些用于故障排除的工具，如<code>testparm</code>和<code>smbstatus</code>。您可以使用这些工具来检查配置和当前Samba会话的状态。</p></li><li><p><strong>参考文档：</strong> 查阅Samba官方文档以获取更多的故障排除信息和建议。</p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> aoaoIT技术管理 </category>
+          
+          <category> 操作系统虚拟化 </category>
+          
+          <category> IT应用项目制度 </category>
+          
+          <category> Linux系统 </category>
+          
+          <category> 备份系统 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> 操作系统虚拟化 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>python之禅-aoaopython</title>
+      <link href="/posts/5da05e59f5ff/"/>
+      <url>/posts/5da05e59f5ff/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p><span class="github-emoji"><span>🌸</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f338.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> python之禅</p></blockquote><ol><li><p>Beautiful is better than ugly.<br>美丽胜于丑陋。</p></li><li><p>Explicit is better than implicit.<br>显式胜于隐式。</p></li><li><p>Simple is better than complex.<br>简单胜于复杂。</p></li><li><p>Complex is better than complicated.<br>复杂胜于错综复杂。</p></li><li><p>Flat is better than nested.<br>平面胜于嵌套。</p></li><li><p>Sparse is better than dense.<br>稀疏胜于密集。</p></li><li><p>Readability counts.<br>可读性至关重要。</p></li><li><p>Special cases aren’t special enough to break the rules.<br>特殊情况不足以打破规则。</p></li><li><p>Although practicality beats purity.<br>尽管实用性胜过纯粹性。</p></li><li><p>Errors should never pass silently.<br>错误不应该悄悄地传递。</p></li><li><p>Unless explicitly silenced.<br>除非明确地被沉默。</p></li><li><p>In the face of ambiguity, refuse the temptation to guess.<br>面对模棱两可，拒绝猜测的诱惑。</p></li><li><p>There should be one– and preferably only one –obvious way to do it.<br>应该有一种 – 最好只有一种 – 显而易见的方法来做这件事。</p></li><li><p>Although that way may not be obvious at first unless you’re Dutch.<br>尽管这种方式一开始可能不明显，除非你是荷兰人。</p></li><li><p>Now is better than never.<br>现在胜过永远不做。</p></li><li><p>Although never is often better than <em>right</em> now.<br>尽管经常来说，永远胜过<em>立刻</em>。</p></li><li><p>If the implementation is hard to explain, it’s a bad idea.<br>如果实现难以解释，那是个坏主意。</p></li><li><p>If the implementation is easy to explain, it may be a good idea.<br>如果实现容易解释，那可能是个好主意。</p></li><li><p>Namespaces are one honking great idea – let’s do more of those!<br>命名空间是个了不起的想法 – 让我们做更多这样的事情！</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> aoaoIT技术管理 </category>
+          
+          <category> 脚本开发运营 </category>
+          
+          <category> aoaoPython </category>
+          
+          <category> aoaoPython </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+            <tag> aoaoIT技术管理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>020.Scarborough Fair - Sarah Brightman 斯卡布罗集市(莎拉.布莱曼)-一首跨越时空、文化、心理、哲学的民谣</title>
       <link href="/posts/d13b1b35659c/"/>
       <url>/posts/d13b1b35659c/</url>
@@ -2234,13 +2302,13 @@
             
             <tag> aoaoLinux命令 </tag>
             
-            <tag> Linux命令 </tag>
-            
             <tag> aoaocrontab </tag>
             
             <tag> crontab </tag>
             
             <tag> Windows命令 </tag>
+            
+            <tag> Linux命令 </tag>
             
         </tags>
       
@@ -2273,13 +2341,13 @@
             
             <tag> aoaoLinux命令 </tag>
             
+            <tag> linux命令 </tag>
+            
             <tag> aoaocrontab </tag>
             
             <tag> crontab </tag>
             
             <tag> Windows命令 </tag>
-            
-            <tag> linux命令 </tag>
             
         </tags>
       
@@ -2372,9 +2440,9 @@
       
         <tags>
             
-            <tag> linux </tag>
-            
             <tag> redhat </tag>
+            
+            <tag> linux </tag>
             
             <tag> kernel </tag>
             
@@ -2405,9 +2473,9 @@
       
         <tags>
             
-            <tag> linux </tag>
-            
             <tag> redhat </tag>
+            
+            <tag> linux </tag>
             
         </tags>
       
@@ -2436,9 +2504,9 @@
       
         <tags>
             
-            <tag> linux </tag>
-            
             <tag> redhat </tag>
+            
+            <tag> linux </tag>
             
             <tag> kernel </tag>
             
@@ -2560,9 +2628,9 @@
       
         <tags>
             
-            <tag> linux </tag>
-            
             <tag> redhat </tag>
+            
+            <tag> linux </tag>
             
         </tags>
       
@@ -2589,9 +2657,9 @@
       
         <tags>
             
-            <tag> ChatGPT </tag>
-            
             <tag> linux </tag>
+            
+            <tag> ChatGPT </tag>
             
         </tags>
       
