@@ -4,6 +4,109 @@
   
     
     <entry>
+      <title>windows性能排查</title>
+      <link href="/posts/e8ca0cf6de2f/"/>
+      <url>/posts/e8ca0cf6de2f/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p><span class="github-emoji"><span>🌸</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f338.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 半夜系统老是有报警性能问题，需要找出具体程序进程，这两个工具还不错</p></blockquote><p><a href="https://learn.microsoft.com/en-us/sysinternals/downloads/procmon">Process Monitor - Sysinternals | Microsoft Learn</a></p><h1 id="Process-Monitor-和-Process-Explorer-是什么？"><a href="#Process-Monitor-和-Process-Explorer-是什么？" class="headerlink" title="Process Monitor 和 Process Explorer 是什么？"></a>Process Monitor 和 Process Explorer 是什么？</h1><p>Process Monitor 和 Process Explorer 是两款由微软推荐的系统监视工具，它们能够实时显示文件系统、注册表、网络连接和进程活动。这两款工具整合了一些功能，其中 Process Monitor 专门用来监视系统中的任何文件操作过程，而 Process Explorer 则用来监视注册表的读写操作过程。</p><h1 id="如何使用这两个工具进行故障排查？"><a href="#如何使用这两个工具进行故障排查？" class="headerlink" title="如何使用这两个工具进行故障排查？"></a>如何使用这两个工具进行故障排查？</h1><p>使用这两款工具进行故障排查的步骤如下：</p><ol><li><strong>启动工具</strong>：首先，您需要下载并运行这两款工具。您可以从微软的官方网站上下载这两款工具。</li><li><strong>设置过滤器</strong>：在启动工具后，您可以设置过滤器来限制显示的事件。例如，如果您只关心某个特定进程的活动，那么您可以设置一个过滤器来只显示该进程的事件。</li><li><strong>查看事件</strong>：在设置好过滤器后，您就可以开始查看事件了。这些事件会实时显示在工具的主界面上。每个事件都会显示一些详细信息，如操作类型、路径、结果等。</li><li><strong>分析问题</strong>：通过查看和分析这些事件，您可以找出可能导致问题的原因。例如，如果您发现某个进程频繁地读写某个文件，那么这可能就是导致磁盘使用率过高的原因。</li><li><strong>解决问题</strong>：在找出问题的原因后，您就可以采取相应的措施来解决问题了。例如，如果问题是由于某个进程频繁地读写某个文件导致的，那么您可以尝试结束该进程或者修改其配置来减少其对该文件的访问。</li></ol><h1 id="这两个工具有什么优点和局限性？"><a href="#这两个工具有什么优点和局限性？" class="headerlink" title="这两个工具有什么优点和局限性？"></a>这两个工具有什么优点和局限性？</h1><p>这两款工具都有各自的优点和局限性。</p><p><strong>优点</strong>：</p><ul><li><strong>实时监控</strong>：这两款工具都能够实时显示系统的活动，这对于故障排查非常有用。</li><li><strong>详细信息</strong>：这两款工具都能够显示事件的详细信息，如操作类型、路径、结果等。</li><li><strong>强大的过滤功能</strong>：这两款工具都提供了强大的过滤功能，可以帮助您快速找到感兴趣的事件。</li></ul><p><strong>局限性</strong>：</p><ul><li><strong>学习曲线</strong>：由于这两款工具提供了大量的信息和功能，因此初次使用可能会感到有些复杂。</li><li><strong>无法保存历史数据</strong>：虽然这两款工具能够实时显示系统活动，但是它们无法保存历史数据。如果您需要查看历史数据，那么可能需要使用其他工具或者服务。</li></ul><p>希望以上内容能对您有所帮助！如果您有任何其他问题或者需要更多的帮助，请随时向我提问。祝您写作愉快！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> aoao工具命令 </category>
+          
+          <category> aoaoIT技术管理 </category>
+          
+          <category> 信息网络安全 </category>
+          
+          <category> 系统工具 </category>
+          
+          <category> 操作系统虚拟化 </category>
+          
+          <category> Windows系统 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 操作系统虚拟化 </tag>
+            
+            <tag> windows </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>AI翻译实时客服系统- 日本地铁多语言客服系统</title>
+      <link href="/posts/ab266eee7a41/"/>
+      <url>/posts/ab266eee7a41/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>VOA上看到一篇日本地铁客服系统介绍，AI一个非常好的落地场景，过几年肯定会很多</p></blockquote><h2 id="VOA上看到一篇日本地铁客服系统介绍，AI一个非常好的落地场景，过几年肯定会很多"><a href="#VOA上看到一篇日本地铁客服系统介绍，AI一个非常好的落地场景，过几年肯定会很多" class="headerlink" title="VOA上看到一篇日本地铁客服系统介绍，AI一个非常好的落地场景，过几年肯定会很多"></a>VOA上看到一篇日本地铁客服系统介绍，AI一个非常好的落地场景，过几年肯定会很多</h2><p>To get help, a person just speaks into a microphone. A system called  VoiceBiz listens to their words and displays them on the window in  Japanese. The railway worker can see the question and reply in Japanese. Then VoiceBiz translates the answer into a language the person who  needs help can understand. The system works with Japanese and 11 other  languages.<br> 有人要寻求帮助，只用对着麦克风说话。VoiceBiz系统会听他们说话，并用日语显示在窗口上。铁路员工可以看到问题，并用日文回答。然后VoiceBiz将答复翻译成需要帮助的人士所能理解的语言。该系统可适用于日语和其他11种语言。只要你对着一个麦克风说话，VoiceBiz就会把你的话转换成主语言，并显示在窗口上。火车站、机场、酒店、商店等地方的工作人员可以看到你的问题，并用相应语言回答。</p><h1 id="讯飞翻译跟此场景对比"><a href="#讯飞翻译跟此场景对比" class="headerlink" title="讯飞翻译跟此场景对比"></a>讯飞翻译跟此场景对比</h1><p>讯飞实时语言翻译是一款由科大讯飞开发的语音翻译软件，它可以让用户通过手机或者其他智能设备，实现多种语言之间的即时互译。讯飞实时语言翻译支持中文、英文、日文、韩文、法文、德文、西班牙文、俄文、阿拉伯文等28种语言，覆盖了全球90%以上的人口。讯飞实时语言翻译的特点有以下几点：</p><ul><li>高效准确：讯飞实时语言翻译采用了先进的人工智能技术，结合了大数据和深度学习，可以实现高达98%的翻译准确率，同时保证了翻译的流畅性和自然性。</li><li>简单易用：讯飞实时语言翻译的操作非常简单，用户只需要选择源语言和目标语言，然后按住屏幕上的按钮说话，就可以听到或者看到对应的翻译结果。用户还可以通过设置来调整翻译的模式、速度、音量等参数。</li><li>多场景适用：讯飞实时语言翻译可以应用于各种场景，比如旅行、商务、教育、娱乐等。用户可以根据不同的场景选择不同的翻译方式，比如对话模式、会议模式、广播模式等。用户还可以通过扫描二维码或者拍照来实现图文翻译。</li><li>云端同步：讯飞实时语言翻译可以将用户的翻译记录保存在云端，方便用户随时查看和管理。用户还可以通过分享功能来将翻译结果发送给其他人或者社交平台。</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> aoao随笔 </category>
+          
+          <category> aoao文化教育 </category>
+          
+          <category> aoao科技技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> aoao随笔,科技 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>个人网盘搭建-alist</title>
+      <link href="/posts/1c2dc5ab7c0b/"/>
+      <url>/posts/1c2dc5ab7c0b/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p><span class="github-emoji"><span>🌸</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f338.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 搭建个smb服务器做为生产系统备份系统备份</p></blockquote><h1 id="alist部署步骤"><a href="#alist部署步骤" class="headerlink" title="alist部署步骤"></a>alist部署步骤</h1><p><a href="https://alist-doc.nn.ci/docs/install/script">https://alist-doc.nn.ci/docs/install/script</a></p><p>curl -fsSL “<a href="https://alist.nn.ci/v2.sh">https://alist.nn.ci/v2.sh</a>“ | bash -s install</p><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>curl -fsSL “<a href="https://alist.nn.ci/v2.sh">https://alist.nn.ci/v2.sh</a>“ | bash -s install /root</p><h1 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h1><p>curl -fsSL “<a href="https://alist.nn.ci/v2.sh">https://alist.nn.ci/v2.sh</a>“ | bash -s update /root</p><h1 id="卸载"><a href="#卸载" class="headerlink" title="卸载"></a>卸载</h1><p>curl -fsSL “<a href="https://alist.nn.ci/v2.sh">https://alist.nn.ci/v2.sh</a>“ | bash -s uninstall /root</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> aoaoIT技术管理 </category>
+          
+          <category> IT应用项目制度 </category>
+          
+          <category> 脚本开发运营 </category>
+          
+          <category> 备份系统 </category>
+          
+          <category> 网站开发建设 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> www </tag>
+            
+            <tag> nginx </tag>
+            
+            <tag> alist </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>samba-smb-linuxwindows共享-aoaosmb</title>
       <link href="/posts/47360269b705/"/>
       <url>/posts/47360269b705/</url>
@@ -1294,9 +1397,9 @@
             
             <tag> 脚本 </tag>
             
-            <tag> shell </tag>
-            
             <tag> python </tag>
+            
+            <tag> shell </tag>
             
         </tags>
       
@@ -1364,8 +1467,8 @@
     
     <entry>
       <title>aoaohexo</title>
-      <link href="/posts/b0770529e0d8/"/>
-      <url>/posts/b0770529e0d8/</url>
+      <link href="/posts/2c97011ea908/"/>
+      <url>/posts/2c97011ea908/</url>
       
         <content type="html"><![CDATA[<h1 id="hexo打开文章显示目录"><a href="#hexo打开文章显示目录" class="headerlink" title="hexo打开文章显示目录"></a>hexo打开文章显示目录</h1><p>主题文件 source/js/script.js 的56行添加 $(‘#default-panel &gt; .icon-file-tree’).trigger(‘click’); </p><pre><code>/*pjax请求回来页面后触发的事件*/    'pjax:end': function () {        NProgress.done();        container.scrollTop(0);        afterPjax();        $('#default-panel &gt; .icon-file-tree').trigger('click');        /*移动端打开文章后，自动隐藏文章列表*/        if ($(window).width() &lt;= 1024) {            if ($fullBtn.children().hasClass("max")) {                $fullBtn.trigger("click");            } else if ($(".nav").hasClass("mobile")) {                $(".nav").removeClass("mobile");                $fullBtn.children().removeClass("mobile");            }        }    },</code></pre><h1 id="修改版权下标"><a href="#修改版权下标" class="headerlink" title="修改版权下标"></a>修改版权下标</h1><p>“E:\hexo\themes\3-hexo\layout_partial\copyright.ejs”</p>]]></content>
       
@@ -1416,9 +1519,9 @@
             
             <tag> 脚本 </tag>
             
-            <tag> shell </tag>
-            
             <tag> python </tag>
+            
+            <tag> shell </tag>
             
         </tags>
       
@@ -1449,9 +1552,9 @@
             
             <tag> 脚本 </tag>
             
-            <tag> shell </tag>
-            
             <tag> python </tag>
+            
+            <tag> shell </tag>
             
         </tags>
       
@@ -1482,9 +1585,9 @@
             
             <tag> 脚本 </tag>
             
-            <tag> shell </tag>
-            
             <tag> python </tag>
+            
+            <tag> shell </tag>
             
         </tags>
       
@@ -1494,8 +1597,8 @@
     
     <entry>
       <title>twikoo评论系统搭建</title>
-      <link href="/posts/a99c48c406f7/"/>
-      <url>/posts/a99c48c406f7/</url>
+      <link href="/posts/472c8cbeb957/"/>
+      <url>/posts/472c8cbeb957/</url>
       
         <content type="html"><![CDATA[<p>twikoo评论系统搭建，wiki下</p><h1 id="twikoo评论系统搭建"><a href="#twikoo评论系统搭建" class="headerlink" title="twikoo评论系统搭建"></a>twikoo评论系统搭建</h1><h2 id="Node-js安装"><a href="#Node-js安装" class="headerlink" title="Node.js安装"></a>Node.js安装</h2><p>Linux下就是个绿色软件 </p><p><a href="https://nodejs.org/zh-cn">https://nodejs.org/zh-cn</a></p><p>wget  $version</p><p>tar xvf node-v17.9.1-linux-x64.tar.gz</p><p>vi /etc/profile</p><blockquote><p>export NODEJS=/tmp/focus/node-v17.9.1-linux-x64                                                                                                                                                                                                                                   export PATH=$NODEJS/bin:$PATH  </p></blockquote><p>source /etc/profile</p><p>测试是否安装完成</p><p>node -v npm -v</p><h2 id="安装-Twikoo"><a href="#安装-Twikoo" class="headerlink" title="安装 Twikoo"></a>安装 Twikoo</h2><p><code>npm i -g tkserver</code></p><p>修改端口存储目录</p><p>export TWIKOO_PORT=9900</p><pre><code>nohup tkserver &gt;&gt; tkserver.log 2&gt;&amp;1 &amp;</code></pre><p>npm list</p><p>npm unintall</p><p>npm install</p>]]></content>
       
@@ -1513,9 +1616,9 @@
             
             <tag> 脚本 </tag>
             
-            <tag> twikoo </tag>
-            
             <tag> shell </tag>
+            
+            <tag> twikoo </tag>
             
         </tags>
       
@@ -2440,9 +2543,9 @@
       
         <tags>
             
-            <tag> redhat </tag>
-            
             <tag> linux </tag>
+            
+            <tag> redhat </tag>
             
             <tag> kernel </tag>
             
@@ -2473,9 +2576,9 @@
       
         <tags>
             
-            <tag> redhat </tag>
-            
             <tag> linux </tag>
+            
+            <tag> redhat </tag>
             
         </tags>
       
@@ -2504,9 +2607,9 @@
       
         <tags>
             
-            <tag> redhat </tag>
-            
             <tag> linux </tag>
+            
+            <tag> redhat </tag>
             
             <tag> kernel </tag>
             
@@ -2518,8 +2621,8 @@
     
     <entry>
       <title>aoaohexo-all-butterfly</title>
-      <link href="/posts/e0200353a8a3/"/>
-      <url>/posts/e0200353a8a3/</url>
+      <link href="/posts/8d91c1c98c58/"/>
+      <url>/posts/8d91c1c98c58/</url>
       
         <content type="html"><![CDATA[<p>[TOC]</p><h1 id="1-hexo安装"><a href="#1-hexo安装" class="headerlink" title="1.hexo安装"></a>1.hexo安装</h1><h2 id="1-1-Windows-hexo-安装"><a href="#1-1-Windows-hexo-安装" class="headerlink" title="1.1 Windows hexo 安装"></a>1.1 Windows hexo 安装</h2><h3 id="1-1-1-安装Nodejs-amp-Git"><a href="#1-1-1-安装Nodejs-amp-Git" class="headerlink" title="1.1.1 安装Nodejs &amp; Git"></a>1.1.1 安装Nodejs &amp; Git</h3><ul><li><p>NODEJS地址：<a href="https://nodejs.org/">Nodejs官网nodejs.org</a>  <a href="http://nodejs.cn/download/">下载 | Node.js 中文网 (nodejs.cn)</a></p></li><li><p>GIT地址：<a href="https://git-scm.com/">Git (git-scm.com)</a></p></li></ul><p><span class="github-emoji"><span>ℹ</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>Nodejs下载版本有LTS、Current，建议使用：LTS:Long Time Support,Current是当前最新版本</p><p>npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a></p><h3 id="1-1-2-安装hexo"><a href="#1-1-2-安装hexo" class="headerlink" title="1.1.2 安装hexo"></a>1.1.2 安装hexo</h3><pre><code># C:\Users\focus&gt;npm install hexo-cli -g# C:\Users\focus&gt;hexo -v网络不行执行# npm install -g cnpm --registry=https://registry.npm.taobao.orgcnpm install hexo-cli -g</code></pre><p><span class="github-emoji"><span>ℹ</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>npm install -g 全局安装文件在： C:\Users\focus\AppData\Roaming\npm\node_modules\hexo-cli</p><p><code>Tips:npm install -g 全局安装文件在： C:\Users\focus\AppData\Roaming\npm\node_modules\hexo-cli</code></p><blockquote><p>Tips:npm install -g 全局安装文件在： C:\Users\focus\AppData\Roaming\npm\node_modules\hexo-cli</p></blockquote><h3 id="1-1-3-初始化hexo"><a href="#1-1-3-初始化hexo" class="headerlink" title="1.1.3 初始化hexo"></a>1.1.3 初始化hexo</h3><p>执行<code>hexo init</code></p><pre><code>hexo inithexo clean #清除缓存hexo g == hexo generate #生成hexo s == hexo server #启动服务预览hexo d == hexo deploy #部署hexo n "aoao第一篇博客" == hexo new "aoao第一篇博客" #新建文章</code></pre><h3 id="1-1-4-下载主题"><a href="#1-1-4-下载主题" class="headerlink" title="1.1.4 下载主题"></a>1.1.4 下载主题</h3><p>next:<a href="https://theme-next.js.org/">next</a></p><p>butterfly:<a href="https://butterfly.js.org/"><span class="github-emoji"><span>🦋</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f98b.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>butterfly</a></p><pre><code>git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly</code></pre><h1 id="2-Github集成免费发布网站"><a href="#2-Github集成免费发布网站" class="headerlink" title="2.Github集成免费发布网站"></a>2.Github集成免费发布网站</h1><h2 id="2-1-域名注册（可选步骤）"><a href="#2-1-域名注册（可选步骤）" class="headerlink" title="2.1 域名注册（可选步骤）"></a>2.1 域名注册（可选步骤）</h2><p>一年30到80不等，我腾讯云注册的 week.wiki </p><h2 id="2-2-Github注册及创建仓库"><a href="#2-2-Github注册及创建仓库" class="headerlink" title="2.2 Github注册及创建仓库"></a>2.2 Github注册及创建仓库</h2><p><a href="https://hwmail.github.io/">hwmail.github.io</a> </p><h2 id="2-3-配置本地网站部署到Github"><a href="#2-3-配置本地网站部署到Github" class="headerlink" title="2.3 配置本地网站部署到Github"></a>2.3 配置本地网站部署到Github</h2><pre><code>git config --global user.name "hwmail"git config --global user.email "hwmail@hwmail.vip"ssh-keygen -t rsa -C "hwmail@hwmail.vip" 回车 回车 回车打开复制"C:\Users\hwmail\.ssh\id_rsa.pub"粘贴到Github设置-SSH Key执行测试是否成功：ssh git@github.com</code></pre><p>修改网站目录下_config.yml</p><pre><code># Deployment## Docs: https://hexo.io/docs/one-command-deploymentdeploy:  type: 'git'  repo: git@github.com:hwmail/hwmail.github.io.git  branch: masternpm install hexo-deployer-git --savehexo clean &amp;&amp; hexo g &amp;&amp; hexo d &amp;&amp; hexo s</code></pre><h2 id="2-4-绑定域名配置域名指向"><a href="#2-4-绑定域名配置域名指向" class="headerlink" title="2.4 绑定域名配置域名指向"></a>2.4 绑定域名配置域名指向</h2><h3 id="2-4-1-域名记录配置"><a href="#2-4-1-域名记录配置" class="headerlink" title="2.4.1 域名记录配置"></a>2.4.1 域名记录配置</h3><p>CNAME类型、主机记录@、值hwmail.github.io</p><p>CNAME类型、主机记录www、值hwmail.github.io</p><h3 id="2-4-2-新建一个CNAME文件"><a href="#2-4-2-新建一个CNAME文件" class="headerlink" title="2.4.2 新建一个CNAME文件"></a>2.4.2 新建一个CNAME文件</h3><p>“D:\hexo\source\CNAME”</p><p>week.wiki</p><h3 id="2-4-3-Github上面绑定域名"><a href="#2-4-3-Github上面绑定域名" class="headerlink" title="2.4.3 Github上面绑定域名"></a>2.4.3 Github上面绑定域名</h3><p>Custom domain</p><p>week.wiki  点  Save</p><h1 id="3-Butterfly主题配置"><a href="#3-Butterfly主题配置" class="headerlink" title="3.Butterfly主题配置"></a>3.Butterfly主题配置</h1><h2 id="3-1-菜单栏定制"><a href="#3-1-菜单栏定制" class="headerlink" title="3.1 菜单栏定制"></a>3.1 菜单栏定制</h2><p><strong>电影菜单：</strong></p><pre><code>官网：https://github.com/mythsman/hexo-douban$ npm install hexo-douban --save</code></pre><hr><p>将下面的配置写入站点的配置文件 <code>_config.yml</code> 里(不是主题的配置文件)</p><pre><code>douban:  id: 162448367  book:    path: books/index.html    title: 'This is my book title'    quote: 'This is my book quote'  movie:    path: movies/index.html    title: 'This is my movie title'    quote: 'This is my movie quote'  game:    path: games/index.html    title: 'This is my game title'    quote: 'This is my game quote'  timeout: 10000   </code></pre><blockquote><p>豆瓣ID获取 <a href="https://www.zhihu.com/question/19634899">https://www.zhihu.com/question/19634899</a></p><p>启动命令：hexo clean &amp;&amp; hexo douban -m &amp;&amp; hexo g &amp;&amp; hexo deploy</p></blockquote><hr><pre><code>menu:   首页: / || fas fa-home   分类: /categories/ || fas fa-folder-open   标签: /tags/ || fas fa-tags   归档: /archives/ || fas fa-archive   生活：|| fas fa-list:     Music: /music/ || fas fa-music     Movie: /movies/ || fas fa-video   友链: /link/ || fas fa-link   关于我: /about/ || fas fa-heart</code></pre><pre><code># 新建分类页$ hexo new page "categories"# 新建标签页$ hexo new page "tags"# 新建关于我hexo new page "tags"  194  hexo new page "categories"  195  hexo new page "pages"  196  hexo new page "tags"  197  hexo new page "about"  198  hexo new page "archives"  199  hexo new page "link"  200  hexo new page "list"  201  hexo new page "music"  204  hexo new page "movies"# 修改categories-index.md typetitle: categoriesdate: 2022-11-27 21:15:24type: categories</code></pre><h2 id="3-2-头像区定制"><a href="#3-2-头像区定制" class="headerlink" title="3.2 头像区定制"></a>3.2 头像区定制</h2><pre><code>    # Avatar (頭像)avatar:  # img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png  img: /img/favicon.png  effect: false  #  按钮    button:      enable: true      icon: fab fa-github      text: 内站hwmail.vip      link: https://hwmail.vip  # 描述定制              card_author:    enable: true    description: 生活、IT笔记、其它</code></pre><h2 id="3-3-首页面定制"><a href="#3-3-首页面定制" class="headerlink" title="3.3 首页面定制"></a>3.3 首页面定制</h2><pre><code># Loading Animation (加載動畫)preloader:  enable: true  # source  # 1. fullpage-loading  # 2. pace (progress bar)  source: 1  # pace theme (see https://codebyzach.github.io/pace/)  pace_css_url:=== # The banner image of home pageindex_img: /img/coco.jpg</code></pre><pre><code>增加首页打字效果subtitle:  enable: true  # Typewriter Effect (打字效果)  effect: true  # Effect Speed Options (打字效果速度參數)  startDelay: 300 # time before typing starts in milliseconds  typeSpeed: 150 # type speed in milliseconds  backSpeed: 50 # backspacing speed in milliseconds  # loop (循環打字)  loop: false  # source 調用第三方服務  # source: false 關閉調用  # source: 1  調用一言網的一句話（簡體） https://hitokoto.cn/  # source: 2  調用今日詩詞（簡體） https://www.jinrishici.com/  # subtitle 會先顯示 source , 再顯示 sub 的內容    source: false    # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字  sub:     - 任何事物都是两面的、没有绝对的对绝对的错。     - hehe ha ha。</code></pre><h2 id="3-4-页脚配置"><a href="#3-4-页脚配置" class="headerlink" title="3.4 页脚配置"></a>3.4 页脚配置</h2><pre><code>footer:  owner:    enable: true    since: 2010  custom_text:联系方式QQ:2516726319 邮箱：hi@week.wiki 邮箱2：jlwu@vip.163.com  copyright: false # Copyright of theme and framework    打开themes\\layout_partial\footer.ejs修改。</code></pre><h2 id="3-5-开启打赏功能"><a href="#3-5-开启打赏功能" class="headerlink" title="3.5 开启打赏功能"></a>3.5 开启打赏功能</h2><pre><code>reward:  enable: true  QR_code:    # - img: /img/wechat.jpg    #   link:    #   text: wechat    - img: /img/alipay.jpg      link:      text: alipay</code></pre><h2 id="3-6-网站统计"><a href="#3-6-网站统计" class="headerlink" title="3.6 网站统计"></a>3.6 网站统计</h2><pre><code># busuanzi count for PV / UV in site# 訪問人數busuanzi:  site_uv: true  site_pv: true  page_pv: true# Time difference between publish date and now (網頁運行時間)# Formal: Month/Day/Year Time or Year/Month/Day Timeruntimeshow:  enable: true  publish_date: 2005/10/10</code></pre><h2 id="3-7-增加搜索功能"><a href="#3-7-增加搜索功能" class="headerlink" title="3.7 增加搜索功能"></a>3.7 增加搜索功能</h2><pre><code>local_search:  enable: true  preload: true  CDN:</code></pre><h2 id="3-8-SEO-优化"><a href="#3-8-SEO-优化" class="headerlink" title="3.8 SEO 优化"></a>3.8 SEO 优化</h2><pre><code># URL## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'url: https://week.wiki# permalink: :year/:month/:day/:title/permalink: posts/:hash/permalink_defaults:pretty_urls:  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks  trailing_html: true # Set to false to remove trailing '.html' from permalinks</code></pre><h2 id="3-9-站点地图"><a href="#3-9-站点地图" class="headerlink" title="3.9 站点地图"></a>3.9 站点地图</h2><pre><code>$ npm install hexo-generator-sitemap --save$ npm install hexo-generator-baidu-sitemap --savesitemap:    path: sitemap.xml    tag: false    category: falsebaidusitemap:    path: baidusitemap.xml</code></pre><h2 id="3-10-配置网站信息"><a href="#3-10-配置网站信息" class="headerlink" title="3.10 配置网站信息"></a>3.10 配置网站信息</h2><pre><code># Sitetitle: week.wikisubtitle: ''description: ''keywords:author: aoaoemail: jlwu@vip.163.comlanguage: zh-CNtimezone: ''</code></pre><h2 id="3-11-hexo多层分类"><a href="#3-11-hexo多层分类" class="headerlink" title="3.11 hexo多层分类"></a>3.11 hexo多层分类</h2><p><strong>父子分类</strong>：</p><pre><code>categories:- 后端- 笔记</code></pre><p><strong>并列分类：</strong></p><pre><code>categories:- [后端]- [笔记]</code></pre><p>同一分类不同子类</p><pre><code>categories:- [学习,html]- [学习,http]</code></pre><h2 id="3-12-hexo公告栏"><a href="#3-12-hexo公告栏" class="headerlink" title="3.12 hexo公告栏"></a>3.12 hexo公告栏</h2><pre><code>  card_announcement:    enable: true    content: 1、网站建中，有什么意见建议请联系             2、我的邮箱jlwu@vip.163.com</code></pre><h2 id=""><a href="#" class="headerlink" title=""></a></h2><pre><code></code></pre><h2 id="3-14-友情链接友链"><a href="#3-14-友情链接友链" class="headerlink" title="3.14 友情链接友链"></a>3.14 友情链接友链</h2><p>1、hexo new page link</p><p>2、vi /sources\link\index.md</p><pre><code>---title: tagsdate: 2022-09-09 14:31:10type: "link"---</code></pre><p>3、新建 source/_data/link.yml</p><pre><code>- class_name: 友情链接  class_desc: 那些人，那些事  link_list:    - name: Hexo      link: https://hexo.io/zh-tw/      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg      descr: 快速、简单且强大的网誌框架 - class_name: 网站  class_desc: 值得推荐的网站  link_list:    - name: Youtube      link: https://www.youtube.com/      avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png      descr: 视频网站    - name: Weibo      link: https://www.weibo.com/      avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png      descr: 中国最大社交分享平台    - name: Twitter      link: https://twitter.com/      avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png      descr: 社交分享平台 </code></pre><h2 id="3-15-增加emoji表情插件"><a href="#3-15-增加emoji表情插件" class="headerlink" title="3.15  增加emoji表情插件"></a>3.15  增加emoji表情插件</h2><pre><code>   安装插件： npm install hexo-filter-github-emojis --save在 Hexo 根目录下的 _config.yml 文件中，新增以下的配置项：    githubEmojis:      enable: true      className: github-emoji      inject: true      styles:      customEmojis:</code></pre><h2 id="3-16-分类导航"><a href="#3-16-分类导航" class="headerlink" title="3.16  分类导航"></a>3.16  分类导航</h2><p>一、首先是分类条，在<code>themes/butterfly/layout/includes/</code>处新建文件<code>categoryBar.pug</code></p><h2 id="3-17-代码框展开-x2F-关闭"><a href="#3-17-代码框展开-x2F-关闭" class="headerlink" title="3.17 代码框展开/关闭"></a>3.17 代码框展开/关闭</h2><pre><code>修改主题配置文件_config.butterfly.yml。中的highlight_shrink属性。highlight_shrink: true #代码框不展开，需点击 '&gt;' 打开    1在默认情况下，代码框自动展开，可设置是否所有代码框都关闭状态，点击&gt;可展开代码。    true 全部代码框不展开，需点击&gt;打开    false 代码框展开，有&gt;点击按钮    none 不显示&gt;按钮</code></pre><h2 id="3-18-文章置顶"><a href="#3-18-文章置顶" class="headerlink" title="3.18 文章置顶"></a>3.18 文章置顶</h2><p>已经支持文章置顶功能。你可以直接在文章的<code>front-matter</code>区域里添加<code>sticky: 1</code>属性来把这篇文章置顶。数值越大，置顶的优先级越大。</p><h2 id="3-19-文章封面"><a href="#3-19-文章封面" class="headerlink" title="3.19 文章封面"></a>3.19 文章封面</h2><pre><code>cover:  # 是否显示文章封面  index_enable: true  aside_enable: true  archives_enable: true  # 封面显示的位置  # 三个值可配置 left , right , both  position: both  # 当没有设置cover时，默认的封面显示  default_cover:  - /img/p1  - /img/p2  - /img/p3</code></pre><h2 id="3-20-动态彩带"><a href="#3-20-动态彩带" class="headerlink" title="3.20 动态彩带"></a>3.20 动态彩带</h2><pre><code>canvas_fluttering_ribbon:  enable: true  mobile: true # false 手机端不显示 true 手机端显示</code></pre><h1 id="4-hexo-layout-布局"><a href="#4-hexo-layout-布局" class="headerlink" title="4. hexo layout 布局"></a>4. hexo layout 布局</h1><p>hexo\scaffolds\post.md</p><pre><code>title: {{ title }}date: {{ date }}cover: /img/music1.jpgtop: 99categories:- 一级- 二级tags: [t1,t2]description: 摘要</code></pre><pre><code>推荐手动截取文章内容，在首页显示。在想要截取的地方添加&lt;!--more --&gt;</code></pre><h2 id="-1"><a href="#-1" class="headerlink" title=""></a></h2><h1 id="5-hexo聊天评论系统"><a href="#5-hexo聊天评论系统" class="headerlink" title="5.hexo聊天评论系统"></a>5.hexo聊天评论系统</h1><h2 id="5-1-hexo-live-chat-system"><a href="#5-1-hexo-live-chat-system" class="headerlink" title="5.1 hexo live chat system"></a>5.1 hexo live chat system</h2><p>crisp live系统：<a href="https://crisp.chat/zh/">https://crisp.chat/zh/</a></p><pre><code>theme configurechat_btn: truechat_hide_show: true打开crisp官网并注册账号。找到 【设置】-&gt;【网站设置】-&gt;【设置说明】，找到你的网站ID。# crisp# https://crisp.chat/en/crisp:  enable: true  website_id: xxxxxxxx</code></pre>]]></content>
       
@@ -2628,9 +2731,9 @@
       
         <tags>
             
-            <tag> redhat </tag>
-            
             <tag> linux </tag>
+            
+            <tag> redhat </tag>
             
         </tags>
       
@@ -2657,9 +2760,9 @@
       
         <tags>
             
-            <tag> linux </tag>
-            
             <tag> ChatGPT </tag>
+            
+            <tag> linux </tag>
             
         </tags>
       
@@ -2813,6 +2916,35 @@
         <tags>
             
             <tag> IT技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>aoaocrontab-crontab</title>
+      <link href="/posts/f56cea85ac25/"/>
+      <url>/posts/f56cea85ac25/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p><span class="github-emoji"><span>🌸</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f338.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> </p></blockquote><p><img src="/img/image-20230828160031790.png" alt="image-20230828160031790"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> aoao工具命令 </category>
+          
+          <category> Windows命令 </category>
+          
+          <category> Linux命令 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> aoao工具命令 </tag>
             
         </tags>
       
