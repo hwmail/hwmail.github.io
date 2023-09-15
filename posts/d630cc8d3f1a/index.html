@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>012.Spice Girls - Wannabe (Radio Edit)-90年代女子偶像团体的告白之歌 | week.wiki</title>
-  <meta name="keywords" content=" 无损音乐 ">
-  <meta name="description" content="012.Spice Girls - Wannabe (Radio Edit)-90年代女子偶像团体的告白之歌 | week.wiki">
+  <title>mssql数据库死锁排查 | week.wiki</title>
+  <meta name="keywords" content=" mssql , sql server ">
+  <meta name="description" content="mssql数据库死锁排查 | week.wiki">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="week.wiki">
@@ -2141,9 +2141,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-04-我的生活-Mylife/aoao音乐/012.Spice Girls - Wannabe (Radio Edit)-90年代女子偶像团体的告白之歌" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-00-我的产品项目-MyproductProject/数据库中间件/mssql数据库死锁排查" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">012.Spice Girls - Wannabe (Radio Edit)-90年代女子偶像团体的告白之歌</h1>
+        <h1 class="article-title">mssql数据库死锁排查</h1>
     
     <div class="article-meta">
         
@@ -2153,9 +2153,11 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="aoao生活">aoao生活</a> > 
+            <a  data-rel="aoaoIT技术管理">aoaoIT技术管理</a> > 
             
-            <a  data-rel="aoao生活&lt;---&gt;aoao音乐">aoao音乐</a>
+            <a  data-rel="aoaoIT技术管理&lt;---&gt;数据库中间件">数据库中间件</a> > 
+            
+            <a  data-rel="aoaoIT技术管理&lt;---&gt;数据库中间件&lt;---&gt;MSSQL数据库">MSSQL数据库</a>
             
         </span>
         
@@ -2163,14 +2165,16 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color5">无损音乐</a>
+            <a class="color1">mssql</a>
+            
+            <a class="color1">sql server</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-08-22 00:37:50'>2023-08-22 00:35</time>
+            发布时间 : <time class="date" title='最后更新: 2023-09-15 15:05:34'>2023-09-15 14:59</time>
         
     </div>
     <div class="article-meta">
@@ -2192,7 +2196,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%99%E9%A6%96%E6%AD%8C%E7%9A%84%E8%83%8C%E6%99%AF%E6%95%85%E4%BA%8B"><span class="toc-text">这首歌的背景故事</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%99%E9%A6%96%E6%AD%8C%E6%9B%B2%E7%9A%84%E5%88%9B%E4%BD%9C%E7%81%B5%E6%84%9F%E6%9D%A5%E6%BA%90"><span class="toc-text">这首歌曲的创作灵感来源</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%8C%E8%AF%8D%E7%BF%BB%E8%AF%91"><span class="toc-text">歌词翻译</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E5%90%AF%E6%95%B0%E6%8D%AE%E5%BA%93%E6%AD%BB%E9%94%81%E6%97%A5%E5%BF%97%E5%8A%9F%E8%83%BD"><span class="toc-text">开启数据库死锁日志功能</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%97%A5%E5%BF%97%E6%9F%A5%E7%9C%8B"><span class="toc-text">日志查看</span></a>
     
 <style>
     .left-col .switch-btn,
@@ -2208,18 +2212,25 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="这首歌的背景故事"><a href="#这首歌的背景故事" class="headerlink" title="这首歌的背景故事"></a>这首歌的背景故事</h1><p>你知道《Wannabe》吗？那可是Spice Girls的第一首单曲，也是她们最火的一首。这首歌在1996年夏天在全世界掀起了一股热潮，让人们都跟着唱“zigazig ha”。这首歌是怎么来的呢？原来，Spice Girls和两个制作人在伦敦一间录音室里写歌，结果遇到了一个很恶心的邻居，他总是在厕所里拉屎和抽雪茄。Spice Girls就用“zigazig ha”这个词来嘲笑他，没想到这个词后来成了这首歌的亮点。</p>
-<p>《Wannabe》是一首让人兴奋和自豪的舞曲，展现了Spice Girls的女权主义理念和个性化形象。歌词表达了她们对友情和爱情的看法，她们说如果你想和我在一起，你得先和我的朋友打成一片，因为友情永远比爱情重要。她们还说你得对我好，不要拖拖拉拉，不要只想着占便宜，不然我会甩了你。她们还用说唱的方式介绍了自己和自己的朋友，每个人都有自己的代号和特点。</p>
-<p>《Wannabe》的音乐视频也很有趣，是在伦敦一家叫Midland Grand Hotel的酒店里拍的。视频里，Spice Girls在酒店里闹腾，打扰了其他客人和工作人员，还跑到屋顶上唱歌跳舞。视频在英国播出后引起了媒体的关注，并帮助了这首歌在英国单曲榜上拿到了七周冠军的成绩。</p>
-<h1 id="这首歌曲的创作灵感来源"><a href="#这首歌曲的创作灵感来源" class="headerlink" title="这首歌曲的创作灵感来源"></a>这首歌曲的创作灵感来源</h1><p>《Wannabe》的创作灵感来源于Spice Girls对自己和对方的信任和尊重，以及对潜在爱人的期待和挑战。她们想要表达的思想感情是：我知道自己想要什么，你也得知道你想要什么，如果你想成为我的爱人，你必须接受我的过去，尊重我的朋友，付出你的真心，不要浪费我的时间，否则我会说再见。她们用简单而直接的语言来传达这些信息，没有遮掩或修饰。她们还用幽默和俏皮的方式来展现自己的个性和风格，让听众感受到她们的魅力和活力。</p>
-<p>以下是一些引用原文说明：</p>
+        <blockquote>
+<p>数据库mirrors镜像偶尔会同步报警，可能是死锁问题 ，wiki下</p>
+</blockquote>
+<h2 id="开启数据库死锁日志功能"><a href="#开启数据库死锁日志功能" class="headerlink" title="开启数据库死锁日志功能"></a><strong>开启数据库死锁日志功能</strong></h2><pre><code class="plaintext">DBCC TRACEON (1222, -1); -- 1222 表示开启 Trace Flag 1222
+DBCC TRACEON (1204, -1); -- 1204 表示开启 Trace Flag 1204
+ 
+</code></pre>
+<p>这里 <code>-1</code> 参数表示在 SQL Server 重启前一直保持 Trace Flag 的开启状态。如果你想要在下次 SQL Server 重启时自动关闭 Trace Flag，可以将参数设置为 <code>0</code></p>
+<p>关闭信号跟踪<br> DBCC TRACEOFF(1222,-1)<br> DBCC TRACEOFF(1204,-1)</p>
+<p> 查看信号跟踪是否开启。<br> DBCC TRACESTATUS(1204,-1)</p>
+<p>DBCC TRACESTATUS(1222,-1)</p>
+<h1 id="日志查看"><a href="#日志查看" class="headerlink" title="日志查看"></a>日志查看</h1><p>开启profiles</p>
+<p>在【事件选择】页中，展开Locks事件，并选择以下事件：</p>
 <ul>
-<li>“If you want my future, forget my past” 这句话说明了她们不想被自己过去的错误或经历所束缚，也不想被别人用过去来评判或质疑。</li>
-<li>“You gotta get with my friends, make it last forever, friendship never ends” 这句话说明了她们对友情的重视和珍惜，也说明了她们希望自己的爱人能够与她们的朋友相处融洽，而不是把她们从朋友身边拉开或孤立。</li>
-<li>“You have got to give, taking is too easy, but that’s the way it is” 这句话说明了她们对爱情的态度和要求，她们不想被别人利用或玩弄，也不想被别人当作理所当然或轻易得到的东西，她们想要的是真诚和平等的付出和回报。</li>
-<li>“So here’s a story from A to Z, you wanna get with me, you gotta listen carefully” 这句话说明了她们对自己和对方的自信和坦诚，她们没有什么秘密或隐瞒，她们愿意把自己和自己的朋友都介绍给对方，让对方了解她们的喜好和特点，但同时也要求对方注意和尊重她们的选择和意愿。</li>
+<li>Deadlock graph</li>
+<li>Lock:Deadlock</li>
+<li>Lock:Deadlock Chain</li>
 </ul>
-<h2 id="歌词翻译"><a href="#歌词翻译" class="headerlink" title="歌词翻译"></a>歌词翻译</h2><p>[00:00.00] 作词 : Melanie Chisholm/Emma Bunton/Victoria Beckham/Geri Halliwell/Matt Rowe/Richard Stannard/Mel Brown<br>[00:00.00] 作曲 : Melanie Chisholm/Emma Bunton/Victoria Beckham/Geri Halliwell/Matt Rowe/Richard Stannard/Mel Brown<br>[00:05.24] Yo, I’ll tell you what I want 哟，我会告诉你我想要的<br>[00:06.65][00:10.94][00:37.24][01:20.72] what I really really want 我真的真的想要的是什么<br>[00:07.75][00:11.92][00:38.10][01:21.77] So tell me what you want 那么告诉我你想要的是什么<br>[00:08.76][00:13.10][00:39.14][01:22.84] what you really really want 你真的真的想要的是什么<br>[00:09.80][00:35.43][01:19.80] I’ll tell you what I want 我会告诉你我想要的<br>[00:14.40][00:40.15][01:23.88] I wanna, I wanna, I wanna 我想要，我想要，我想要<br>[00:15.35][00:41.63][01:25.26] I wanna, I wanna, really, really wanna 我想要，我想要，真的，真的想要<br>[00:17.59][00:43.22][01:26.77] really really wanna zigazig ha 真的真的想要 zigazig ha<br>[00:19.10] If you want my future, forget my past 如果你想要我的未来，忘记我的过去<br>[00:22.86] If you wanna get with me 如果你想和我在一起<br>[00:25.11] Better make it fast 最好快点<br>[00:27.20] Now don’t go wasting my precious time 现在别浪费我的宝贵时间<br>[00:31.45] Get your act together, we could be just fine 集中注意力，我们可能会很好<br>[00:44.54][00:53.64][01:28.55][01:37.22][02:03.26][02:12.19][02:20.92][02:47.19] If you wanna be my lover 如果你想成为我的爱人<br>[00:46.53][01:30.14][02:05.60] You gotta get with my friends 你必须融入我的朋友<br>[00:48.74][01:32.38][02:07.17] Make it last forever, friendship never ends 让它永远持续，友情永不终止<br>[00:55.27][01:38.87] You have got to give 你必须付出<br>[00:57.63][01:41.70][02:15.97] Taking is too easy, but that’s the way it is 拿取太容易，但那就是现实<br>[01:02.48] What do you think about that now you know how I feel 你现在知道我感受如何，你怎么想<br>[01:03.73] Say you can handle my love, are you for real 说你能接受我的爱，你是认真的吗<br>[01:10.59] I won’t be hasty, I’ll give you a try 我不会草率，我会给你一个机会<br>[01:15.50] If you really bug me, then I’ll say goodbye 如果你真的让我烦恼，那么我会告别<br>[01:43.22][02:18.11] But that’s the way it is 但那就是现实<br>[01:45.61] So here’s a story from A to Z 所以这是从A到Z的故事<br>[01:47.69] You wanna get with me, you gotta listen carefully 你想和我在一起，你得仔细听<br>[01:50.11] We got Em in the place who likes it in your face 我们有Em在这里，喜欢面对面<br>[01:51.19] We got G like MC who likes it on an Easy V doesn’t come for free 我们有像MC那样喜欢的G，在容易的V上并不是免费的<br>[01:55.87] She’s a real lady, and as for me, you’ll see 她是个真正的女士，至于我，你会看到<br>[01:58.89][02:01.18][02:27.75][02:29.56][02:34.90] Slam your body down and wind it all around 把你的身体猛撞下来，然后把它绕着转<br>[02:13.71] you have got to give 你必须付出<br>[02:22.53] you gotta, you gotta, you gotta 你必须，你必须，你必须<br>[02:24.19] you gotta, you gotta 你必须，你必须<br>[02:25.34] slam, slam, slam, slam 猛撞，猛撞，猛撞，猛撞<br>[02:31.51][02:39.32][02:49.25]<br>[02:36.60] Slam your body down, zigazig ah 猛撞你的身体，zigazig ah</p>
+<p>关键字 dead 、 victim </p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 xieaoao@qq.com QQ:1296454177 </span>
